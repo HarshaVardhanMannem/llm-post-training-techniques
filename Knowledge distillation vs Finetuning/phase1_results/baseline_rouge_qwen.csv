@@ -1,0 +1,3 @@
+model,num_samples,num_params_B,gen_time_s,samples_per_sec,rouge1_clean,rouge2_clean,rougeL_clean,rougeLsum_clean,rouge1_raw,rouge2_raw,rougeL_raw,avg_pred_words,avg_ref_words,preamble_rate
+Qwen/Qwen2.5-7B-Instruct,1000,7.616,771.5,1.296,36.389,11.933,23.312,29.682,36.388,11.932,23.314,45.2,55.2,0.006
+Qwen/Qwen2.5-0.5B-Instruct,1000,0.494,217.1,4.606,32.7,10.884,21.654,27.523,32.7,10.882,21.651,37.0,55.2,0.007
