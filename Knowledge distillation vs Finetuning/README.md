@@ -32,9 +32,9 @@ Both use **LoRA** (parameter-efficient training). The central question: **does d
 ## Experiment Phases
 
 ### Phase 1 — Baseline Evaluation
-Evaluate teacher and student zero-shot to establish the performance gap.
+Evaluate teacher (Qwen2.5-7B-Instruct) and student (Qwen2.5-0.5B-Instruct) zero-shot to establish the performance gap.
 
-**Output:** ROUGE-1/2/L for both models → `phase1_results/`
+**Output:** ROUGE-1/2/L for both models → `baseline_results/`
 
 | Model | ROUGE-1 |
 |---|---|
@@ -49,17 +49,17 @@ Each step lives in its own notebook under `notebooks/`.
 
 | Step | Notebook | What it does | Output |
 |---|---|---|---|
-| 2a | `phase2a_teacher_generate.ipynb` | Teacher generates summaries on 10k train articles | `phase2_data/teacher_generations.jsonl` |
-| 2b | `phase2b_kd_lora_train.ipynb` | Train student via LoRA on **teacher generations** (KD) | `phase2_outputs/student_kd_lora/` |
-| 2c | `phase2c_sft_lora_train.ipynb` | Train student via LoRA on **gold summaries** (SFT) | `phase2_outputs/student_sft_lora/` |
-| 2d | `phase2d_eval_compare.ipynb` | Evaluate all four models on the same test set | `phase2_eval_results/phase2_comparison.csv` |
+| 2a | `02_Qwen2.5-7B-teacher_generate_kd_targets.ipynb` | Teacher generates summaries on 10k train articles | `kd_teacher_data/teacher_generations.jsonl` |
+| 2b | `03_kd_lora_train_Qwen2.5-0.5B-student.ipynb` | Train student via LoRA on **teacher generations** (KD) | `model_outputs/student_kd_lora/` |
+| 2c | `04_sft_lora_finetune_Qwen2.5-0.5B-student.ipynb` | Train student via LoRA on **gold summaries** (SFT) | `model_outputs/student_sft_lora/` |
+| 2d | `05_kd_vs_sft_eval_Qwen2.5-0.5B_indomain_crossdomain.ipynb` | Evaluate all four models in-domain + cross-domain | `kd_vs_sft_eval_results/` |
 
-> **Critical:** Steps 2b and 2c are identical in every way except the target labels — same articles, same LoRA config, same hyperparameters, same seed. The only variable is whether the student learns from teacher outputs or gold summaries.
+> **Critical:** Steps 2b and 2c are identical in every way except the target labels — same articles, same LoRA config, same hyperparameters, same seed. The only variable is whether the student learns from teacher outputs (KD) or gold summaries (SFT).
 
 ---
 
-### Phase 3 (Planned) — Cross-Domain
-Re-evaluate trained students on XSum and SAMSum to test generalization.
+### Phase 3 — Cross-Domain (included in Phase 2d notebook)
+Re-evaluate trained students on XSum and SAMSum to test generalization. Already integrated into `05_kd_vs_sft_eval_Qwen2.5-0.5B_indomain_crossdomain.ipynb`.
 
 ### Phase 4 (Planned) — Scale Up
 If 10k shows real signal, repeat 2a–2d with 50k examples for final paper numbers.
@@ -70,11 +70,11 @@ If 10k shows real signal, repeat 2a–2d with 50k examples for final paper numbe
 
 | Setting | Value |
 |---|---|
-| LoRA rank | r=16, alpha=32, dropout=0.05 |
+| LoRA rank | r=32, alpha=64, dropout=0.1 |
 | LoRA targets | All attention + MLP projections |
-| Effective batch size | 16 (per-device 2 × grad accum 8) |
-| Epochs | 3 |
-| Learning rate | 3e-4, cosine schedule, 3% warmup |
+| Effective batch size | 16 (per-device 4 × grad accum 4) |
+| Epochs | 4 |
+| Learning rate | 2e-4, cosine schedule, 3% warmup |
 | Max sequence length | 1536 |
 | Article pre-truncation | 6000 chars, left-truncated |
 | Precision | bf16 + gradient checkpointing |
@@ -115,23 +115,23 @@ After Phase 2d, the headline number is **KD-LoRA ROUGE-1 vs SFT-LoRA ROUGE-1**:
 .
 ├── README.md
 ├── notebooks/
-│   ├── phase1_baseline_eval.ipynb
-│   ├── phase2a_teacher_generate.ipynb
-│   ├── phase2b_kd_lora_train.ipynb          # (to be created)
-│   ├── phase2c_sft_lora_train.ipynb          # (to be created)
-│   └── phase2d_eval_compare.ipynb            # (to be created)
-├── phase1_results/
+│   ├── 01_baseline_eval_Qwen2.5-7B-teacher_vs_Qwen2.5-0.5B-student.ipynb
+│   ├── 02_Qwen2.5-7B-teacher_generate_kd_targets.ipynb
+│   ├── 03_kd_lora_train_Qwen2.5-0.5B-student.ipynb
+│   ├── 04_sft_lora_finetune_Qwen2.5-0.5B-student.ipynb
+│   └── 05_kd_vs_sft_eval_Qwen2.5-0.5B_indomain_crossdomain.ipynb
+├── baseline_results/
 │   ├── baseline_rouge_qwen.csv
 │   ├── baseline_rouge_qwen.json
 │   ├── predictions_Qwen2.5-0.5B-Instruct.json
 │   └── predictions_Qwen2.5-7B-Instruct.json
-├── phase2_data/
+├── kd_teacher_data/
 │   └── teacher_generations.jsonl
-├── phase2_outputs/
-│   ├── student_kd_lora/                      # LoRA adapter weights (after 2b)
-│   └── student_sft_lora/                     # LoRA adapter weights (after 2c)
-└── phase2_eval_results/
-    └── phase2_comparison.csv                 # (after 2d)
+├── model_outputs/
+│   ├── student_kd_lora/       # LoRA adapter weights (after notebook 03)
+│   └── student_sft_lora/      # LoRA adapter weights (after notebook 04)
+└── kd_vs_sft_eval_results/
+    └── ...                    # CSVs and JSONs from notebook 05
 ```
 
 ---
@@ -139,9 +139,8 @@ After Phase 2d, the headline number is **KD-LoRA ROUGE-1 vs SFT-LoRA ROUGE-1**:
 ## Current Status
 
 - [x] Phase 1 — Baseline evaluation complete
-- [x] Phase 2a — Teacher generations complete (`teacher_generations.jsonl`)
-- [ ] Phase 2b — KD-LoRA training
-- [ ] Phase 2c — SFT-LoRA training
-- [ ] Phase 2d — Evaluation and comparison
-- [ ] Phase 3 — Cross-domain generalization
+- [x] Phase 2a — Teacher generations complete (`kd_teacher_data/teacher_generations.jsonl`)
+- [ ] Phase 2b — KD-LoRA training (Qwen2.5-0.5B student on teacher outputs)
+- [ ] Phase 2c — SFT-LoRA training (Qwen2.5-0.5B student on gold summaries)
+- [ ] Phase 2d/3 — Evaluation and comparison (in-domain + cross-domain)
 - [ ] Phase 4 — Scale up to 50k
