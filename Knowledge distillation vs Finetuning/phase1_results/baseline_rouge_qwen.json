@@ -1,0 +1,36 @@
+[
+  {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "num_samples": 1000,
+    "num_params_B": 7.616,
+    "gen_time_s": 771.5,
+    "samples_per_sec": 1.296,
+    "rouge1_clean": 36.389,
+    "rouge2_clean": 11.933,
+    "rougeL_clean": 23.312,
+    "rougeLsum_clean": 29.682,
+    "rouge1_raw": 36.388,
+    "rouge2_raw": 11.932,
+    "rougeL_raw": 23.314,
+    "avg_pred_words": 45.2,
+    "avg_ref_words": 55.2,
+    "preamble_rate": 0.006
+  },
+  {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "num_samples": 1000,
+    "num_params_B": 0.494,
+    "gen_time_s": 217.1,
+    "samples_per_sec": 4.606,
+    "rouge1_clean": 32.7,
+    "rouge2_clean": 10.884,
+    "rougeL_clean": 21.654,
+    "rougeLsum_clean": 27.523,
+    "rouge1_raw": 32.7,
+    "rouge2_raw": 10.882,
+    "rougeL_raw": 21.651,
+    "avg_pred_words": 37.0,
+    "avg_ref_words": 55.2,
+    "preamble_rate": 0.007
+  }
+]
