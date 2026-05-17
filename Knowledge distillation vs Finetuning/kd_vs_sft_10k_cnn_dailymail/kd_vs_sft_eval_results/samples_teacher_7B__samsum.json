@@ -1,0 +1,127 @@
+{
+  "result": {
+    "model_label": "teacher_7B",
+    "model_path": "Qwen/Qwen2.5-7B-Instruct",
+    "dataset": "samsum",
+    "in_domain": false,
+    "num_samples": 819,
+    "gen_time_s": 15.4,
+    "samples_per_sec": 53.197,
+    "rouge1_clean": 38.097,
+    "rouge2_clean": 12.753,
+    "rougeL_clean": 29.316,
+    "rougeLsum_clean": 29.325,
+    "rouge1_raw": 38.027,
+    "bertscore_f1": 39.532,
+    "bertscore_precision": 35.523,
+    "bertscore_recall": 43.584,
+    "avg_pred_words": 24.2,
+    "avg_ref_words": 20.0,
+    "preamble_rate": 0.105,
+    "finish_reasons": {
+      "stop": 819
+    }
+  },
+  "samples": [
+    {
+      "reference": "Both Claire and Linda are making curry for dinner. ",
+      "raw": "The friends shared photos of their curry dishes and joked about it being a \"curry dream team.\" They expressed enjoyment of their meals.",
+      "clean": "The friends shared photos of their curry dishes and joked about it being a \"curry dream team.\" They expressed enjoyment of their meals."
+    },
+    {
+      "reference": "Derek and Alyssa make fun of Fergie's performance of the national anthem.",
+      "raw": "The conversation discusses Alyssa and Derek's opinions on Fergie's performance of the national anthem, finding it amusing despite its poor quality.",
+      "clean": "Alyssa and Derek's opinions on Fergie's performance of the national anthem, finding it amusing despite its poor quality."
+    },
+    {
+      "reference": "Ann wants to buy Josh's laptop for $200. Josh doesn't want to negotiate the price. Ann will take it for $250 with accessories. ",
+      "raw": "Ann and Josh discuss purchasing a laptop; Ann agrees to buy it for $250 and asks about additional accessories, planning to pick it up later.",
+      "clean": "Ann and Josh discuss purchasing a laptop; Ann agrees to buy it for $250 and asks about additional accessories, planning to pick it up later."
+    },
+    {
+      "reference": "Matt and Tony want to go to the concert of Bon Jovi next July in Poland and are planning to buy the tickets that cost 250 PLN before they\u2019re sold out. Phil will think about it and let them know.",
+      "raw": "The group discusses Bon Jovi's upcoming concert in Warsaw, with Matt planning to buy cheap tickets early, while Phil is considering attending after some thought. Tony also expresses interest in possibly going.",
+      "clean": "The group discusses Bon Jovi's upcoming concert in Warsaw, with Matt planning to buy cheap tickets early, while Phil is considering attending after some thought. Tony also expresses interest in possibly going."
+    },
+    {
+      "reference": "Anastasia sent her new school photos to Darrell.",
+      "raw": "Anastasia and Darrell discuss Anastasia's new school photo, which she finds unflattering due to the quick and careless nature of taking school photos. They both share their thoughts on why these photos aren't taken seriously anymore except for identification purposes.",
+      "clean": "Anastasia and Darrell discuss Anastasia's new school photo, which she finds unflattering due to the quick and careless nature of taking school photos. They both share their thoughts on why these photos aren't taken seriously anymore except for identification purposes."
+    },
+    {
+      "reference": "Jake, Florence, Margot and others are going on a research trip to Swazi. The name of the country was changed last year and it's now Eswatini.",
+      "raw": "The group discusses who is going on a research trip to Eswatini (formerly known as Swaziland) and briefly mentions Mike considering joining them, while also noting that the conditions there might be challenging.",
+      "clean": "The group discusses who is going on a research trip to Eswatini (formerly known as Swaziland) and briefly mentions Mike considering joining them, while also noting that the conditions there might be challenging."
+    },
+    {
+      "reference": "Nathalie, Pauline, Jacob and Anthony are thinking about spending holidays in Greece together in August. Jacob and Nathalie need to be back by August 10 because of Nathalie's younger sister's wedding. ",
+      "raw": "The group discusses their holiday plans in Greece but must adjust their travel dates due to Nathalie's sister's wedding on August 10th. They joke around and support each other despite the last-minute change.",
+      "clean": "The group discusses their holiday plans in Greece but must adjust their travel dates due to Nathalie's sister's wedding on August 10th. They joke around and support each other despite the last-minute change."
+    },
+    {
+      "reference": "Kim needs to get some fresh fish in Warsaw. Kim will ask at restaurants about their source. Kim is planning something special but won't share any details with Margot for now.",
+      "raw": "Kim and Margot discuss possible sources for fresh ramal fish in Warsaw, ultimately suggesting Kim contact local restaurants directly while planning a surprise grilled fish meal.",
+      "clean": "Kim and Margot discuss possible sources for fresh ramal fish in Warsaw, ultimately suggesting Kim contact local restaurants directly while planning a surprise grilled fish meal."
+    },
+    {
+      "reference": "Malik and Samanta want to lose weight. They will try to keep a diet, keto or paleo, and go for runs together.",
+      "raw": "Malik and Samantha discuss trying either the paleo or keto diet together to lose weight, decide to research further before making a decision, and express excitement about starting their fitness journey again.",
+      "clean": "Malik and Samantha discuss trying either the paleo or keto diet together to lose weight, decide to research further before making a decision, and express excitement about starting their fitness journey again."
+    },
+    {
+      "reference": "Suzy urges Linda to follow her on Instagram and she obliges.",
+      "raw": "Suzy encouraged Linda to follow her on Instagram for nice pictures, and Linda agreed.",
+      "clean": "Suzy encouraged Linda to follow her on Instagram for nice pictures, and Linda agreed."
+    },
+    {
+      "reference": "Jones and Angelina will meet in town in the afternoon.",
+      "raw": "Jones and Angelina plan to meet in town later that afternoon after confirming details via phone.",
+      "clean": "Jones and Angelina plan to meet in town later that afternoon after confirming details via phone."
+    },
+    {
+      "reference": "Erin has just baked something that Zachary finds delicious. Zachary wants her to bring him a piece of it as now he's busy cleaning. ",
+      "raw": "Erin shared photos of her freshly baked treat with Zachary, who complimented it and asked for a piece later. Zachary also showed Erin pictures of his apartment cleaning efforts.",
+      "clean": "Erin shared photos of her freshly baked treat with Zachary, who complimented it and asked for a piece later. Zachary also showed Erin pictures of his apartment cleaning efforts."
+    },
+    {
+      "reference": "Piper will get paid tonight. Client liked Piper's work and wants to work with her on a long-term basis.",
+      "raw": "The conversation discusses an upcoming payment for work completed, with Bryan's manager scheduled to send the payment that night, and Piper expressing hope for future collaboration.",
+      "clean": "an upcoming payment for work completed, with Bryan's manager scheduled to send the payment that night, and Piper expressing hope for future collaboration."
+    },
+    {
+      "reference": "Ulysses and Peter got an A, Julia got a B. The grades are to be checked on the course page.",
+      "raw": "Students discussed their grades, with some receiving As and one getting a B; Julia informed Martha on how to access her grades online.",
+      "clean": "Students discussed their grades, with some receiving As and one getting a B; Julia informed Martha on how to access her grades online."
+    },
+    {
+      "reference": "There was a meet-and-greet with James Charles in Birmingham which gathered 8000  people.",
+      "raw": "The British media reacted negatively to the large fan turnout at James Charles' meet and greet in Birmingham, causing traffic issues, and struggled to understand why he garnered such attention.",
+      "clean": "The British media reacted negatively to the large fan turnout at James Charles' meet and greet in Birmingham, causing traffic issues, and struggled to understand why he garnered such attention."
+    },
+    {
+      "reference": "Julia knew Tim was gay, while Adam and Nate didn't. ",
+      "raw": "The group discusses Tim coming out as gay to one of them, and their reactions range from surprise to disappointment that he didn't share this information earlier with all of them.",
+      "clean": "The group discusses Tim coming out as gay to one of them, and their reactions range from surprise to disappointment that he didn't share this information earlier with all of them."
+    },
+    {
+      "reference": "Daniel will find out who rents a pop corn machines on Lily's request.",
+      "raw": "Lily is renting a popcorn machine for their office Christmas party where they plan to watch Love Actually, and Daniel will help find someone who rents them.",
+      "clean": "Lily is renting a popcorn machine for their office Christmas party where they plan to watch Love Actually, and Daniel will help find someone who rents them."
+    },
+    {
+      "reference": "It took Phil a very long time to do the Christmas shopping but he probably managed to get everything. He will be home in an hour. Phil's apple pie will be in the oven when he arrives.",
+      "raw": "Phil is stuck in traffic and crowds trying to park and get into a store; Nancy offers to make him an apple pie when he gets home.",
+      "clean": "Phil is stuck in traffic and crowds trying to park and get into a store; Nancy offers to make him an apple pie when he gets home."
+    },
+    {
+      "reference": "Timmy had a bad day at work. Timmy will bring some wine to Gemma's bbq at the weekend.",
+      "raw": "Timmy had a bad day at work with his boss yelling at him but has been invited to Gemma's BBQ on the weekend where he can bring some wine.",
+      "clean": "Timmy had a bad day at work with his boss yelling at him but has been invited to Gemma's BBQ on the weekend where he can bring some wine."
+    },
+    {
+      "reference": "Shaldona sends mobile invitations to her wedding, as she has no time to give them in person.",
+      "raw": "Shaldona shared her wedding invitation through Messenger after not contacting Piper in years, which Piper found inappropriate given the effort required for such an event.",
+      "clean": "Shaldona shared her wedding invitation through Messenger after not contacting Piper in years, which Piper found inappropriate given the effort required for such an event."
+    }
+  ]
+}

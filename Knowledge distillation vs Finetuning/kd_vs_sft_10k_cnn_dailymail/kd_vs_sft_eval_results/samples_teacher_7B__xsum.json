@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "teacher_7B",
+    "model_path": "Qwen/Qwen2.5-7B-Instruct",
+    "dataset": "xsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 41.1,
+    "samples_per_sec": 24.311,
+    "rouge1_clean": 27.209,
+    "rouge2_clean": 7.178,
+    "rougeL_clean": 20.071,
+    "rougeLsum_clean": 20.073,
+    "rouge1_raw": 27.221,
+    "bertscore_f1": 30.062,
+    "bertscore_precision": 26.448,
+    "bertscore_recall": 33.644,
+    "avg_pred_words": 27.5,
+    "avg_ref_words": 21.0,
+    "preamble_rate": 0.01,
+    "finish_reasons": {
+      "stop": 998,
+      "length": 2
+    }
+  },
+  "samples": [
+    {
+      "reference": "A woman who was seriously hurt in a fatal hen party motorway crash is now helping other major trauma victims rebuild their lives.",
+      "raw": "Sarah Johnson, after surviving a\u4e25\u91cd\u4e8b\u6545\uff0c\u9996\u6b21\u516c\u5f00\u5206\u4eab\u4e86\u5979\u5728hen party\u5df4\u58eb\u8f66\u7978\u4e2d\u7684\u7ecf\u5386\uff0c\u5e76\u8868\u793a\u8fd9\u6bb5\u7ecf\u5386\u8ba9\u5979\u610f\u8bc6\u5230\u8981\u73cd\u60dc\u751f\u547d\u5e76\u51b3\u5b9a\u901a\u8fc7\u6148\u5584\u673a\u6784\u652f\u6301\u5176\u4ed6\u53d7\u5bb3\u8005\u3002",
+      "clean": "Sarah Johnson, after surviving a"
+    },
+    {
+      "reference": "A Tudor manor house has reopened following a \u00a32.2m makeover.",
+      "raw": "Bramall Hall in Stockport is welcoming visitors following extensive renovations funded by grants and local council funds, marking the first time in centuries some areas can be explored publicly.",
+      "clean": "Bramall Hall in Stockport is welcoming visitors following extensive renovations funded by grants and local council funds, marking the first time in centuries some areas can be explored publicly."
+    },
+    {
+      "reference": "Walt Disney World has unveiled a lighthouse memorial for a young boy who was killed by an alligator while on holiday at the Florida theme park.",
+      "raw": "A two-year-old boy named Lane Thomas Graves died after being attacked and killed by an alligator in a man-made lagoon at a Disney resort in Florida.",
+      "clean": "A two-year-old boy named Lane Thomas Graves died after being attacked and killed by an alligator in a man-made lagoon at a Disney resort in Florida."
+    },
+    {
+      "reference": "The agriculture minister is to return to China next month as attempts to access markets there continue.",
+      "raw": "Michelle O'Neill used the Balmoral Show to host meetings aimed at expanding Northern Ireland's exports of various foods including pork, beef, and chicken to China and the US.",
+      "clean": "Michelle O'Neill used the Balmoral Show to host meetings aimed at expanding Northern Ireland's exports of various foods including pork, beef, and chicken to China and the US."
+    },
+    {
+      "reference": "Blackpool have signed Bournemouth goalkeeper Ryan Allsop and midfielder Callum Cooke from Middlesbrough on season-long loans.",
+      "raw": "Blackpool have signed two new players, Allsop and Cooke, as they strengthen their squad for the upcoming season.",
+      "clean": "Blackpool have signed two new players, Allsop and Cooke, as they strengthen their squad for the upcoming season."
+    },
+    {
+      "reference": "Scotland must beat Slovenia if they are to resurrect their chances of reaching the World Cup finals, Gordon Strachan has acknowledged.",
+      "raw": "Scotland's head coach Gordon Strachan emphasizes the importance of winning an upcoming match against Slovenia to stay alive in Euro 2018 qualifying, while maintaining focus on the team's preparation and fan support.",
+      "clean": "Scotland's head coach Gordon Strachan emphasizes the importance of winning an upcoming match against Slovenia to stay alive in Euro 2018 qualifying, while maintaining focus on the team's preparation and fan support."
+    },
+    {
+      "reference": "A man jailed for six years for coercing a woman into having sex with a stranger and sending \"revenge porn\" to her family has had the convictions quashed.",
+      "raw": "Clive Weatherhogg's conviction for coercing his former partner was overturned due to a prosecutorial concession about insufficient evidence and misdirections during the trial, leading to his imminent release from prison.",
+      "clean": "Clive Weatherhogg's conviction for coercing his former partner was overturned due to a prosecutorial concession about insufficient evidence and misdirections during the trial, leading to his imminent release from prison."
+    },
+    {
+      "reference": "A Dublin man accused of stabbing his friend in a County Antrim hotel has been granted bail.",
+      "raw": "John Morley faces multiple charges including attempted wounding, possession of an offensive weapon, and disorderly behavior following an incident at the Chimney Corner Hotel where he allegedly attacked Derek White with a flick knife.",
+      "clean": "John Morley faces multiple charges including attempted wounding, possession of an offensive weapon, and disorderly behavior following an incident at the Chimney Corner Hotel where he allegedly attacked Derek White with a flick knife."
+    },
+    {
+      "reference": "Catalans Dragons will be without hooker Paul Aiton for up to six weeks after he tore a pectoral muscle on his debut, in a defeat by Wigan Warriors on Friday.",
+      "raw": "Wakefield's Aiton is out for the season after sustaining an injury diagnosed through recent scans.",
+      "clean": "Wakefield's Aiton is out for the season after sustaining an injury diagnosed through recent scans."
+    },
+    {
+      "reference": "Planners in Rugby have revealed they have been in talks with Coventry City Football Club about building a stadium in the borough.",
+      "raw": "Coventry City FC has requested a meeting with Rugby Borough Council to discuss potential future stadium sites outside Coventry, following a long-standing dispute over the Ricoh Arena.",
+      "clean": "Coventry City FC has requested a meeting with Rugby Borough Council to discuss potential future stadium sites outside Coventry, following a long-standing dispute over the Ricoh Arena."
+    },
+    {
+      "reference": "A man tried to buy ricin from the \"dark web\" after the idea was \"implanted in his brain\" from watching the Breaking Bad television series, a court heard.",
+      "raw": "A man from Liverpool, suspected of trying to order ricin through the dark web under the alias \"Weirdos 0000,\" was found out when the U.S.-based seller turned out to be an FBI agent.",
+      "clean": "A man from Liverpool, suspected of trying to order ricin through the dark web under the alias \"Weirdos 0000,\" was found out when the U.S.-based seller turned out to be an FBI agent."
+    },
+    {
+      "reference": "A tumble dryer could \"not be ruled out\" as the cause of a flat fire in which two men died, an inquest has heard.",
+      "raw": "A fire engineer testified at the inquest that while a Hotpoint dryer may not be the source of the fatal fire, a fault in its starter switch cannot be ruled out, and suggested another iron in the same room could have caused the blaze.",
+      "clean": "A fire engineer testified at the inquest that while a Hotpoint dryer may not be the source of the fatal fire, a fault in its starter switch cannot be ruled out, and suggested another iron in the same room could have caused the blaze."
+    },
+    {
+      "reference": "Bots appear to be spamming a US regulator's website over a proposed reversal of net neutrality rules, researchers have said.",
+      "raw": "Automated comments flooding the FCC's net neutrality portal raise concerns about the authenticity of public opinion and could undermine legitimate protest efforts.",
+      "clean": "Automated comments flooding the FCC's net neutrality portal raise concerns about the authenticity of public opinion and could undermine legitimate protest efforts."
+    },
+    {
+      "reference": "School Report gives students a real audience, by linking to their work from the BBC website.",
+      "raw": "Schools must create a dedicated webpage on their website for the BBC to link to, ensuring it is publicly accessible and free of personal information before uploading student reports on March 16, 2017.",
+      "clean": "Schools must create a dedicated webpage on their website for the BBC to link to, ensuring it is publicly accessible and free of personal information before uploading student reports on March 16, 2017."
+    },
+    {
+      "reference": "Michele Morgan, the French screen star and glamour icon who won the first best actress prize at the Cannes film festival, has died at the age of 96.",
+      "raw": "French actress Michele Morgan, known for roles in classic films like \"Quai des Brumes\" and \"The Fallen Idol,\" passed away, leaving an enduring legacy of elegance and grace in cinema.",
+      "clean": "French actress Michele Morgan, known for roles in classic films like \"Quai des Brumes\" and \"The Fallen Idol,\" passed away, leaving an enduring legacy of elegance and grace in cinema."
+    },
+    {
+      "reference": "For years Match of the Day has satisfied impatient football fans by condensing a 90 minute match into a handy chunk of highlights.",
+      "raw": "Scientists at the Polytechnic University of Catalonia are developing technology to automatically identify key moments in soccer games for editing highlights, aiming to assist editors but still facing challenges in accurately detecting all significant events like goals.",
+      "clean": "Scientists at the Polytechnic University of Catalonia are developing technology to automatically identify key moments in soccer games for editing highlights, aiming to assist editors but still facing challenges in accurately detecting all significant events like goals."
+    },
+    {
+      "reference": "St Johnstone have secured striker Steven MacLean on a contract extension.",
+      "raw": "St Johnstone's 33-year-old player MacLean has extended his contract until May 2017, while two young players from the club have been sent on loan to other teams.",
+      "clean": "St Johnstone's 33-year-old player MacLean has extended his contract until May 2017, while two young players from the club have been sent on loan to other teams."
+    },
+    {
+      "reference": "Bournemouth have signed Norwich midfielder Andrew Surman for an undisclosed fee on a three-year deal.",
+      "raw": "Surman returns to Portsmouth after previous loans, bringing experience from clubs including Bournemouth, Southampton, Wolves, and Norwich.",
+      "clean": "Surman returns to Portsmouth after previous loans, bringing experience from clubs including Bournemouth, Southampton, Wolves, and Norwich."
+    },
+    {
+      "reference": "Another election is probably the last thing the public want to hear about after what we've just gone through but that's exactly what the parties at the assembly are gearing up for next year.",
+      "raw": "The Welsh Conservatives gained significant momentum following the election, feeling more confident in challenging in more constituencies and having valuable voter data, while Labour faces challenges including disaffection due to the NHS and internal issues regarding council reorganization.",
+      "clean": "The Welsh Conservatives gained significant momentum following the election, feeling more confident in challenging in more constituencies and having valuable voter data, while Labour faces challenges including disaffection due to the NHS and internal issues regarding council reorganization."
+    },
+    {
+      "reference": "Chancellor George Osborne has abandoned his target to restore government finances to a surplus by 2020.",
+      "raw": "Chancellor George Osborne announces the government will no longer aim for a budget surplus by the end of the decade due to the economic shock from Brexit.",
+      "clean": "Chancellor George Osborne announces the government will no longer aim for a budget surplus by the end of the decade due to the economic shock from Brexit."
+    }
+  ]
+}
