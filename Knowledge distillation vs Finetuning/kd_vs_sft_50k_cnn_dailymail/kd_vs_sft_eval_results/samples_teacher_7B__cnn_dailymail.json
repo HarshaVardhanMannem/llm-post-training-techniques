@@ -1,0 +1,127 @@
+{
+  "result": {
+    "model_label": "teacher_7B",
+    "model_path": "Qwen/Qwen2.5-7B-Instruct",
+    "dataset": "cnn_dailymail",
+    "in_domain": true,
+    "num_samples": 1000,
+    "gen_time_s": 73.1,
+    "samples_per_sec": 13.689,
+    "rouge1_clean": 33.414,
+    "rouge2_clean": 10.54,
+    "rougeL_clean": 21.611,
+    "rougeLsum_clean": 27.415,
+    "rouge1_raw": 33.426,
+    "bertscore_f1": 22.949,
+    "bertscore_precision": 28.615,
+    "bertscore_recall": 17.284,
+    "avg_pred_words": 43.7,
+    "avg_ref_words": 55.2,
+    "preamble_rate": 0.013,
+    "finish_reasons": {
+      "stop": 1000
+    }
+  },
+  "samples": [
+    {
+      "reference": "CNN's Dr. Sanjay Gupta says we should legalize medical marijuana now .\nHe says he knows how easy it is do nothing \"because I did nothing for too long\"",
+      "raw": "The author describes a revolutionary shift towards acceptance and legalization of medical marijuana, citing changes in public opinion, scientific support, patient success stories, and political advocacy. He argues for nationwide legalization based on growing evidence and the need to address unmet medical needs.",
+      "clean": "The author describes a revolutionary shift towards acceptance and legalization of medical marijuana, citing changes in public opinion, scientific support, patient success stories, and political advocacy. He argues for nationwide legalization based on growing evidence and the need to address unmet medical needs."
+    },
+    {
+      "reference": "Child has amassed thousands of Twitter followers with 'gang life' photos .\nIn one video he points gun at camera as adults look on unfazed .\nHis tweets have prompted backlash with calls for intervention .",
+      "raw": "A young boy from Memphis, Tennessee, has gained over 3,000 Twitter followers by posting photos and videos depicting gang activities including drug use and firearms; his posts have sparked criticism while he defends himself against accusations of promoting harmful behavior.",
+      "clean": "A young boy from Memphis, Tennessee, has gained over 3,000 Twitter followers by posting photos and videos depicting gang activities including drug use and firearms; his posts have sparked criticism while he defends himself against accusations of promoting harmful behavior."
+    },
+    {
+      "reference": "The presidential hopeful held a town hall meeting in Kenilworth on Tuesday .\nDuring the meeting, high school English teacher Kathy Mooney got up to ask the governor a question about pensions .\nShe asked why he didn't seek a higher legal settlement in a case with ExxonMobil that would have contributed to the state's pension system .\nChristie responded by repeatedly asking how much Mooney knew about the deal instead of answering her question .",
+      "raw": "During a town hall meeting, New Jersey Governor Chris Christie engaged in an aggressive exchange with a teacher questioning his handling of an ExxonMobil settlement, prompting criticism from the state\u2019s largest teachers\u2019 union for his 'bully' behavior.",
+      "clean": "During a town hall meeting, New Jersey Governor Chris Christie engaged in an aggressive exchange with a teacher questioning his handling of an ExxonMobil settlement, prompting criticism from the state\u2019s largest teachers\u2019 union for his 'bully' behavior."
+    },
+    {
+      "reference": "Cassey Ho boasts over two million subscribers on her YouTube channel Blogilates .\nThe 28-year-old receives hundreds of comments a day telling her that she needs to lose weight .",
+      "raw": "Fitness YouTuber Cassey Ho responds to harsh criticism by showcasing the negative comments she receives and demonstrating their impact on her self-image, ultimately aiming to highlight the harmful effects of body shaming and encourage others to stand against such behavior.",
+      "clean": "Fitness YouTuber Cassey Ho responds to harsh criticism by showcasing the negative comments she receives and demonstrating their impact on her self-image, ultimately aiming to highlight the harmful effects of body shaming and encourage others to stand against such behavior."
+    },
+    {
+      "reference": "Aaron Cook was overlooked by Team GB for the London Olympics .\nTaekwondo star has received citizenship from Moldova and plans to fight for them at the Rio 2016 Games .\nThe British Olympic Association could yet block the move .",
+      "raw": "Taekwondo athlete Aaron Cook, previously rejected for the British team, has secured Moldovan citizenship and intends to compete for Moldova at the 2016 Rio Olympics after feeling overlooked by Great Britain's taekwondo program.",
+      "clean": "Taekwondo athlete Aaron Cook, previously rejected for the British team, has secured Moldovan citizenship and intends to compete for Moldova at the 2016 Rio Olympics after feeling overlooked by Great Britain's taekwondo program."
+    },
+    {
+      "reference": "Floyd Mayweather will fight Manny Pacquiao in Las Vegas on May 2 .\nThe bout is expected to generate $300 million in revenue .\nIyanna Mayweather has been in training camp with her father Floyd .",
+      "raw": "Floyd Mayweather Jr.'s daughter, Iyanna, shares her admiration for her father's rigorous training regimen during the preparation for his high-stakes fight against Manny Pacquiao, highlighting his exceptional work ethic and unique jumping rope skills.",
+      "clean": "Floyd Mayweather Jr.'s daughter, Iyanna, shares her admiration for her father's rigorous training regimen during the preparation for his high-stakes fight against Manny Pacquiao, highlighting his exceptional work ethic and unique jumping rope skills."
+    },
+    {
+      "reference": "Arsene Wenger will have chat with Theo Walcott ahead of Arsenal clash .\nWalcott was substituted after 55 minutes of England's draw with Italy .\nArsenal boss is Wenger is concerned by the winger's confidence .\nThe Gunners take on Liverpool at the Emirates Stadium on Saturday .",
+      "raw": "Arsenal manager Arsene Wenger expresses concern over Theo Walcott's declining confidence following poor performances for England, and plans to discuss the issue with him before their upcoming match against Liverpool. Wenger also criticizes proposals to increase the number of required homegrown players in Premier League squads.",
+      "clean": "Arsenal manager Arsene Wenger expresses concern over Theo Walcott's declining confidence following poor performances for England, and plans to discuss the issue with him before their upcoming match against Liverpool. Wenger also criticizes proposals to increase the number of required homegrown players in Premier League squads."
+    },
+    {
+      "reference": "New video features an Australian doctor called Abu Yusuf al-Australi .\nThe doctor calls on foreigners with training to join the ISIS health service .\nHe is seen handling babies while dressed in western-style surgical scrubs .\nThe video appears to be mimicking Britain's National Health Service .\nNine British medical students recently\u00a0travelled to Syria to join ISIS .",
+      "raw": "A propaganda video by ISIS showcases an Australian doctor calling himself \"Abu Yusuf\" urging foreign medical professionals to join the Islamic State Health Service in Syria, aiming to present a facade of normalcy through depictions of modern healthcare facilities.",
+      "clean": "A propaganda video by ISIS showcases an Australian doctor calling himself \"Abu Yusuf\" urging foreign medical professionals to join the Islamic State Health Service in Syria, aiming to present a facade of normalcy through depictions of modern healthcare facilities."
+    },
+    {
+      "reference": "Fish and chips has believed to be partly Portuguese and partly Belgian .\nThe tea bag was accidentally invented by a New York tea merchant .\nSaint George himself is thought to have been born in Syria .",
+      "raw": "St George's Day highlights the diverse influences on English culture, including the unexpected origins of beloved traditions such as fish and chips (Portuguese and Belgian), tea bags (accidentally invented by a New York merchant), pubs (introduced by the Romans), and polo (originating in Persia). These examples illustrate how England's cultural heritage is enriched by contributions from various immigrant communities throughout history.",
+      "clean": "St George's Day highlights the diverse influences on English culture, including the unexpected origins of beloved traditions such as fish and chips (Portuguese and Belgian), tea bags (accidentally invented by a New York merchant), pubs (introduced by the Romans), and polo (originating in Persia). These examples illustrate how England's cultural heritage is enriched by contributions from various immigrant communities throughout history."
+    },
+    {
+      "reference": "Duli Hembrom wrote to the principal at Milan Mithi Uchha Vidyalaya .\nSaid parents refused to cancel the wedding and did not want to go ahead .\nChild Marriage Restraint Act specifies a girl must be 18 before she can wed .",
+      "raw": "A 13-year-old Indian girl named Duli Hembrom wrote to her teacher asking them to prevent her forced arranged marriage, which was set to occur within two days. Despite taking an \"oath\" upon joining her school promising not to marry until age 18, child marriage remains prevalent in parts of India where finding matches for older girls is challenging.",
+      "clean": "A 13-year-old Indian girl named Duli Hembrom wrote to her teacher asking them to prevent her forced arranged marriage, which was set to occur within two days. Despite taking an \"oath\" upon joining her school promising not to marry until age 18, child marriage remains prevalent in parts of India where finding matches for older girls is challenging."
+    },
+    {
+      "reference": "Investigators have released a handful of photographs to help inquiries .\nThey show fans rushing to tend to the dying as they lay on football pitch .\nPolice say the people photographed could address unanswered questions .\nA Home Office probe into 1989 disaster which claimed 96 lives is ongoing .\nAnyone with information is urged to call 08000 283 284 or visit www.operationresolve.co.uk .\nAnyone who can identify any of the people in the images should call Operation Resolve on 08000 283 284 or via the website www.operationresolve.co.uk .",
+      "raw": "Investigators in the Hillsborough disaster case have appealed to the public for help identifying individuals from photos taken during the 1989 event, hoping these people can assist in answering questions raised by the victims' families and furthering the ongoing inquiry.",
+      "clean": "Investigators in the Hillsborough disaster case have appealed to the public for help identifying individuals from photos taken during the 1989 event, hoping these people can assist in answering questions raised by the victims' families and furthering the ongoing inquiry."
+    },
+    {
+      "reference": "David Wheeler: Corinthian, considered a \"predator\" school, will shut down campuses .\nWheeler: Students of for-profit colleges are hapless victims; their debts should be forgiven .",
+      "raw": "The closure of Corinthian Colleges marks a significant step in addressing issues with for-profit colleges, which often exploit students with dubious programs and high debt loads, receiving substantial federal funds despite poor outcomes for students. This situation highlights broader concerns about accountability and transparency in the for-profit education sector.",
+      "clean": "The closure of Corinthian Colleges marks a significant step in addressing issues with for-profit colleges, which often exploit students with dubious programs and high debt loads, receiving substantial federal funds despite poor outcomes for students. This situation highlights broader concerns about accountability and transparency in the for-profit education sector."
+    },
+    {
+      "reference": "Franz Beckenbauer thinks Jurgen Klopp could be next Bayern Munich boss .\nKlopp has already confirmed he will leave Borussia Dortmund this summer .\nBeckenebauer believes Klopp has what it takes to replace Pep Guardiola .\nGuardiola has a contract until 2016 but has been linked with a move away .",
+      "raw": "Franz Beckenbauer suggests Jurgen Klopp could be the ideal replacement for Pep Guardiola at Bayern Munich after Klopp leaves Borussia Dortmund, while also emphasizing the importance of a fully-fit squad, particularly mentioning Franck Ribery, David Alaba, and Arjen Robben, for potential success against Barcelona in the Champions League.",
+      "clean": "Franz Beckenbauer suggests Jurgen Klopp could be the ideal replacement for Pep Guardiola at Bayern Munich after Klopp leaves Borussia Dortmund, while also emphasizing the importance of a fully-fit squad, particularly mentioning Franck Ribery, David Alaba, and Arjen Robben, for potential success against Barcelona in the Champions League."
+    },
+    {
+      "reference": "Faris Al-Khori, 62, was found with dozens of bomb-making\u00a0ingredients .\nPolice found\u00a0chemicals, nails, ball bearings, toxic beans and instructions .\nDiscovery made during a fire at his block of flats in Edinburgh last year .\nHe pleaded guilty and was sentenced to three years and four months in jail .",
+      "raw": "Former Syrian doctor Faris Al-Khori, 62, was sentenced to three years and four months in prison after police found a cache of explosive materials and bomb-making instructions in his Edinburgh homes. The discovery came about accidentally when firefighters responded to a fire; they uncovered castor beans, lead picrate, and detailed bomb recipes among other hazardous substances.",
+      "clean": "Former Syrian doctor Faris Al-Khori, 62, was sentenced to three years and four months in prison after police found a cache of explosive materials and bomb-making instructions in his Edinburgh homes. The discovery came about accidentally when firefighters responded to a fire; they uncovered castor beans, lead picrate, and detailed bomb recipes among other hazardous substances."
+    },
+    {
+      "reference": "More than nine in ten working households will receive a tax cut from today .\nPersonal allowance rising to \u00a310,600 - putting extra \u00a317 a month in pockets .\nCameron due to set out case for people keeping more of their own money .\nHe will argue for continued lower taxes, with less spent on \u2018bureaucracy\u2019\nA rise in the personal allowance from \u00a310,000 to \u00a310,600.\nThe first increase in the 40p higher threshold \u2013 in line with inflation \u2013 for five years.\nThe \u00a31,060 Marriage Tax allowance, which benefits traditional couples where one parent does not work.\nA one per cent increase in working age benefits.",
+      "raw": "Prime Minister David Cameron argues that high taxes are \"morally\" wrong as he announces a tax cut benefiting 14 million working households, while opposition parties criticize these cuts as exacerbating financial hardships for many families.",
+      "clean": "Prime Minister David Cameron argues that high taxes are \"morally\" wrong as he announces a tax cut benefiting 14 million working households, while opposition parties criticize these cuts as exacerbating financial hardships for many families."
+    },
+    {
+      "reference": "Manchester United take on Manchester City on Sunday .\nMatch will begin at 4pm local time at United's Old Trafford home .\nPolice have no objections to kick-off being so late in the afternoon .\nLast late afternoon weekend kick-off in the Manchester derby saw 34 fans arrested at Wembley in 2011 FA Cup semi-final .",
+      "raw": "Manchester police have approved a late afternoon (4 pm) kick-off for Sunday's Manchester derby between United and City, citing good fan behavior as justification; safety measures include drink limits and searches, though police assure no holding back of City fans post-match despite past incidents.",
+      "clean": "Manchester police have approved a late afternoon (4 pm) kick-off for Sunday's Manchester derby between United and City, citing good fan behavior as justification; safety measures include drink limits and searches, though police assure no holding back of City fans post-match despite past incidents."
+    },
+    {
+      "reference": "Alexander Kutner travelled with his Sky presenter mum, Kay Burley .\nThey stayed at the Ulusaba reserve\u00a0in South Africa's Sabi Sands .\nThe  stay at\u00a0Cliff Lodge had luxury furnishings, soft sheets and a chef .",
+      "raw": "Alexander Kutner went on a wildlife photography trip to Ulusaba, Sir Richard Branson's private game reserve in South Africa's Sabi Sands, capturing stunning shots of various animals including rhinos, lions, hippos, leopards, and elephants while learning valuable tips from experienced rangers.",
+      "clean": "Alexander Kutner went on a wildlife photography trip to Ulusaba, Sir Richard Branson's private game reserve in South Africa's Sabi Sands, capturing stunning shots of various animals including rhinos, lions, hippos, leopards, and elephants while learning valuable tips from experienced rangers."
+    },
+    {
+      "reference": "Sharista Giles of Sweetwater, Tennessee, went into a coma after a car accident in December .\nDoctors forced delivery of her baby in January and Giles opened her eyes for the first time earlier this month .\nShe is still nonverbal and is on a ventilator to help her breathe, but has moved her head when she recognizes voices .\nHer mother, Anna Moser, believes Giles will make a full recovery and will be able to raise her son on her own .",
+      "raw": "Sharista Giles, 20, woke from a four-month coma against medical odds after being involved in a car accident that left her in critical condition while five months pregnant; despite remaining nonverbal, she has shown signs of improvement, including following objects and responding to her mother's words about her newborn son.",
+      "clean": "Sharista Giles, 20, woke from a four-month coma against medical odds after being involved in a car accident that left her in critical condition while five months pregnant; despite remaining nonverbal, she has shown signs of improvement, including following objects and responding to her mother's words about her newborn son."
+    },
+    {
+      "reference": "Moutassem Yazbek describes harrowing 12-day journey from Turkey to Italy .\nYazbek, a Syrian refugee, paid a smuggler $6,500 to get him to Italy in December .",
+      "raw": "A Syrian migrant recounts his perilous journey across the Mediterranean Sea to reach Europe, detailing multiple attempts, harsh living conditions aboard smugglers' vessels, and eventual arrival in Italy, emphasizing the risks taken and sacrifices made for a better life.",
+      "clean": "A Syrian migrant recounts his perilous journey across the Mediterranean Sea to reach Europe, detailing multiple attempts, harsh living conditions aboard smugglers' vessels, and eventual arrival in Italy, emphasizing the risks taken and sacrifices made for a better life."
+    },
+    {
+      "reference": "Decorated former Argentina international Esteban Cambiasso says that keeping Leicester up this season would be like 'another cup'\nThe former Inter Milan and Real Madrid midfielder joined Leicester last summer on a free transfer, signing a one-year deal .\nLeicester are currently bottom of the Premier League table with 19 points from 29 games and take on West Ham in their next fixture .",
+      "raw": "Leicester City midfielder Esteban Cambiasso believes saving the team from relegation would be equivalent to winning a trophy, given his experience with major victories at Inter Milan. Despite being bottom of the Premier League, Cambiasso remains optimistic about securing survival for Leicester.",
+      "clean": "Leicester City midfielder Esteban Cambiasso believes saving the team from relegation would be equivalent to winning a trophy, given his experience with major victories at Inter Milan. Despite being bottom of the Premier League, Cambiasso remains optimistic about securing survival for Leicester."
+    }
+  ]
+}

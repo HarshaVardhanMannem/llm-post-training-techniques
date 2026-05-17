@@ -1,0 +1,127 @@
+{
+  "result": {
+    "model_label": "teacher_7B",
+    "model_path": "Qwen/Qwen2.5-7B-Instruct",
+    "dataset": "dialogsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 20.5,
+    "samples_per_sec": 48.878,
+    "rouge1_clean": 30.451,
+    "rouge2_clean": 8.861,
+    "rougeL_clean": 23.36,
+    "rougeLsum_clean": 23.39,
+    "rouge1_raw": 30.297,
+    "bertscore_f1": 24.508,
+    "bertscore_precision": 25.196,
+    "bertscore_recall": 23.762,
+    "avg_pred_words": 29.8,
+    "avg_ref_words": 18.7,
+    "preamble_rate": 0.256,
+    "finish_reasons": {
+      "stop": 1000
+    }
+  },
+  "samples": [
+    {
+      "reference": "#Person1# and #Person2# talk about pilgrims around the world, including Muslims' pilgrimage to mecca and Christians' pilgrimage to Canterbury or Vatican. #Person2# thinks faith heals people instead of magical places.",
+      "raw": "The conversation discusses Islamic pilgrimages, specifically the Hajj to Mecca, including its significance for Muslims and safety concerns due to overcrowding. It also compares it to other religious pilgrimages like those to Canterbury and the Vatican, and mentions Lourdes as a site believed by some to have healing powers.",
+      "clean": "Islamic pilgrimages, specifically the Hajj to Mecca, including its significance for Muslims and safety concerns due to overcrowding. It also compares it to other religious pilgrimages like those to Canterbury and the Vatican, and mentions Lourdes as a site believed by some to have healing powers."
+    },
+    {
+      "reference": "#Person1# is sending a package with the help of #Person2#.",
+      "raw": "The conversation discusses sending a package by first-class mail with insurance, purchasing stamps and a money order, and navigating the post office layout.",
+      "clean": "sending a package by first-class mail with insurance, purchasing stamps and a money order, and navigating the post office layout."
+    },
+    {
+      "reference": "#Person1# invites Lily to picnic this weekend. Lily accepts.",
+      "raw": "Lily will join a picnic at the river on\u5468\u672b\uff0c\u4f60\u4eec\u6253\u7b97\u51e0\u70b9\u51fa\u53d1\uff1f",
+      "clean": "Lily will join a picnic at the river on"
+    },
+    {
+      "reference": "#Person1# makes drinks for #Person2# at a bar.",
+      "raw": "The conversation revolves around #Person2 ordering a stirred Compari as an aperitif and later choosing a recommended non-alcoholic Singer cocktail at #Person1's suggestion in their bar.",
+      "clean": "The conversation revolves around #Person2 ordering a stirred Compari as an aperitif and later choosing a recommended non-alcoholic Singer cocktail at #Person1's suggestion in their bar."
+    },
+    {
+      "reference": "Lin Fang and Lucy are talking about their favourite subjects.",
+      "raw": "The conversation discusses each person's favorite subjects, noting that while #Person1 prefers English and PE, #Person2 enjoys both Chinese and science equally but slightly favors Chinese over science. They also compare their preferences to those of Nancy, who likes English best and dislikes science.",
+      "clean": "each person's favorite subjects, noting that while #Person1 prefers English and PE, #Person2 enjoys both Chinese and science equally but slightly favors Chinese over science. They also compare their preferences to those of Nancy, who likes English best and dislikes science."
+    },
+    {
+      "reference": "#Person2# tells #Person1# that he falls in love with his neighbour and #Person1# thinks he has some competition and wishes him good luck.",
+      "raw": "The conversation revolves around #Person2 meeting his new neighbor, who is an attractive single American woman, and discussing plans to pursue a romantic interest in her, including potentially asking her out on a date.",
+      "clean": "The conversation revolves around #Person2 meeting his new neighbor, who is an attractive single American woman, and discussing plans to pursue a romantic interest in her, including potentially asking her out on a date."
+    },
+    {
+      "reference": "Mr. Smith asks #Person1# to help find his train ticket, but #Person1# finds out that Mr. Smith didn't have any proof of purchase. Thus Mr. Smith brings another ticket in the end.",
+      "raw": "A traveler named Smith who misplaced his train ticket attempts to buy a new one but finds out he needs more money than available. The station staff helps him by allowing him to pay slightly less due to his urgency and personal circumstances.",
+      "clean": "A traveler named Smith who misplaced his train ticket attempts to buy a new one but finds out he needs more money than available. The station staff helps him by allowing him to pay slightly less due to his urgency and personal circumstances."
+    },
+    {
+      "reference": "#Person1# congratulates #Person2# on #Person2#'s new venture and expresses #Person1#'s willingness to help.",
+      "raw": "Person2 is setting up their own law office and has Person1's support and wishes for success.",
+      "clean": "Person2 is setting up their own law office and has Person1's support and wishes for success."
+    },
+    {
+      "reference": "#Person1# gets a crank call and is angry about it.",
+      "raw": "The caller threatens to involve the police if they continue to receive repeated calls from an unknown person.",
+      "clean": "The caller threatens to involve the police if they continue to receive repeated calls from an unknown person."
+    },
+    {
+      "reference": "#Person1# introduces the weekend driving courses to #Person2#. #Person2# feels satisfied with its settings.",
+      "raw": "The conversation discusses available driving courses, including weekend sessions starting at 8:00 AM on Saturdays and Sundays, with 5 hours of training per day (3 in the morning and 2 in the afternoon) using cars shared among three students under two coaches.",
+      "clean": "available driving courses, including weekend sessions starting at 8:00 AM on Saturdays and Sundays, with 5 hours of training per day (3 in the morning and 2 in the afternoon) using cars shared among three students under two coaches."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the most fundamental concepts underlying the accounting process.",
+      "raw": "The conversation focused on basic accounting principles, with #Person2# explaining that the key concepts include the accounting entity, going concern, measuring unit, accounting period, and objectivity.",
+      "clean": "The conversation focused on basic accounting principles, with #Person2# explaining that the key concepts include the accounting entity, going concern, measuring unit, accounting period, and objectivity."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the low temperature at night, although spring has come.",
+      "raw": "Both individuals discuss the lingering cold despite signs of spring; one mentions having to use an unconventional method to stay warm indoors while the other notes how quickly temperatures drop when outdoors.",
+      "clean": "Both individuals discuss the lingering cold despite signs of spring; one mentions having to use an unconventional method to stay warm indoors while the other notes how quickly temperatures drop when outdoors."
+    },
+    {
+      "reference": "Mark asks Maggie for her notes because Mark's notes aren't good. They decide to be study partners and study together.",
+      "raw": "Mark needs Maggie's history notes because he works late and has trouble staying awake during classes. They decide to become study partners to help each other stay alert and learn better.",
+      "clean": "Mark needs Maggie's history notes because he works late and has trouble staying awake during classes. They decide to become study partners to help each other stay alert and learn better."
+    },
+    {
+      "reference": "Joe doesn't think highly of Tom's new assistant while Tom does.",
+      "raw": "Joe and Tom discuss their differing impressions of Tom's new assistant; Joe finds her helpful but aloof, while Joe believes she is rude to everyone except his boss.",
+      "clean": "Joe and Tom discuss their differing impressions of Tom's new assistant; Joe finds her helpful but aloof, while Joe believes she is rude to everyone except his boss."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the popular sports in their countries, including football, basketball, tennis, swimming, golf, extreme sports and rugby.",
+      "raw": "The conversation discusses various sports' popularity in different countries, including football, basketball, tennis, swimming, golf, and extreme sports, noting differences between genders and age groups. Rugby is highlighted as a significant sport in at least one of the countries mentioned.",
+      "clean": "various sports' popularity in different countries, including football, basketball, tennis, swimming, golf, and extreme sports, noting differences between genders and age groups. Rugby is highlighted as a significant sport in at least one of the countries mentioned."
+    },
+    {
+      "reference": "#Person1# thinks #Person2# has chicken pox and warns #Person2# about the possible hazards but #Person2# thinks it will be fine.",
+      "raw": "A person believes they might have chickenpox and is concerned about being contagious, while their friend initially thinks it could be another condition but ultimately advises seeking medical attention.",
+      "clean": "A person believes they might have chickenpox and is concerned about being contagious, while their friend initially thinks it could be another condition but ultimately advises seeking medical attention."
+    },
+    {
+      "reference": "#Person1# gives #Person2# a physical check and advises #Person2# to stay in hospital for a shoulder X-ray the next day.",
+      "raw": "A medical professional is examining someone who has injured their shoulder, checking for pain and potential need for an X-ray, which cannot be done immediately but requires staying overnight at the hospital.",
+      "clean": "A medical professional is examining someone who has injured their shoulder, checking for pain and potential need for an X-ray, which cannot be done immediately but requires staying overnight at the hospital."
+    },
+    {
+      "reference": "People in #Person2#'s country like football, basketball, tennis, and swimming. People in #Person1#'s country like golf. A few people like extreme sports. Both people like rugby.",
+      "raw": "The conversation discusses various sports' popularity in different countries, including football, basketball, tennis, swimming, golf, and extreme sports, noting differences between genders and age groups. Rugby is highlighted as a significant sport in at least one of the countries mentioned.",
+      "clean": "various sports' popularity in different countries, including football, basketball, tennis, swimming, golf, and extreme sports, noting differences between genders and age groups. Rugby is highlighted as a significant sport in at least one of the countries mentioned."
+    },
+    {
+      "reference": "Sue doesn't eat cakes and sandwiches at her birthday party to avoid being allergic. Bill is willing to order her some hot soup to make her feel better. They decide to go to the restaurant later.",
+      "raw": "Bill offers Sue various options to find her something suitable to eat during a party due to her dietary restrictions related to allergies, eventually deciding to order soup for her from a nearby restaurant while she stays and socializes with other guests.",
+      "clean": "Bill offers Sue various options to find her something suitable to eat during a party due to her dietary restrictions related to allergies, eventually deciding to order soup for her from a nearby restaurant while she stays and socializes with other guests."
+    },
+    {
+      "reference": "#Person2# tells #Person1# #Person2#'s writing experience.",
+      "raw": "The conversation is about #Person2's application for a position at #Person1's newspaper, with #Person1 expressing interest in #Person2's writing background and asking about their motivation for applying.",
+      "clean": "#Person2's application for a position at #Person1's newspaper, with #Person1 expressing interest in #Person2's writing background and asking about their motivation for applying."
+    }
+  ]
+}
