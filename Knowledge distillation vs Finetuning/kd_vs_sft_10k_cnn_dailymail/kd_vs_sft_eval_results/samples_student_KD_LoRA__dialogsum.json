@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_KD_LoRA",
+    "model_path": "/content/merged_ttyd4_3k",
+    "dataset": "dialogsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 16.6,
+    "samples_per_sec": 60.398,
+    "rouge1_clean": 20.925,
+    "rouge2_clean": 4.494,
+    "rougeL_clean": 14.903,
+    "rougeLsum_clean": 14.984,
+    "rouge1_raw": 20.62,
+    "bertscore_f1": 15.529,
+    "bertscore_precision": 14.186,
+    "bertscore_recall": 16.792,
+    "avg_pred_words": 46.1,
+    "avg_ref_words": 18.7,
+    "preamble_rate": 0.401,
+    "finish_reasons": {
+      "length": 205,
+      "stop": 795
+    }
+  },
+  "samples": [
+    {
+      "reference": "#Person1# and #Person2# talk about pilgrims around the world, including Muslims' pilgrimage to mecca and Christians' pilgrimage to Canterbury or Vatican. #Person2# thinks faith heals people instead of magical places.",
+      "raw": "The conversation discusses Islamic pilgrimages to Mecca, including the challenges faced by Muslim travelers during Hajj, while also exploring the religious significance behind these journeys and personal beliefs regarding healing through faith.\u0639\u0637\u0627\u0621\u5ba3\u8a00\uff1aThis discussion covers various aspects of Islam-related travel experiences, from physical safety precautions to spiritual motivations and potential health benefits associated with pilgrimage routes.roma\n Assassins: This article aims to provide an overview",
+      "clean": "Islamic pilgrimages to Mecca, including the challenges faced by Muslim travelers during Hajj, while also exploring the religious significance behind these journeys and personal beliefs regarding healing through faith."
+    },
+    {
+      "reference": "#Person1# is sending a package with the help of #Person2#.",
+      "raw": "A person is sending a package via First-Class Mail from Person1 to Person2 who wants insurance and stamps; they request money order services but need to go through another door in the same hallway. A second-person confirms their intention to use the same channel.",
+      "clean": "A person is sending a package via First-Class Mail from Person1 to Person2 who wants insurance and stamps; they request money order services but need to go through another door in the same hallway. A second-person confirms their intention to use the same channel."
+    },
+    {
+      "reference": "#Person1# invites Lily to picnic this weekend. Lily accepts.",
+      "raw": "Lily is interested in attending a picnic at the river, but she needs to dress comfortably and bring all necessary items. She suggests they walk around together without bringing anything specific.);\r\r\r\n\n Assassins' Creed #105: The article discusses a conversation between two individuals discussing their plans for a picnic near a river, where one person wants to participate while the other asks if they can join them.",
+      "clean": "Lily is interested in attending a picnic at the river, but she needs to dress comfortably and bring all necessary items. She suggests they walk around together without bringing anything specific.);\n Assassins' Creed #105: The article discusses a conversation between two individuals discussing their plans for a picnic near a river, where one person wants to participate while the other asks if they can join them."
+    },
+    {
+      "reference": "#Person1# makes drinks for #Person2# at a bar.",
+      "raw": "A person ordered an aperitif (a mix) from a bartender at a restaurant, which they found enjoyable; after trying it, they decided to enjoy another non-alcoholic cocktail as well. The conversation continued with other drinks suggested by both parties.",
+      "clean": "A person ordered an aperitif (a mix) from a bartender at a restaurant, which they found enjoyable; after trying it, they decided to enjoy another non-alcoholic cocktail as well. The conversation continued with other drinks suggested by both parties."
+    },
+    {
+      "reference": "Lin Fang and Lucy are talking about their favourite subjects.",
+      "raw": "The conversation discusses Lin Fang's preferences for subjects, focusing on English as her primary language and then discussing other subjects including PE, Chinese, and science. It also touches upon Nancy's dislike for science but expresses interest in learning Chinese.",
+      "clean": "Lin Fang's preferences for subjects, focusing on English as her primary language and then discussing other subjects including PE, Chinese, and science. It also touches upon Nancy's dislike for science but expresses interest in learning Chinese."
+    },
+    {
+      "reference": "#Person2# tells #Person1# that he falls in love with his neighbour and #Person1# thinks he has some competition and wishes him good luck.",
+      "raw": "The conversation revolves around an encounter between Person1 and Person2 where they meet and discuss their potential future relationships, focusing on the girl's characteristics (single) and their current interest in someone else. Both parties express excitement at finding each other, though there is concern over breaking up due to competition among friends.",
+      "clean": "The conversation revolves around an encounter between Person1 and Person2 where they meet and discuss their potential future relationships, focusing on the girl's characteristics (single) and their current interest in someone else. Both parties express excitement at finding each other, though there is concern over breaking up due to competition among friends."
+    },
+    {
+      "reference": "Mr. Smith asks #Person1# to help find his train ticket, but #Person1# finds out that Mr. Smith didn't have any proof of purchase. Thus Mr. Smith brings another ticket in the end.",
+      "raw": "A man named Person1 asks a woman named Person2 where she is and why she left her train ticket at home; they discuss options such as purchasing a soft sleeper or hard seat ticket based on their available funds. The conversation ends with Person2 offering to buy a soft sleeper instead, despite being unable to provide sufficient cash due to theft.",
+      "clean": "A man named Person1 asks a woman named Person2 where she is and why she left her train ticket at home; they discuss options such as purchasing a soft sleeper or hard seat ticket based on their available funds. The conversation ends with Person2 offering to buy a soft sleeper instead, despite being unable to provide sufficient cash due to theft."
+    },
+    {
+      "reference": "#Person1# congratulates #Person2# on #Person2#'s new venture and expresses #Person1#'s willingness to help.",
+      "raw": "The conversation is about setting up one's own law office and wishing Person2 well on their journey. It ends with both parties expressing gratitude for each other's support and encouragement.",
+      "clean": "setting up one's own law office and wishing Person2 well on their journey. It ends with both parties expressing gratitude for each other's support and encouragement."
+    },
+    {
+      "reference": "#Person1# gets a crank call and is angry about it.",
+      "raw": "A man has called the police twice in succession to avoid paying his taxes, using the same phone number multiple times without being caught. The caller claims he knows their identity but refuses to provide it due to fear of arrest. A police officer responds by asking for the caller's name and address, then threatens them if they do not cooperate.",
+      "clean": "A man has called the police twice in succession to avoid paying his taxes, using the same phone number multiple times without being caught. The caller claims he knows their identity but refuses to provide it due to fear of arrest. A police officer responds by asking for the caller's name and address, then threatens them if they do not cooperate."
+    },
+    {
+      "reference": "#Person1# introduces the weekend driving courses to #Person2#. #Person2# feels satisfied with its settings.",
+      "raw": "The conversation is about scheduling a driving course, where Person2 wants to attend it on weekends but prefers not to take it during weekdays due to personal commitments. Both parties agree on starting times, coach availability, and number of participants per session. A detailed schedule including start times and coaching duration is provided.",
+      "clean": "scheduling a driving course, where Person2 wants to attend it on weekends but prefers not to take it during weekdays due to personal commitments. Both parties agree on starting times, coach availability, and number of participants per session. A detailed schedule including start times and coaching duration is provided."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the most fundamental concepts underlying the accounting process.",
+      "raw": "The conversation discusses basic principles of accounting including account entities, going concerns, measurement units, periods, and objectivity. It highlights that while some may be unfamiliar with these terms but understand their core components.",
+      "clean": "basic principles of accounting including account entities, going concerns, measurement units, periods, and objectivity. It highlights that while some may be unfamiliar with these terms but understand their core components."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the low temperature at night, although spring has come.",
+      "raw": "The conversation discusses how cold nights make people uncomfortable, especially when using heating systems; Person1 suggests turning off the heat for better comfort during winter months, while Person2 expresses concern about staying indoors due to chilly temperatures. Both parties agree that maintaining warmth can be challenging but appreciate each other's perspective.",
+      "clean": "how cold nights make people uncomfortable, especially when using heating systems; Person1 suggests turning off the heat for better comfort during winter months, while Person2 expresses concern about staying indoors due to chilly temperatures. Both parties agree that maintaining warmth can be challenging but appreciate each other's perspective."
+    },
+    {
+      "reference": "Mark asks Maggie for her notes because Mark's notes aren't good. They decide to be study partners and study together.",
+      "raw": "Maggie borrowed her notes from Person2 who needed them during their lunch break; they agreed to study together in the library. Both parties found it convenient and enjoyable.\u0639\u0637\u0627\u0621\u00b7\nTags: #person1#, #person2#, #library#, #study_, #notes#",
+      "clean": "Maggie borrowed her notes from Person2 who needed them during their lunch break; they agreed to study together in the library. Both parties found it convenient and enjoyable."
+    },
+    {
+      "reference": "Joe doesn't think highly of Tom's new assistant while Tom does.",
+      "raw": "The conversation between two people is about an employee who seems unhelpful and not very friendly, while their boss praises her as helpful despite initial impressions. The interaction highlights differences in communication styles and expectations regarding workplace behavior.",
+      "clean": "The conversation between two people is about an employee who seems unhelpful and not very friendly, while their boss praises her as helpful despite initial impressions. The interaction highlights differences in communication styles and expectations regarding workplace behavior."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the popular sports in their countries, including football, basketball, tennis, swimming, golf, extreme sports and rugby.",
+      "raw": "The conversation discusses various sports in different countries, focusing on popularity among young adults, their preferences, and current trends. It highlights that while some sports remain popular due to cost-effectiveness, others have become less so as technology advances. \u2026(end)",
+      "clean": "various sports in different countries, focusing on popularity among young adults, their preferences, and current trends. It highlights that while some sports remain popular due to cost-effectiveness, others have become less so as technology advances. \u2026(end)"
+    },
+    {
+      "reference": "#Person1# thinks #Person2# has chicken pox and warns #Person2# about the possible hazards but #Person2# thinks it will be fine.",
+      "raw": "A person is feeling unwell after scratching their skin for several hours; they suspect they might have chickenpox but are concerned about potential contagion to others. The other party advises them not to touch them again unless seen by a doctor.",
+      "clean": "A person is feeling unwell after scratching their skin for several hours; they suspect they might have chickenpox but are concerned about potential contagion to others. The other party advises them not to touch them again unless seen by a doctor."
+    },
+    {
+      "reference": "#Person1# gives #Person2# a physical check and advises #Person2# to stay in hospital for a shoulder X-ray the next day.",
+      "raw": "The conversation involves discussing an injury to one person who is lying down after being struck by another person while sleeping; they discuss holding their arms outstretched as a precautionary measure but also express concern about potential future injuries. A doctor suggests waiting overnight before further treatment.",
+      "clean": "The conversation involves discussing an injury to one person who is lying down after being struck by another person while sleeping; they discuss holding their arms outstretched as a precautionary measure but also express concern about potential future injuries. A doctor suggests waiting overnight before further treatment."
+    },
+    {
+      "reference": "People in #Person2#'s country like football, basketball, tennis, and swimming. People in #Person1#'s country like golf. A few people like extreme sports. Both people like rugby.",
+      "raw": "The conversation discusses various sports in different countries, focusing on popularity among young adults, their preferences, and current trends. It highlights that while some sports remain popular due to cost-effectiveness, others have become less so as technology advances. \u2026(end)",
+      "clean": "various sports in different countries, focusing on popularity among young adults, their preferences, and current trends. It highlights that while some sports remain popular due to cost-effectiveness, others have become less so as technology advances. \u2026(end)"
+    },
+    {
+      "reference": "Sue doesn't eat cakes and sandwiches at her birthday party to avoid being allergic. Bill is willing to order her some hot soup to make her feel better. They decide to go to the restaurant later.",
+      "raw": "A conversation between two people discussing their diets and plans after a birthday celebration where one person has requested a special dessert while another is planning to dine out later. The discussion includes comments about the need for dietary restrictions due to allergies, and both parties express interest in each other's preferences.);\r\r\r\n\n Assassins' Creed #10: A group of assassins must infiltrate an underground network controlled by a",
+      "clean": "A conversation between two people discussing their diets and plans after a birthday celebration where one person has requested a special dessert while another is planning to dine out later. The discussion includes comments about the need for dietary restrictions due to allergies, and both parties express interest in each other's preferences.);\n Assassins' Creed #10: A group of assassins must infiltrate an underground network controlled by a"
+    },
+    {
+      "reference": "#Person2# tells #Person1# #Person2#'s writing experience.",
+      "raw": "The conversation is between two individuals discussing potential job opportunities and their respective experiences, focusing on one's interest in working at a newspaper. The discussion includes an exchange about the applicant's qualifications and how they compare to those of other applicants.",
+      "clean": "The conversation is between two individuals discussing potential job opportunities and their respective experiences, focusing on one's interest in working at a newspaper. The discussion includes an exchange about the applicant's qualifications and how they compare to those of other applicants."
+    }
+  ]
+}

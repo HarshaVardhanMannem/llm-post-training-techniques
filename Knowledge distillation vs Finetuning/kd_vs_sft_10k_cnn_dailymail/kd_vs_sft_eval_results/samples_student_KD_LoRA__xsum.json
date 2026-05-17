@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_KD_LoRA",
+    "model_path": "/content/merged_ttyd4_3k",
+    "dataset": "xsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 18.5,
+    "samples_per_sec": 54.126,
+    "rouge1_clean": 21.474,
+    "rouge2_clean": 3.928,
+    "rougeL_clean": 14.283,
+    "rougeLsum_clean": 14.276,
+    "rouge1_raw": 21.459,
+    "bertscore_f1": 21.337,
+    "bertscore_precision": 13.521,
+    "bertscore_recall": 29.278,
+    "avg_pred_words": 47.1,
+    "avg_ref_words": 21.0,
+    "preamble_rate": 0.026,
+    "finish_reasons": {
+      "stop": 627,
+      "length": 373
+    }
+  },
+  "samples": [
+    {
+      "reference": "A woman who was seriously hurt in a fatal hen party motorway crash is now helping other major trauma victims rebuild their lives.",
+      "raw": "A woman named Sarah Johnson survived a serious head injury after being involved in a lorry accident near Liverpool; she later became inspired by a charity donation and joined Day One, an organization providing support to those affected by traumatic events. She expressed gratitude for the aid provided during her recovery.",
+      "clean": "A woman named Sarah Johnson survived a serious head injury after being involved in a lorry accident near Liverpool; she later became inspired by a charity donation and joined Day One, an organization providing support to those affected by traumatic events. She expressed gratitude for the aid provided during her recovery."
+    },
+    {
+      "reference": "A Tudor manor house has reopened following a \u00a32.2m makeover.",
+      "raw": "Bramall Hall in Stockport, England, is set to open on Saturday night with 1,400 tickets already sold due to renovations completed in 2014. The restoration includes new stained glass windows and alterations to the dining room and butler's pantry, making it a significant cultural and historical",
+      "clean": "Bramall Hall in Stockport, England, is set to open on Saturday night with 1,400 tickets already sold due to renovations completed in 2014. The restoration includes new stained glass windows and alterations to the dining room and butler's pantry, making it a significant cultural and historical"
+    },
+    {
+      "reference": "Walt Disney World has unveiled a lighthouse memorial for a young boy who was killed by an alligator while on holiday at the Florida theme park.",
+      "raw": "A two-year-old boy named Lane Thomas Graves drowned while playing in the sand at the Grand Floridian resort, leading to wildlife officials classifying it as a predatory attack; the lighthouse has been installed nearby to raise awareness about the incident. The incident prompted criticism from Disney for failing to post safety warnings around their installation.",
+      "clean": "A two-year-old boy named Lane Thomas Graves drowned while playing in the sand at the Grand Floridian resort, leading to wildlife officials classifying it as a predatory attack; the lighthouse has been installed nearby to raise awareness about the incident. The incident prompted criticism from Disney for failing to post safety warnings around their installation."
+    },
+    {
+      "reference": "The agriculture minister is to return to China next month as attempts to access markets there continue.",
+      "raw": "Michelle O'Neill hosted a breakfast at the Balmoral Show where Chinese officials were present, aiming to address potential challenges related to exporting Northern Ireland pork products from the UK to China. The event included discussions about improving labeling standards and expanding exports to US markets.",
+      "clean": "Michelle O'Neill hosted a breakfast at the Balmoral Show where Chinese officials were present, aiming to address potential challenges related to exporting Northern Ireland pork products from the UK to China. The event included discussions about improving labeling standards and expanding exports to US markets."
+    },
+    {
+      "reference": "Blackpool have signed Bournemouth goalkeeper Ryan Allsop and midfielder Callum Cooke from Middlesbrough on season-long loans.",
+      "raw": "Blackpool has signed nine new footballers for their summer transfer window, including Allsop and Cooke from other clubs, bringing them to the club's ranks. The signings include former England Under-17s player Allsop and striker Cooke who recently won the European Championship.\ud872\udf76",
+      "clean": "Blackpool has signed nine new footballers for their summer transfer window, including Allsop and Cooke from other clubs, bringing them to the club's ranks. The signings include former England Under-17s player Allsop and striker Cooke who recently won the European Championship.\ud872\udf76"
+    },
+    {
+      "reference": "Scotland must beat Slovenia if they are to resurrect their chances of reaching the World Cup finals, Gordon Strachan has acknowledged.",
+      "raw": "Scotland's head coach, John Strachan, expressed confidence in his team's chances of reaching the World Cup qualifying group stage despite facing a potential loss if they lose their upcoming match against Switzerland. He emphasized the importance of winning the next game to secure qualification and express optimism about his team's ability to perform well.",
+      "clean": "Scotland's head coach, John Strachan, expressed confidence in his team's chances of reaching the World Cup qualifying group stage despite facing a potential loss if they lose their upcoming match against Switzerland. He emphasized the importance of winning the next game to secure qualification and express optimism about his team's ability to perform well."
+    },
+    {
+      "reference": "A man jailed for six years for coercing a woman into having sex with a stranger and sending \"revenge porn\" to her family has had the convictions quashed.",
+      "raw": "A judge has ruled that Clive Weatherhogg's lawyers have conceded there was a miscarriage of justice regarding his coercion conviction, while also agreeing that jurors were misled about other charges related to video sharing. The decision comes as Weatherhogg faces parole eligibility due to serving time in jail.",
+      "clean": "A judge has ruled that Clive Weatherhogg's lawyers have conceded there was a miscarriage of justice regarding his coercion conviction, while also agreeing that jurors were misled about other charges related to video sharing. The decision comes as Weatherhogg faces parole eligibility due to serving time in jail."
+    },
+    {
+      "reference": "A Dublin man accused of stabbing his friend in a County Antrim hotel has been granted bail.",
+      "raw": "John Morley, 29, has been arrested for carrying out a weekend assault on Derek White at the Chimney Corner Hotel in Mallusk; charges include attempted wounding, possession of an offensive weapon, disorderly behavior, and possession of Class B drugs. He faces up to five years in prison if convicted.",
+      "clean": "John Morley, 29, has been arrested for carrying out a weekend assault on Derek White at the Chimney Corner Hotel in Mallusk; charges include attempted wounding, possession of an offensive weapon, disorderly behavior, and possession of Class B drugs. He faces up to five years in prison if convicted."
+    },
+    {
+      "reference": "Catalans Dragons will be without hooker Paul Aiton for up to six weeks after he tore a pectoral muscle on his debut, in a defeat by Wigan Warriors on Friday.",
+      "raw": "Aiton has been sidelined since January due to an elbow injury sustained during a match against Newcastle United, having previously suffered an arm injury while playing for Leeds. He is now recovering after being diagnosed by doctors as part of his diagnosis process.",
+      "clean": "Aiton has been sidelined since January due to an elbow injury sustained during a match against Newcastle United, having previously suffered an arm injury while playing for Leeds. He is now recovering after being diagnosed by doctors as part of his diagnosis process."
+    },
+    {
+      "reference": "Planners in Rugby have revealed they have been in talks with Coventry City Football Club about building a stadium in the borough.",
+      "raw": "Rugby Borough Council has agreed to meet with the Sky Blues to discuss a possible relocation of the club to Coventry after a long-standing dispute over ownership of their current venue. The council aims to finalize plans by September, though a site still needs to be determined.",
+      "clean": "Rugby Borough Council has agreed to meet with the Sky Blues to discuss a possible relocation of the club to Coventry after a long-standing dispute over ownership of their current venue. The council aims to finalize plans by September, though a site still needs to be determined."
+    },
+    {
+      "reference": "A man tried to buy ricin from the \"dark web\" after the idea was \"implanted in his brain\" from watching the Breaking Bad television series, a court heard.",
+      "raw": "A 31-year-old man named Mohammed Ali from Liverpool is facing charges of attempting to possess a chemical weapon after being caught using an online account to purchase 500mg of ricin, leading him to commit suicide by self-inflicted wounds. His behavior mirrors Asperger's syndrome symptoms, according to forensic",
+      "clean": "A 31-year-old man named Mohammed Ali from Liverpool is facing charges of attempting to possess a chemical weapon after being caught using an online account to purchase 500mg of ricin, leading him to commit suicide by self-inflicted wounds. His behavior mirrors Asperger's syndrome symptoms, according to forensic"
+    },
+    {
+      "reference": "A tumble dryer could \"not be ruled out\" as the cause of a flat fire in which two men died, an inquest has heard.",
+      "raw": "Abergele inquest heard that a hotplate dryer at a funeral director's office in Llanrwst, Wales, may be responsible for the fatal fire that killed Bernard Hender and Doug McTavish. The jury considered whether the dryer started the fire but found no conclusive evidence against it.",
+      "clean": "Abergele inquest heard that a hotplate dryer at a funeral director's office in Llanrwst, Wales, may be responsible for the fatal fire that killed Bernard Hender and Doug McTavish. The jury considered whether the dryer started the fire but found no conclusive evidence against it."
+    },
+    {
+      "reference": "Bots appear to be spamming a US regulator's website over a proposed reversal of net neutrality rules, researchers have said.",
+      "raw": "A flood of automated comments to the Federal Communications Commission (FCC) has been detected recently, leading to concerns among activists who believe the activity could undermine net neutrality principles. The comments, which appear to be generated through bots, suggest widespread participation in online activism aimed at challenging net neutrality rules.",
+      "clean": "A flood of automated comments to the Federal Communications Commission (FCC) has been detected recently, leading to concerns among activists who believe the activity could undermine net neutrality principles. The comments, which appear to be generated through bots, suggest widespread participation in online activism aimed at challenging net neutrality rules."
+    },
+    {
+      "reference": "School Report gives students a real audience, by linking to their work from the BBC website.",
+      "raw": "To set up a dedicated web page on a school website, follow these steps: \n1. Create a unique and visible location on the school website where students' work can be displayed.\n2. Ensure the page is accessible to the public and includes information about the event.\n3. Use Google Maps or other tools to display",
+      "clean": "To set up a dedicated web page on a school website, follow these steps:\n1. Create a unique and visible location on the school website where students' work can be displayed. 2. Ensure the page is accessible to the public and includes information about the event. 3. Use Google Maps or other tools to display"
+    },
+    {
+      "reference": "Michele Morgan, the French screen star and glamour icon who won the first best actress prize at the Cannes film festival, has died at the age of 96.",
+      "raw": "French President Fran\u00e7ois Hollande praised actress Michele Morgan for her iconic roles and influence on cinema, including her portrayal of a blind woman in \"La Symphonie Pastorale\" and her longevity in acting despite early setbacks. She won an Academy Award for Best Actress in 1946 for her role as a blind woman in",
+      "clean": "French President Fran\u00e7ois Hollande praised actress Michele Morgan for her iconic roles and influence on cinema, including her portrayal of a blind woman in \"La Symphonie Pastorale\" and her longevity in acting despite early setbacks. She won an Academy Award for Best Actress in 1946 for her role as a blind woman in"
+    },
+    {
+      "reference": "For years Match of the Day has satisfied impatient football fans by condensing a 90 minute match into a handy chunk of highlights.",
+      "raw": "Scientists in Spain are developing software called KeyFrameEdit to help summarize football games more efficiently, allowing editors to focus on critical moments rather than entire matches. The system analyzes key frames to identify significant events like player movements, crowd activity, and referee signals, aiming to improve the speed and accuracy of manual summaries while still providing some",
+      "clean": "Scientists in Spain are developing software called KeyFrameEdit to help summarize football games more efficiently, allowing editors to focus on critical moments rather than entire matches. The system analyzes key frames to identify significant events like player movements, crowd activity, and referee signals, aiming to improve the speed and accuracy of manual summaries while still providing some"
+    },
+    {
+      "reference": "St Johnstone have secured striker Steven MacLean on a contract extension.",
+      "raw": "A former Scotland Under-21 player, MacLean has joined St Johnstone as an apprentice at their academy, while another player is set to join Montrose in League Two. Both signings come after a successful move by MacLean from Yeovil Town.",
+      "clean": "A former Scotland Under-21 player, MacLean has joined St Johnstone as an apprentice at their academy, while another player is set to join Montrose in League Two. Both signings come after a successful move by MacLean from Yeovil Town."
+    },
+    {
+      "reference": "Bournemouth have signed Norwich midfielder Andrew Surman for an undisclosed fee on a three-year deal.",
+      "raw": "Former Aston Villa striker Chris Surman has returned to football after spending time on loan at both Norwich City and Bournemouth clubs, where he played for several seasons. He recently signed a new contract with Norwich and is set to return home from loan this week.",
+      "clean": "Former Aston Villa striker Chris Surman has returned to football after spending time on loan at both Norwich City and Bournemouth clubs, where he played for several seasons. He recently signed a new contract with Norwich and is set to return home from loan this week."
+    },
+    {
+      "reference": "Another election is probably the last thing the public want to hear about after what we've just gone through but that's exactly what the parties at the assembly are gearing up for next year.",
+      "raw": "The Conservatives' leadership team is optimistic about challenging more constituencies this year instead of relying solely on the list, citing increased voter confidence and improved data analytics. Meanwhile, Labour faces challenges including losing some key MPs due to recent reforms and facing internal divisions over council reorganization. The party aims to capitalize on these opportunities while maintaining",
+      "clean": "The Conservatives' leadership team is optimistic about challenging more constituencies this year instead of relying solely on the list, citing increased voter confidence and improved data analytics. Meanwhile, Labour faces challenges including losing some key MPs due to recent reforms and facing internal divisions over council reorganization. The party aims to capitalize on these opportunities while maintaining"
+    },
+    {
+      "reference": "Chancellor George Osborne has abandoned his target to restore government finances to a surplus by 2020.",
+      "raw": "Chancellor George Osborne stated in a speech that the UK economy is facing challenges due to the EU referendum result, which he believes may lead to a potential \"debt crisis.\" The government aims to achieve a balanced budget by 2020, though Osborne acknowledges the challenge ahead.",
+      "clean": "Chancellor George Osborne stated in a speech that the UK economy is facing challenges due to the EU referendum result, which he believes may lead to a potential \"debt crisis.\" The government aims to achieve a balanced budget by 2020, though Osborne acknowledges the challenge ahead."
+    }
+  ]
+}

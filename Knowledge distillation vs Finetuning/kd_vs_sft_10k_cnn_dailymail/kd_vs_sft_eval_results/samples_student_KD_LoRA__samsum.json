@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_KD_LoRA",
+    "model_path": "/content/merged_ttyd4_3k",
+    "dataset": "samsum",
+    "in_domain": false,
+    "num_samples": 819,
+    "gen_time_s": 13.1,
+    "samples_per_sec": 62.439,
+    "rouge1_clean": 23.971,
+    "rouge2_clean": 4.552,
+    "rougeL_clean": 16.703,
+    "rougeLsum_clean": 16.845,
+    "rouge1_raw": 23.898,
+    "bertscore_f1": 23.961,
+    "bertscore_precision": 15.044,
+    "bertscore_recall": 33.101,
+    "avg_pred_words": 45.7,
+    "avg_ref_words": 20.0,
+    "preamble_rate": 0.284,
+    "finish_reasons": {
+      "stop": 655,
+      "length": 164
+    }
+  },
+  "samples": [
+    {
+      "reference": "Both Claire and Linda are making curry for dinner. ",
+      "raw": "A conversation between Claire and Kim about their favorite dishes from different cuisines, including curry dreams. The dialogue includes both casual remarks and more serious comments on food preferences.",
+      "clean": "A conversation between Claire and Kim about their favorite dishes from different cuisines, including curry dreams. The dialogue includes both casual remarks and more serious comments on food preferences."
+    },
+    {
+      "reference": "Derek and Alyssa make fun of Fergie's performance of the national anthem.",
+      "raw": "The conversation discusses Derek's reaction to seeing Fergie perform her national anthem on stage, comparing it favorably to his own performance and noting its comedic quality despite being performed by someone else. Alysia expresses surprise but acknowledges the humor in the performance.);\r\r\r\n\n Assassination attempt: \"I'm going to kill them all!\" shouted a man who had been stabbed twice in an attack on a police",
+      "clean": "Derek's reaction to seeing Fergie perform her national anthem on stage, comparing it favorably to his own performance and noting its comedic quality despite being performed by someone else. Alysia expresses surprise but acknowledges the humor in the performance.);\n Assassination attempt: \"I'm going to kill them all!\" shouted a man who had been stabbed twice in an attack on a police"
+    },
+    {
+      "reference": "Ann wants to buy Josh's laptop for $200. Josh doesn't want to negotiate the price. Ann will take it for $250 with accessories. ",
+      "raw": "The conversation involves discussing availability of a laptop, its cost, and any additional items needed to complete the purchase. Both parties agreed on an initial price of $250 but decided to discuss picking up the item at their current location instead of paying in cash.);\r\r\r\n\n Assassins: A quick note about this message style: It uses a messenger-like format that often includes details like prices, availability,",
+      "clean": "The conversation involves discussing availability of a laptop, its cost, and any additional items needed to complete the purchase. Both parties agreed on an initial price of $250 but decided to discuss picking up the item at their current location instead of paying in cash.);\n Assassins: A quick note about this message style: It uses a messenger-like format that often includes details like prices, availability,"
+    },
+    {
+      "reference": "Matt and Tony want to go to the concert of Bon Jovi next July in Poland and are planning to buy the tickets that cost 250 PLN before they\u2019re sold out. Phil will think about it and let them know.",
+      "raw": "A Polish friend is interested in seeing Bon Jovi perform at Warsaw's upcoming concert, while Matt offers to help by purchasing tickets early if possible. Both parties agree on ticket prices but express interest in attending the event together.",
+      "clean": "A Polish friend is interested in seeing Bon Jovi perform at Warsaw's upcoming concert, while Matt offers to help by purchasing tickets early if possible. Both parties agree on ticket prices but express interest in attending the event together."
+    },
+    {
+      "reference": "Anastasia sent her new school photos to Darrell.",
+      "raw": "The conversation is between Anastasia and Darrell discussing their recent school photos, noting that they both found the process quick and casual compared to traditional methods. Both express amusement at the speed and lack of formalities involved in taking these photos.);\r\r\r\n\n Assassins: The text above contains spoilers! It describes an exchange where two characters discuss their experiences with school photography, focusing on its efficiency and humorous tone",
+      "clean": "The conversation is between Anastasia and Darrell discussing their recent school photos, noting that they both found the process quick and casual compared to traditional methods. Both express amusement at the speed and lack of formalities involved in taking these photos.);\n Assassins: The text above contains spoilers! It describes an exchange where two characters discuss their experiences with school photography, focusing on its efficiency and humorous tone"
+    },
+    {
+      "reference": "Jake, Florence, Margot and others are going on a research trip to Swazi. The name of the country was changed last year and it's now Eswatini.",
+      "raw": "The conversation revolves around Mike discussing his upcoming research trip to Swaziland, where he will work on an environmental project, while Jake and other friends express concern about the changing political landscape in Swaziland after its recent change in name from Swaziland to Eswatini. The discussion includes references to the harsh conditions and potential changes in politics.",
+      "clean": "The conversation revolves around Mike discussing his upcoming research trip to Swaziland, where he will work on an environmental project, while Jake and other friends express concern about the changing political landscape in Swaziland after its recent change in name from Swaziland to Eswatini. The discussion includes references to the harsh conditions and potential changes in politics."
+    },
+    {
+      "reference": "Nathalie, Pauline, Jacob and Anthony are thinking about spending holidays in Greece together in August. Jacob and Nathalie need to be back by August 10 because of Nathalie's younger sister's wedding. ",
+      "raw": "The conversation revolves around Nathalie's upcoming wedding on August 10th, with Pauline and Tony planning their trip to Greece in order to attend the event. Jacob expresses his interest but is skeptical about Anthony's plans due to concerns over transportation costs. The discussion also touches upon the costliness of travel options available in Greece.",
+      "clean": "The conversation revolves around Nathalie's upcoming wedding on August 10th, with Pauline and Tony planning their trip to Greece in order to attend the event. Jacob expresses his interest but is skeptical about Anthony's plans due to concerns over transportation costs. The discussion also touches upon the costliness of travel options available in Greece."
+    },
+    {
+      "reference": "Kim needs to get some fresh fish in Warsaw. Kim will ask at restaurants about their source. Kim is planning something special but won't share any details with Margot for now.",
+      "raw": "A conversation between Kim and Margot discussing finding fresh, locally sourced fish in Warsaw, including potential sources like restaurants and online reviews. Both parties agree on trying the marketplace at Polna Street as an alternative option._Parms",
+      "clean": "A conversation between Kim and Margot discussing finding fresh, locally sourced fish in Warsaw, including potential sources like restaurants and online reviews. Both parties agree on trying the marketplace at Polna Street as an alternative option._Parms"
+    },
+    {
+      "reference": "Malik and Samanta want to lose weight. They will try to keep a diet, keto or paleo, and go for runs together.",
+      "raw": "The conversation involves discussing a paleo diet versus a keto diet, with Samantha expressing interest in trying both diets and suggesting combining them as an exercise option. Both parties express excitement at potentially losing weight together.);\r\r\r\n\n Assassins: The article discusses various dietary options including paleo and keto, highlighting their similarities and differences; it includes Samantha's initial skepticism before realizing the potential benefits of combining these two approaches.",
+      "clean": "The conversation involves discussing a paleo diet versus a keto diet, with Samantha expressing interest in trying both diets and suggesting combining them as an exercise option. Both parties express excitement at potentially losing weight together.);\n Assassins: The article discusses various dietary options including paleo and keto, highlighting their similarities and differences; it includes Samantha's initial skepticism before realizing the potential benefits of combining these two approaches."
+    },
+    {
+      "reference": "Suzy urges Linda to follow her on Instagram and she obliges.",
+      "raw": "The conversation between Suzy and Linda is about following each other's social media accounts without needing to share their own content. Both parties express gratitude for each other's support and acknowledge that they can now focus solely on their shared interests.",
+      "clean": "The conversation between Suzy and Linda is about following each other's social media accounts without needing to share their own content. Both parties express gratitude for each other's support and acknowledge that they can now focus solely on their shared interests."
+    },
+    {
+      "reference": "Jones and Angelina will meet in town in the afternoon.",
+      "raw": "The conversation is about meeting up after an earlier discussion and confirmation from Angelina that they could meet at noon in town. Both parties expressed interest in continuing their current relationship despite initial concerns.);\r\r\r\n\n Assassins: The conversation seems casual but contains some serious elements as it involves discussing potential future plans for the group's activities and possibly even planning a date night together. It also touches on personal matters like health",
+      "clean": "meeting up after an earlier discussion and confirmation from Angelina that they could meet at noon in town. Both parties expressed interest in continuing their current relationship despite initial concerns.);\n Assassins: The conversation seems casual but contains some serious elements as it involves discussing potential future plans for the group's activities and possibly even planning a date night together. It also touches on personal matters like health"
+    },
+    {
+      "reference": "Erin has just baked something that Zachary finds delicious. Zachary wants her to bring him a piece of it as now he's busy cleaning. ",
+      "raw": "A woman named Erin is baking something and has brought her friend Zachary over for some help cleaning up after she finished cooking. Both parties express interest in seeing the result, but Zachary seems less enthusiastic about helping. \u2026 (+) ...",
+      "clean": "A woman named Erin is baking something and has brought her friend Zachary over for some help cleaning up after she finished cooking. Both parties express interest in seeing the result, but Zachary seems less enthusiastic about helping. \u2026 (+) ..."
+    },
+    {
+      "reference": "Piper will get paid tonight. Client liked Piper's work and wants to work with her on a long-term basis.",
+      "raw": "The conversation involves Piper and Bryan discussing the timing for a client's payment from their company, where they agreed on sending the money by tomorrow night. Both parties expressed interest in working together over the next few months.);\r\r\r\n\n Assassins: The conversation revolves around a potential payment due soon after receiving feedback from clients about their work quality. It includes details such as when the payment should arrive and any specific terms",
+      "clean": "The conversation involves Piper and Bryan discussing the timing for a client's payment from their company, where they agreed on sending the money by tomorrow night. Both parties expressed interest in working together over the next few months.);\n Assassins: The conversation revolves around a potential payment due soon after receiving feedback from clients about their work quality. It includes details such as when the payment should arrive and any specific terms"
+    },
+    {
+      "reference": "Ulysses and Peter got an A, Julia got a B. The grades are to be checked on the course page.",
+      "raw": "The conversation involves Ulysses and Peter discussing their academic performance, where they both received good grades but Julia found it difficult to access her grade information online due to technical issues. The discussion also touches on how different people handle learning material differently based on personal preferences and resources available.",
+      "clean": "The conversation involves Ulysses and Peter discussing their academic performance, where they both received good grades but Julia found it difficult to access her grade information online due to technical issues. The discussion also touches on how different people handle learning material differently based on personal preferences and resources available."
+    },
+    {
+      "reference": "There was a meet-and-greet with James Charles in Birmingham which gathered 8000  people.",
+      "raw": "A BBC reporter met and greeted James Charles at a London mall, causing significant media attention; Ellie found her own reaction to this event amusing but also critical, noting the lack of proper research by media outlets regarding the topic. The article discusses the impact of such events on public perception and media coverage.",
+      "clean": "A BBC reporter met and greeted James Charles at a London mall, causing significant media attention; Ellie found her own reaction to this event amusing but also critical, noting the lack of proper research by media outlets regarding the topic. The article discusses the impact of such events on public perception and media coverage."
+    },
+    {
+      "reference": "Julia knew Tim was gay, while Adam and Nate didn't. ",
+      "raw": "A conversation between two people discussing their friendship and Adam's surprise when they learned about Tim being gay from a friend. The discussion includes Julia's initial assumption that she knew but later realizing it wasn't her business, and Nate expressing concern for Tim who did not want to share this information publicly.",
+      "clean": "A conversation between two people discussing their friendship and Adam's surprise when they learned about Tim being gay from a friend. The discussion includes Julia's initial assumption that she knew but later realizing it wasn't her business, and Nate expressing concern for Tim who did not want to share this information publicly."
+    },
+    {
+      "reference": "Daniel will find out who rents a pop corn machines on Lily's request.",
+      "raw": "Lily is looking for a pop corn machine for her office's Christmas party and needs help from Daniel in finding one. They discuss renting a Popcorn Machine at their local store, which Lily finds attractive as part of their Christmas party theme.",
+      "clean": "Lily is looking for a pop corn machine for her office's Christmas party and needs help from Daniel in finding one. They discuss renting a Popcorn Machine at their local store, which Lily finds attractive as part of their Christmas party theme."
+    },
+    {
+      "reference": "It took Phil a very long time to do the Christmas shopping but he probably managed to get everything. He will be home in an hour. Phil's apple pie will be in the oven when he arrives.",
+      "raw": "A man named Phil is stuck in a huge line at a store while waiting for his friend Nancy to pick up their order from the bakery. Despite being tired after work, both men express gratitude for each other's company during this challenging situation.);",
+      "clean": "A man named Phil is stuck in a huge line at a store while waiting for his friend Nancy to pick up their order from the bakery. Despite being tired after work, both men express gratitude for each other's company during this challenging situation.);"
+    },
+    {
+      "reference": "Timmy had a bad day at work. Timmy will bring some wine to Gemma's bbq at the weekend.",
+      "raw": "A conversation between two friends discussing their experiences during a busy week in the office, where Timmy has been working hard but his boss seems angry due to an argument over a project deadline. The group plans to go out for dinner on Saturday night after work, including bringing wine and some food as well.",
+      "clean": "A conversation between two friends discussing their experiences during a busy week in the office, where Timmy has been working hard but his boss seems angry due to an argument over a project deadline. The group plans to go out for dinner on Saturday night after work, including bringing wine and some food as well."
+    },
+    {
+      "reference": "Shaldona sends mobile invitations to her wedding, as she has no time to give them in person.",
+      "raw": "Shaldona expresses her desire to get married through messaging, while Piper questions whether she can send an actual wedding invitation by text message due to limited time constraints. Both parties discuss potential alternatives like phone calls or online invitations.);\r\r\r\n\n Assassination attempt on President Obama? The FBI has arrested two men who were involved in planning it. One man is accused of being a former CIA agent; the other is",
+      "clean": "Shaldona expresses her desire to get married through messaging, while Piper questions whether she can send an actual wedding invitation by text message due to limited time constraints. Both parties discuss potential alternatives like phone calls or online invitations.);\n Assassination attempt on President Obama? The FBI has arrested two men who were involved in planning it. One man is accused of being a former CIA agent; the other is"
+    }
+  ]
+}
