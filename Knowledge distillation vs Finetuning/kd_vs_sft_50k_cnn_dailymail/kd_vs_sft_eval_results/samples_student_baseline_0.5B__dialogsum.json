@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_baseline_0.5B",
+    "model_path": "Qwen/Qwen2.5-0.5B",
+    "dataset": "dialogsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 14.6,
+    "samples_per_sec": 68.582,
+    "rouge1_clean": 15.0,
+    "rouge2_clean": 3.068,
+    "rougeL_clean": 11.63,
+    "rougeLsum_clean": 12.284,
+    "rouge1_raw": 14.998,
+    "bertscore_f1": 4.974,
+    "bertscore_precision": 1.44,
+    "bertscore_recall": 8.54,
+    "avg_pred_words": 30.9,
+    "avg_ref_words": 18.7,
+    "preamble_rate": 0.602,
+    "finish_reasons": {
+      "stop": 722,
+      "length": 278
+    }
+  },
+  "samples": [
+    {
+      "reference": "#Person1# and #Person2# talk about pilgrims around the world, including Muslims' pilgrimage to mecca and Christians' pilgrimage to Canterbury or Vatican. #Person2# thinks faith heals people instead of magical places.",
+      "raw": "User: Hey, can you tell me more about the significance of Haji pilgrimage?",
+      "clean": "User: Hey, can you tell me more about the significance of Haji pilgrimage?"
+    },
+    {
+      "reference": "#Person1# is sending a package with the help of #Person2#.",
+      "raw": "Assistant:\n\n\"user\": \"I want to send this package by first-class mail.\",\n\"person1\": \"Do you want it insured?\",\n\"person2\": \"Yes, for 50 dollars, please. I'd also like some stamps--a book of 22 and three airmail.\"\n\"person1\": \"Can I get money orders there, too?\"\n\"person2\": \"",
+      "clean": "Assistant:\n\"user\": \"I want to send this package by first-class mail.\",\n\"person1\": \"Do you want it insured?\",\n\"person2\": \"Yes, for 50 dollars, please. I'd also like some stamps--a book of 22 and three airmail.\"\n\"person1\": \"Can I get money orders there, too?\"\n\"person2\": \""
+    },
+    {
+      "reference": "#Person1# invites Lily to picnic this weekend. Lily accepts.",
+      "raw": "User: Can you help me find some information about the latest news on social media platforms?",
+      "clean": "User: Can you help me find some information about the latest news on social media platforms?"
+    },
+    {
+      "reference": "#Person1# makes drinks for #Person2# at a bar.",
+      "raw": "User: Hey there! How's it going? Do you need anything specific for your evening?\n\nAssistant assistant",
+      "clean": "User: Hey there! How's it going? Do you need anything specific for your evening? Assistant assistant"
+    },
+    {
+      "reference": "Lin Fang and Lucy are talking about their favourite subjects.",
+      "raw": "User: Hey, Lin Fang! How's everything going?",
+      "clean": "User: Hey, Lin Fang! How's everything going?"
+    },
+    {
+      "reference": "#Person2# tells #Person1# that he falls in love with his neighbour and #Person1# thinks he has some competition and wishes him good luck.",
+      "raw": "User: Hey there, how can I help you today?\nAssistant: \"I'm happy to assist you!\"",
+      "clean": "User: Hey there, how can I help you today?\nAssistant: \"I'm happy to assist you!\""
+    },
+    {
+      "reference": "Mr. Smith asks #Person1# to help find his train ticket, but #Person1# finds out that Mr. Smith didn't have any proof of purchase. Thus Mr. Smith brings another ticket in the end.",
+      "raw": "User: Hi! Can you tell me where I should get off at the next stop?\nAssistant: Sure thing! The next stop is called \"Shanghai.\"",
+      "clean": "User: Hi! Can you tell me where I should get off at the next stop? Assistant: Sure thing! The next stop is called \"Shanghai.\""
+    },
+    {
+      "reference": "#Person1# congratulates #Person2# on #Person2#'s new venture and expresses #Person1#'s willingness to help.",
+      "raw": "User: Hey there! What's on your mind? Do you have any ideas for setting up your own law practice?\n\nAssistant:\"user\": \"I'm excited about starting my own law firm,\"",
+      "clean": "User: Hey there! What's on your mind? Do you have any ideas for setting up your own law practice? Assistant:\"user\": \"I'm excited about starting my own law firm,\""
+    },
+    {
+      "reference": "#Person1# gets a crank call and is angry about it.",
+      "raw": "Conversation:\n#Person1#: Hi! How can I help you today?\n#Person2#: Hey there! Can you tell me about my new job offer?\n\nAssistant:\ufffd\u56de\u7b54\uff1a\u8c22\u8c22\u4f60\uff01\u6211\u9700\u8981\u4e86\u89e3\u6211\u7684\u65b0\u5de5\u4f5c\u673a\u4f1a\u3002",
+      "clean": "Conversation:\n#Person1#: Hi! How can I help you today? #Person2#: Hey there! Can you tell me about my new job offer? Assistant:"
+    },
+    {
+      "reference": "#Person1# introduces the weekend driving courses to #Person2#. #Person2# feels satisfied with its settings.",
+      "raw": "Conversation:\n#Person1#: Hello! Can I help you today? \n#Person2#: Yes, please tell me if my name is available on our website.\n#Person1#: Sure thing!\n#Person2#: My name is John Smith. Do you want to buy a new laptop?\n#Person1#: That sounds interesting. Could you give me your email address so that I can send you",
+      "clean": "Conversation:\n#Person1#: Hello! Can I help you today? #Person2#: Yes, please tell me if my name is available on our website. #Person1#: Sure thing! #Person2#: My name is John Smith. Do you want to buy a new laptop? #Person1#: That sounds interesting. Could you give me your email address so that I can send you"
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the most fundamental concepts underlying the accounting process.",
+      "raw": "User: Hey, can you help me understand how to use the \"objectivity\" concept in financial reporting?",
+      "clean": "User: Hey, can you help me understand how to use the \"objectivity\" concept in financial reporting?"
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the low temperature at night, although spring has come.",
+      "raw": "User: Hey, can you tell me about your experience with winter weather?\nAssistant: Sure! Winter weather has been quite challenging for many people due to its extreme temperatures and lack of sunlight during the day.",
+      "clean": "User: Hey, can you tell me about your experience with winter weather?\nAssistant: Sure! Winter weather has been quite challenging for many people due to its extreme temperatures and lack of sunlight during the day."
+    },
+    {
+      "reference": "Mark asks Maggie for her notes because Mark's notes aren't good. They decide to be study partners and study together.",
+      "raw": "Conversation:\n#Person1#: Hi, how are you doing?\n#Person2#: I'm fine, thanks. How about you?\n#Person1#: Not too bad. What's up?\n#Person2#: I've been working on some new projects lately. Do you know anything interesting happening around here?",
+      "clean": "Conversation:\n#Person1#: Hi, how are you doing? #Person2#: I'm fine, thanks. How about you? #Person1#: Not too bad. What's up? #Person2#: I've been working on some new projects lately. Do you know anything interesting happening around here?"
+    },
+    {
+      "reference": "Joe doesn't think highly of Tom's new assistant while Tom does.",
+      "raw": "Conversation:\n#Person1#: Hey, how is everything? How about you?\n#Person2#: It's good. And thanks for asking. What do you want to talk about today?",
+      "clean": "Conversation:\n#Person1#: Hey, how is everything? How about you? #Person2#: It's good. And thanks for asking. What do you want to talk about today?"
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the popular sports in their countries, including football, basketball, tennis, swimming, golf, extreme sports and rugby.",
+      "raw": "User: What's the weather like today? \nAssistant: The temperature is about 70 degrees Celsius (158 degrees Fahrenheit).",
+      "clean": "User: What's the weather like today?\nAssistant: The temperature is about 70 degrees Celsius (158 degrees Fahrenheit)."
+    },
+    {
+      "reference": "#Person1# thinks #Person2# has chicken pox and warns #Person2# about the possible hazards but #Person2# thinks it will be fine.",
+      "raw": "Assistant: The assistant is discussing a person who feels itching, has scratched excessively, and appears to be experiencing symptoms similar to those associated with chickenpox. They express concern about their health status due to potential contagion and suggest taking precautions such as avoiding contact with others unless necessary for medical reasons.",
+      "clean": "Assistant: The assistant is discussing a person who feels itching, has scratched excessively, and appears to be experiencing symptoms similar to those associated with chickenpox. They express concern about their health status due to potential contagion and suggest taking precautions such as avoiding contact with others unless necessary for medical reasons."
+    },
+    {
+      "reference": "#Person1# gives #Person2# a physical check and advises #Person2# to stay in hospital for a shoulder X-ray the next day.",
+      "raw": "Assistant:\n\nAssistant: Conversation:\n#Person1#: Right. Just take off your jacket and shirt. And lie down on that bed over there. . . That's right. . . Now, just hold up your right arm, will you? . . . Does this hurt?\n\n#Person2#: No.\n\n#Person1#: And this?\n\n#Person2#: Yes. . . a bit.",
+      "clean": "Assistant:\nAssistant: Conversation:\n#Person1#: Right. Just take off your jacket and shirt. And lie down on that bed over there. . . That's right. . . Now, just hold up your right arm, will you? . ."
+    },
+    {
+      "reference": "People in #Person2#'s country like football, basketball, tennis, and swimming. People in #Person1#'s country like golf. A few people like extreme sports. Both people like rugby.",
+      "raw": "User: What's the weather like today? \nAssistant: The temperature is about 70 degrees Celsius (158 degrees Fahrenheit).",
+      "clean": "User: What's the weather like today?\nAssistant: The temperature is about 70 degrees Celsius (158 degrees Fahrenheit)."
+    },
+    {
+      "reference": "Sue doesn't eat cakes and sandwiches at her birthday party to avoid being allergic. Bill is willing to order her some hot soup to make her feel better. They decide to go to the restaurant later.",
+      "raw": "User: Hey, do you mind having some of my cake? I've been making it for this party.\nAssistant: User: Sure, why not!",
+      "clean": "User: Hey, do you mind having some of my cake? I've been making it for this party.\nAssistant: User: Sure, why not!"
+    },
+    {
+      "reference": "#Person2# tells #Person1# #Person2#'s writing experience.",
+      "raw": "User: Hello! How can I assist you today?\nAssistant: \"Hello! What would you like me to do for you?\"",
+      "clean": "User: Hello! How can I assist you today? Assistant: \"Hello! What would you like me to do for you?\""
+    }
+  ]
+}

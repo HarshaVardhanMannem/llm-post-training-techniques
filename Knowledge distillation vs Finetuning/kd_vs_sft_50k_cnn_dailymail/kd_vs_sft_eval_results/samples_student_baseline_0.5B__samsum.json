@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_baseline_0.5B",
+    "model_path": "Qwen/Qwen2.5-0.5B",
+    "dataset": "samsum",
+    "in_domain": false,
+    "num_samples": 819,
+    "gen_time_s": 11.6,
+    "samples_per_sec": 70.54,
+    "rouge1_clean": 11.664,
+    "rouge2_clean": 1.78,
+    "rougeL_clean": 9.065,
+    "rougeLsum_clean": 9.517,
+    "rouge1_raw": 11.646,
+    "bertscore_f1": 2.593,
+    "bertscore_precision": -7.159,
+    "bertscore_recall": 12.688,
+    "avg_pred_words": 32.0,
+    "avg_ref_words": 20.0,
+    "preamble_rate": 0.634,
+    "finish_reasons": {
+      "stop": 602,
+      "length": 217
+    }
+  },
+  "samples": [
+    {
+      "reference": "Both Claire and Linda are making curry for dinner. ",
+      "raw": "Conversation:\nClaire: <file_photo>\nKim: Looks delicious...\nLinda: No way... Look what I'm cooking right now:\nLinda: <file_photo>\nClaire: hahahaha \nKim: Curry dream team\nClaire: Enjoy your dinner :*",
+      "clean": "Conversation:\nClaire: <file_photo>\nKim: Looks delicious...\nLinda: No way... Look what I'm cooking right now:\nLinda: <file_photo>\nClaire: hahahaha\nKim: Curry dream team\nClaire: Enjoy your dinner :*"
+    },
+    {
+      "reference": "Derek and Alyssa make fun of Fergie's performance of the national anthem.",
+      "raw": "User: Can you summarize my conversation with Derek on Fergie's National Anthem?\nAssistant: Alyssa asked if Derek had seen Fergie's National Anthem, which he confirmed by saying \"This is not normal.\" He also mentioned seeing it recently but found it amusing.\n\n\u00f3ria\nI'm sorry to hear that Derek didn't see the song. Do you have any other suggestions for me?\n\n\u00f3",
+      "clean": "User: Can you summarize my conversation with Derek on Fergie's National Anthem? Assistant: Alyssa asked if Derek had seen Fergie's National Anthem, which he confirmed by saying \"This is not normal.\" He also mentioned seeing it recently but found it amusing. \u00f3ria\nI'm sorry to hear that Derek didn't see the song. Do you have any other suggestions for me? \u00f3"
+    },
+    {
+      "reference": "Ann wants to buy Josh's laptop for $200. Josh doesn't want to negotiate the price. Ann will take it for $250 with accessories. ",
+      "raw": "User: Hey, do you know if my laptop is still available?\nAssistant: \"Yes, it is.\"\n Knoxville (Knoxville) - 3 days ago\n\n Nashville (Nashville) - 4 days ago",
+      "clean": "User: Hey, do you know if my laptop is still available?\nAssistant: \"Yes, it is.\"\n Knoxville (Knoxville) - 3 days ago\n Nashville (Nashville) - 4 days ago"
+    },
+    {
+      "reference": "Matt and Tony want to go to the concert of Bon Jovi next July in Poland and are planning to buy the tickets that cost 250 PLN before they\u2019re sold out. Phil will think about it and let them know.",
+      "raw": "User: What's your favorite type of music genre?\nAssistant: Assistant: My favorite is pop.\ntica\nConversation:\nMatt: Have you seen any new movies lately?\nPhil: Not really, but I've been watching some TV shows recently.\nMatt: That sounds interesting! Which one do you recommend?\nPhil: \"The Crown\" by David Fincher is definitely worth checking out.",
+      "clean": "User: What's your favorite type of music genre? Assistant: Assistant: My favorite is pop. tica\nConversation:\nMatt: Have you seen any new movies lately? Phil: Not really, but I've been watching some TV shows recently. Matt: That sounds interesting! Which one do you recommend? Phil: \"The Crown\" by David Fincher is definitely worth checking out."
+    },
+    {
+      "reference": "Anastasia sent her new school photos to Darrell.",
+      "raw": "User: How can I get more information on the latest news from around the world? Assistant: Hi! We have lots of interesting things happening all over the place. Check out our website for updates!",
+      "clean": "User: How can I get more information on the latest news from around the world? Assistant: Hi! We have lots of interesting things happening all over the place. Check out our website for updates!"
+    },
+    {
+      "reference": "Jake, Florence, Margot and others are going on a research trip to Swazi. The name of the country was changed last year and it's now Eswatini.",
+      "raw": "User: What do you think about the new name of Eswatini after the change?\n\nAssistant: Assistant:\n\n Worcester University has been awarded an award by the Department of Education for its outstanding teaching performance.\n\nHuman: User: Can you summarize this information to me as if i'm talking to my friend on WhatsApp?\n\nAssistant: Worcestershire University received recognition from the Department of Education for their exceptional",
+      "clean": "User: What do you think about the new name of Eswatini after the change? Assistant: Assistant:\n Worcester University has been awarded an award by the Department of Education for its outstanding teaching performance. Human: User: Can you summarize this information to me as if i'm talking to my friend on WhatsApp? Assistant: Worcestershire University received recognition from the Department of Education for their exceptional"
+    },
+    {
+      "reference": "Nathalie, Pauline, Jacob and Anthony are thinking about spending holidays in Greece together in August. Jacob and Nathalie need to be back by August 10 because of Nathalie's younger sister's wedding. ",
+      "raw": "User: Have you considered the holiday?\nAssistant: Nathalie has been thinking about the upcoming holiday.\n Moderator: What do you think about it?\n Assistant: I'm considering going on a trip to Greece this summer.\n Moderator: That sounds like an exciting idea!\n Assistant: Yes, I agree! It would be great to spend some time in Greece together with my family.\n Moderator: Let's plan our",
+      "clean": "User: Have you considered the holiday? Assistant: Nathalie has been thinking about the upcoming holiday. Moderator: What do you think about it? Assistant: I'm considering going on a trip to Greece this summer. Moderator: That sounds like an exciting idea! Assistant: Yes, I agree! It would be great to spend some time in Greece together with my family. Moderator: Let's plan our"
+    },
+    {
+      "reference": "Kim needs to get some fresh fish in Warsaw. Kim will ask at restaurants about their source. Kim is planning something special but won't share any details with Margot for now.",
+      "raw": "User: Hello, how can I help you today?",
+      "clean": "User: Hello, how can I help you today?"
+    },
+    {
+      "reference": "Malik and Samanta want to lose weight. They will try to keep a diet, keto or paleo, and go for runs together.",
+      "raw": "User: What is your favorite type of food?\nAssistant: I don't know!",
+      "clean": "User: What is your favorite type of food?\nAssistant: I don't know!"
+    },
+    {
+      "reference": "Suzy urges Linda to follow her on Instagram and she obliges.",
+      "raw": "Conversation:\nSuzy: hey, how's it going?\nLinda: good! How about you?\nSuzy: I'm doing well too!\nLinda: That's great! What did you do last night?\nSuzy: Nothing much. Just watching TV.\nLinda: Oh, that sounds boring. Do you have any plans for tonight?\nSuzy: Not really. Let's just",
+      "clean": "Conversation:\nSuzy: hey, how's it going? Linda: good! How about you? Suzy: I'm doing well too! Linda: That's great! What did you do last night? Suzy: Nothing much. Just watching TV. Linda: Oh, that sounds boring. Do you have any plans for tonight? Suzy: Not really. Let's just"
+    },
+    {
+      "reference": "Jones and Angelina will meet in town in the afternoon.",
+      "raw": "Assistant: Hello! It's nice to hear from you again. We're excited about meeting at your location this afternoon.\n\nAssistant: Assistant",
+      "clean": "Assistant: Hello! It's nice to hear from you again. We're excited about meeting at your location this afternoon. Assistant: Assistant"
+    },
+    {
+      "reference": "Erin has just baked something that Zachary finds delicious. Zachary wants her to bring him a piece of it as now he's busy cleaning. ",
+      "raw": "User: Hey Zach, how's your day going?",
+      "clean": "User: Hey Zach, how's your day going?"
+    },
+    {
+      "reference": "Piper will get paid tonight. Client liked Piper's work and wants to work with her on a long-term basis.",
+      "raw": "User: What's the best way to get started on this project?\nAssistant: Assistant: You can start by creating an account and then follow our tutorial for getting started.\n\nzza\nConversation:\nPiper: How do we know if someone has been hacked into our system?\nBryan: We use a security scanner that scans all incoming traffic.\nPiper: Is there any way to prevent hackers from accessing",
+      "clean": "User: What's the best way to get started on this project? Assistant: Assistant: You can start by creating an account and then follow our tutorial for getting started. zza\nConversation:\nPiper: How do we know if someone has been hacked into our system? Bryan: We use a security scanner that scans all incoming traffic. Piper: Is there any way to prevent hackers from accessing"
+    },
+    {
+      "reference": "Ulysses and Peter got an A, Julia got a B. The grades are to be checked on the course page.",
+      "raw": "Conversation:\nAssistant: What's up? How about you?\n\nAssistant: Assistant",
+      "clean": "Conversation:\nAssistant: What's up? How about you?\nAssistant: Assistant"
+    },
+    {
+      "reference": "There was a meet-and-greet with James Charles in Birmingham which gathered 8000  people.",
+      "raw": "User: What do you think about the recent controversy surrounding meet-and-greet events at malls in Britain?\nAssistant: The user expresses concern over the potential backlash caused by such gatherings due to perceived negativity from British media.",
+      "clean": "User: What do you think about the recent controversy surrounding meet-and-greet events at malls in Britain?\nAssistant: The user expresses concern over the potential backlash caused by such gatherings due to perceived negativity from British media."
+    },
+    {
+      "reference": "Julia knew Tim was gay, while Adam and Nate didn't. ",
+      "raw": "User: What did Adam see Tim doing at the party?\nAssistant: Adam saw Tim and another person having sex.",
+      "clean": "User: What did Adam see Tim doing at the party?\nAssistant: Adam saw Tim and another person having sex."
+    },
+    {
+      "reference": "Daniel will find out who rents a pop corn machines on Lily's request.",
+      "raw": "User: What's your favorite movie genre?",
+      "clean": "User: What's your favorite movie genre?"
+    },
+    {
+      "reference": "It took Phil a very long time to do the Christmas shopping but he probably managed to get everything. He will be home in an hour. Phil's apple pie will be in the oven when he arrives.",
+      "raw": "User: Hey, can you help me figure out how to use this app?\nAssistant: Assistant: Sure thing! Let's go through some steps together.",
+      "clean": "User: Hey, can you help me figure out how to use this app?\nAssistant: Assistant: Sure thing! Let's go through some steps together."
+    },
+    {
+      "reference": "Timmy had a bad day at work. Timmy will bring some wine to Gemma's bbq at the weekend.",
+      "raw": "User: Hey, can you help me find some good places for a BBQ tonight?\nAssistant: Sure thing! Let's go check out some popular spots in town.\n\nzza\nzza\nzza",
+      "clean": "User: Hey, can you help me find some good places for a BBQ tonight? Assistant: Sure thing! Let's go check out some popular spots in town. zza\nzza\nzza"
+    },
+    {
+      "reference": "Shaldona sends mobile invitations to her wedding, as she has no time to give them in person.",
+      "raw": "Assistant:\n\nAssistant: Assistant: Hello! How can I assist you today?",
+      "clean": "Assistant:\nAssistant: Assistant: Hello! How can I assist you today?"
+    }
+  ]
+}
