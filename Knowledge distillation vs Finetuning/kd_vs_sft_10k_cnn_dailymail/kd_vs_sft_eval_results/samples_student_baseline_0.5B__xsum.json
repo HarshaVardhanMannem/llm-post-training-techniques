@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_baseline_0.5B",
+    "model_path": "Qwen/Qwen2.5-0.5B",
+    "dataset": "xsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 15.9,
+    "samples_per_sec": 62.697,
+    "rouge1_clean": 11.423,
+    "rouge2_clean": 1.072,
+    "rougeL_clean": 8.196,
+    "rougeLsum_clean": 8.842,
+    "rouge1_raw": 11.457,
+    "bertscore_f1": -1.826,
+    "bertscore_precision": -5.086,
+    "bertscore_recall": 1.521,
+    "avg_pred_words": 31.3,
+    "avg_ref_words": 21.0,
+    "preamble_rate": 0.576,
+    "finish_reasons": {
+      "length": 430,
+      "stop": 570
+    }
+  },
+  "samples": [
+    {
+      "reference": "A woman who was seriously hurt in a fatal hen party motorway crash is now helping other major trauma victims rebuild their lives.",
+      "raw": "Write a summary using this paragraph as a reference text. Output only the summary itself, without any preamble or commentary. \u8f93\u51fa\uff1a Raqqa is an important city in Syria, but it has also become a target for ISIS militants since they took control of the area last year.\n\nRaqqa is a significant location within Syria, particularly",
+      "clean": "Write a summary using this paragraph as a reference text. Output only the summary itself, without any preamble or commentary."
+    },
+    {
+      "reference": "A Tudor manor house has reopened following a \u00a32.2m makeover.",
+      "raw": "Assistant:\n\nAssistant: A total of 1,400 tickets have sold out for the opening weekend at Bramall Hall in Stockport, Greater Manchester following renovation work beginning in 2014. The restoration includes stained glass windows and ceiling repairs as well as access to the dining room and butler's pantry",
+      "clean": "Assistant:\nAssistant: A total of 1,400 tickets have sold out for the opening weekend at Bramall Hall in Stockport, Greater Manchester following renovation work beginning in 2014. The restoration includes stained glass windows and ceiling repairs as well as access to the dining room and butler's pantry"
+    },
+    {
+      "reference": "Walt Disney World has unveiled a lighthouse memorial for a young boy who was killed by an alligator while on holiday at the Florida theme park.",
+      "raw": "Write a summary using Markdown syntax.\n\natory",
+      "clean": "Write a summary using Markdown syntax.\natory"
+    },
+    {
+      "reference": "The agriculture minister is to return to China next month as attempts to access markets there continue.",
+      "raw": "Write a summary based on this input. Output should be 1-2 sentences.\nthinkable\nAssistant:\n\nThe assistant has summarized the given text by extracting key points such as Michelle O'Neill hosting a breakfast, China inspectors visiting Northern Ireland pork plants, US consul general attending an event, and the potential impact on Northern Ireland's",
+      "clean": "Write a summary based on this input. Output should be 1-2 sentences.\nthinkable\nAssistant:\nThe assistant has summarized the given text by extracting key points such as Michelle O'Neill hosting a breakfast, China inspectors visiting Northern Ireland pork plants, US consul general attending an event, and the potential impact on Northern Ireland's"
+    },
+    {
+      "reference": "Blackpool have signed Bournemouth goalkeeper Ryan Allsop and midfielder Callum Cooke from Middlesbrough on season-long loans.",
+      "raw": "Write a summary for this article.\n libertine",
+      "clean": "Write a summary for this article.\n libertine"
+    },
+    {
+      "reference": "Scotland must beat Slovenia if they are to resurrect their chances of reaching the World Cup finals, Gordon Strachan has acknowledged.",
+      "raw": "Assistant assistant",
+      "clean": "Assistant assistant"
+    },
+    {
+      "reference": "A man jailed for six years for coercing a woman into having sex with a stranger and sending \"revenge porn\" to her family has had the convictions quashed.",
+      "raw": "Assistant",
+      "clean": "Assistant"
+    },
+    {
+      "reference": "A Dublin man accused of stabbing his friend in a County Antrim hotel has been granted bail.",
+      "raw": "Write a summary using this paragraph as a reference:\n\nIn recent weeks, there has been much speculation about the identity of the man behind the series of attacks targeting people in Northern Ireland. The latest incident involved John Morley, 29 years old, who allegedly targeted Derek White, a 45-year-old man living",
+      "clean": "Write a summary using this paragraph as a reference:\nIn recent weeks, there has been much speculation about the identity of the man behind the series of attacks targeting people in Northern Ireland. The latest incident involved John Morley, 29 years old, who allegedly targeted Derek White, a 45-year-old man living"
+    },
+    {
+      "reference": "Catalans Dragons will be without hooker Paul Aiton for up to six weeks after he tore a pectoral muscle on his debut, in a defeat by Wigan Warriors on Friday.",
+      "raw": "Write a summary using this input: The Australian footballer who was injured during the 2016-17 season has been named as Aiton, 30, after he underwent scans to diagnose the injury on Monday.\nOutput:\n\nAustralian footballer Aiton, 30 years old, is being referred",
+      "clean": "Write a summary using this input: The Australian footballer who was injured during the 2016-17 season has been named as Aiton, 30, after he underwent scans to diagnose the injury on Monday.\nOutput:\nAustralian footballer Aiton, 30 years old, is being referred"
+    },
+    {
+      "reference": "Planners in Rugby have revealed they have been in talks with Coventry City Football Club about building a stadium in the borough.",
+      "raw": "Assistant:\n\nAssistant: The assistant summarizes the article about the Sky Blues playing at Coventry's Ricoh Arena due to a recent dispute over ownership rights.",
+      "clean": "Assistant:\nAssistant: The assistant summarizes the article about the Sky Blues playing at Coventry's Ricoh Arena due to a recent dispute over ownership rights."
+    },
+    {
+      "reference": "A man tried to buy ricin from the \"dark web\" after the idea was \"implanted in his brain\" from watching the Breaking Bad television series, a court heard.",
+      "raw": "Write a single sentence that summarizes the content of this article. Output only the sentence itself, without any preamble or commentary. \u8f93\u51fa\uff1aheimer system",
+      "clean": "Write a single sentence that summarizes the content of this article. Output only the sentence itself, without any preamble or commentary."
+    },
+    {
+      "reference": "A tumble dryer could \"not be ruled out\" as the cause of a flat fire in which two men died, an inquest has heard.",
+      "raw": "Write a single sentence that summarizes this article. Output only the sentence itself, with no preamble or commentary.})();\nLETE",
+      "clean": "Write a single sentence that summarizes this article. Output only the sentence itself, with no preamble or commentary.})();\nLETE"
+    },
+    {
+      "reference": "Bots appear to be spamming a US regulator's website over a proposed reversal of net neutrality rules, researchers have said.",
+      "raw": "Article:\nA group of researchers working on artificial intelligence (AI) systems believe they've found a way to improve the accuracy of language translation without relying on human translators.\nTheir work could help bridge the gap between AI-powered chatbots and traditional human-language assistants, making it easier for users to communicate with virtual agents.\nResearchers from",
+      "clean": "Article:\nA group of researchers working on artificial intelligence (AI) systems believe they've found a way to improve the accuracy of language translation without relying on human translators.\nTheir work could help bridge the gap between AI-powered chatbots and traditional human-language assistants, making it easier for users to communicate with virtual agents.\nResearchers from"
+    },
+    {
+      "reference": "School Report gives students a real audience, by linking to their work from the BBC website.",
+      "raw": "Assistant\n\nAssistant:\n\nusterity assistant",
+      "clean": "Assistant\nAssistant:\nusterity assistant"
+    },
+    {
+      "reference": "Michele Morgan, the French screen star and glamour icon who won the first best actress prize at the Cannes film festival, has died at the age of 96.",
+      "raw": "Write a summary based on this article:\n\nA former British spy who helped expose Nazi atrocities during World War II has been named one of Britain's most influential women by Time magazine.\nThe 75-year-old, who is known as 'the world's first female spy', died last week after suffering from cancer.\nMs Morgan",
+      "clean": "Write a summary based on this article:\nA former British spy who helped expose Nazi atrocities during World War II has been named one of Britain's most influential women by Time magazine.\nThe 75-year-old, who is known as 'the world's first female spy', died last week after suffering from cancer.\nMs Morgan"
+    },
+    {
+      "reference": "For years Match of the Day has satisfied impatient football fans by condensing a 90 minute match into a handy chunk of highlights.",
+      "raw": "Article:\nA new system has been developed which can help editors summarize games more quickly than ever before.\nIt uses artificial intelligence to identify key moments in a match, such as where a player crosses the ball or gets fouled.\nThis allows teams to focus their attention on crucial actions rather than going through each minute individually.\n\nSummary",
+      "clean": "Article:\nA new system has been developed which can help editors summarize games more quickly than ever before. It uses artificial intelligence to identify key moments in a match, such as where a player crosses the ball or gets fouled. This allows teams to focus their attention on crucial actions rather than going through each minute individually. Summary"
+    },
+    {
+      "reference": "St Johnstone have secured striker Steven MacLean on a contract extension.",
+      "raw": "Assistant:\n\nAssistant: The assistant is providing an overview of the article by highlighting key points such as MacLean's career progression, his signing status, and any notable transfers he might be involved in.",
+      "clean": "Assistant:\nAssistant: The assistant is providing an overview of the article by highlighting key points such as MacLean's career progression, his signing status, and any notable transfers he might be involved in."
+    },
+    {
+      "reference": "Bournemouth have signed Norwich midfielder Andrew Surman for an undisclosed fee on a three-year deal.",
+      "raw": "Question: What is Surman's current status as an assistant coach?\nAnswer: He has been assigned to assist Coach Chris Coleman in managing the team's performance this season.\nLETE",
+      "clean": "Question: What is Surman's current status as an assistant coach?\nAnswer: He has been assigned to assist Coach Chris Coleman in managing the team's performance this season.\nLETE"
+    },
+    {
+      "reference": "Another election is probably the last thing the public want to hear about after what we've just gone through but that's exactly what the parties at the assembly are gearing up for next year.",
+      "raw": "Assistant:\n\nAssistant: Tory leaders' confidence boosts following recent polls",
+      "clean": "Assistant:\nAssistant: Tory leaders' confidence boosts following recent polls"
+    },
+    {
+      "reference": "Chancellor George Osborne has abandoned his target to restore government finances to a surplus by 2020.",
+      "raw": "Article:\nIn a speech he said, given the effects of the referendum vote, the government had to be \"realistic about achieving a surplus by the end of the decade\". The target had been the chancellor's most prized goal and had been driving austerity measures in previous budgets. But he said the economy is showing \"clear",
+      "clean": "Article:\nIn a speech he said, given the effects of the referendum vote, the government had to be \"realistic about achieving a surplus by the end of the decade\". The target had been the chancellor's most prized goal and had been driving austerity measures in previous budgets. But he said the economy is showing \"clear"
+    }
+  ]
+}
