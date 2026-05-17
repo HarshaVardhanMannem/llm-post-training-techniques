@@ -1,0 +1,21 @@
+# Large data files — store locally or in cloud storage, not git
+*.jsonl
+*.json.gz
+*.parquet
+*.arrow
+
+# Model weights and checkpoints
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+model_outputs/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
