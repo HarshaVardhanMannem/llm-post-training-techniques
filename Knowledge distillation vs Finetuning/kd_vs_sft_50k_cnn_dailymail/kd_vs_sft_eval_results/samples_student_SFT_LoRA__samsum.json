@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_SFT_LoRA",
+    "model_path": "/content/merged_qslwm5l2",
+    "dataset": "samsum",
+    "in_domain": false,
+    "num_samples": 819,
+    "gen_time_s": 12.3,
+    "samples_per_sec": 66.844,
+    "rouge1_clean": 24.307,
+    "rouge2_clean": 4.767,
+    "rougeL_clean": 16.973,
+    "rougeLsum_clean": 20.236,
+    "rouge1_raw": 24.204,
+    "bertscore_f1": 16.307,
+    "bertscore_precision": 3.029,
+    "bertscore_recall": 30.224,
+    "avg_pred_words": 41.7,
+    "avg_ref_words": 20.0,
+    "preamble_rate": 0.149,
+    "finish_reasons": {
+      "stop": 628,
+      "length": 191
+    }
+  },
+  "samples": [
+    {
+      "reference": "Both Claire and Linda are making curry for dinner. ",
+      "raw": "Kim and Linda have been eating curry for years .\nThey both love to cook .FilterWhere\nLinda is trying out new recipes this week .\ufffd\nShe's also learning how to make her own curry powder .(egt",
+      "clean": "Kim and Linda have been eating curry for years .\nThey both love to cook .FilterWhere\nLinda is trying out new recipes this week .\ufffd\nShe's also learning how to make her own curry powder .(egt"
+    },
+    {
+      "reference": "Derek and Alyssa make fun of Fergie's performance of the national anthem.",
+      "raw": "Fergie's national anthem has been performed by Illuminati .\nThe band have also released an album called \"Illuminati\" which features her music .\ufffd\nAlyssa says she thinks it's funnier than usual .",
+      "clean": "Fergie's national anthem has been performed by Illuminati .\nThe band have also released an album called \"Illuminati\" which features her music .\ufffd\nAlyssa says she thinks it's funnier than usual ."
+    },
+    {
+      "reference": "Ann wants to buy Josh's laptop for $200. Josh doesn't want to negotiate the price. Ann will take it for $250 with accessories. ",
+      "raw": "Ann wants to buy Josh a new laptop .\nShe has already paid $250 but he doesn't want that much money .\ufffd\nHe says she should get him some bags and an extra mouse .\nAnn will be happy if they both agree on something .",
+      "clean": "Ann wants to buy Josh a new laptop .\nShe has already paid $250 but he doesn't want that much money .\ufffd\nHe says she should get him some bags and an extra mouse .\nAnn will be happy if they both agree on something ."
+    },
+    {
+      "reference": "Matt and Tony want to go to the concert of Bon Jovi next July in Poland and are planning to buy the tickets that cost 250 PLN before they\u2019re sold out. Phil will think about it and let them know.",
+      "raw": "Matt is planning on going to Poland in July .\nHe's been told he'll need to buy tickets for Bon Jovi concerts .\ufffd\nThe band has already played at several venues around Europe .",
+      "clean": "Matt is planning on going to Poland in July .\nHe's been told he'll need to buy tickets for Bon Jovi concerts .\ufffd\nThe band has already played at several venues around Europe ."
+    },
+    {
+      "reference": "Anastasia sent her new school photos to Darrell.",
+      "raw": "Darrell: It looks like they did it too quickly .\nAnastasia: No worries - we'll have another one soon .\ufffd\nDarrell: We should be able to get a better picture this time around .",
+      "clean": "Darrell: It looks like they did it too quickly .\nAnastasia: No worries - we'll have another one soon .\ufffd\nDarrell: We should be able to get a better picture this time around ."
+    },
+    {
+      "reference": "Jake, Florence, Margot and others are going on a research trip to Swazi. The name of the country was changed last year and it's now Eswatini.",
+      "raw": "Jake has been asked to go on a research trip .\nHe will travel around the world .FilterWhere\nBut he says it won't be easy - because his home country is Swazi .\nThe Swazi government wants him to change his name .FilterWhere\nSo he decides to ask some friends if they know how to get there .FilterWhere\nThey say yes! And then they all end up getting together .",
+      "clean": "Jake has been asked to go on a research trip . He will travel around the world .FilterWhere\nBut he says it won't be easy - because his home country is Swazi . The Swazi government wants him to change his name .FilterWhere\nSo he decides to ask some friends if they know how to get there .FilterWhere\nThey say yes! And then they all end up getting together ."
+    },
+    {
+      "reference": "Nathalie, Pauline, Jacob and Anthony are thinking about spending holidays in Greece together in August. Jacob and Nathalie need to be back by August 10 because of Nathalie's younger sister's wedding. ",
+      "raw": "Nathalie has been planning a trip to Greece .\nShe wants to visit Athens but can't afford it yet .\ufffd\nPauline says they should go somewhere warmer and cooler .\nJacob suggests going to Rome instead .",
+      "clean": "Nathalie has been planning a trip to Greece .\nShe wants to visit Athens but can't afford it yet .\ufffd\nPauline says they should go somewhere warmer and cooler .\nJacob suggests going to Rome instead ."
+    },
+    {
+      "reference": "Kim needs to get some fresh fish in Warsaw. Kim will ask at restaurants about their source. Kim is planning something special but won't share any details with Margot for now.",
+      "raw": "Kim and Margot were both looking for fresh fish .\nThey decided on trying out the Polish marketplace .FilterWhere\nKim wanted to grill it up as a surprise .FilterWhere\nMargot said she would be glad to help Kim out .FilterWhere\nShe also suggested checking online sources before cooking .FilterWhere",
+      "clean": "Kim and Margot were both looking for fresh fish .\nThey decided on trying out the Polish marketplace .FilterWhere\nKim wanted to grill it up as a surprise .FilterWhere\nMargot said she would be glad to help Kim out .FilterWhere\nShe also suggested checking online sources before cooking .FilterWhere"
+    },
+    {
+      "reference": "Malik and Samanta want to lose weight. They will try to keep a diet, keto or paleo, and go for runs together.",
+      "raw": "Samantha is trying out a new diet .\nShe wants to lose weight .\nMalik has been following a paleo diet .\ufffd\nHe says he needs to lose weight too .",
+      "clean": "Samantha is trying out a new diet .\nShe wants to lose weight .\nMalik has been following a paleo diet .\ufffd\nHe says he needs to lose weight too ."
+    },
+    {
+      "reference": "Suzy urges Linda to follow her on Instagram and she obliges.",
+      "raw": "Suzy and Linda were both in New York City .\nThey had been friends for years .\ufffd\nSuzy wanted to send them some photos from their trip .\nShe asked if they would like to follow her on Instagram .FilterWhere\nLinda said she'd be happy to help Suzy post pics .FilterWhere\nSuzy replied that she didn't know how to do it .FilterWhere\nLinda said",
+      "clean": "Suzy and Linda were both in New York City .\nThey had been friends for years .\ufffd\nSuzy wanted to send them some photos from their trip .\nShe asked if they would like to follow her on Instagram .FilterWhere\nLinda said she'd be happy to help Suzy post pics .FilterWhere\nSuzy replied that she didn't know how to do it .FilterWhere\nLinda said"
+    },
+    {
+      "reference": "Jones and Angelina will meet in town in the afternoon.",
+      "raw": "Jesse Jones and Angelina Piveto met for first time since divorce .\nThey were both at the same event on Friday night .\ufffd\nThe pair had been dating for years before they got married .",
+      "clean": "Jesse Jones and Angelina Piveto met for first time since divorce .\nThey were both at the same event on Friday night .\ufffd\nThe pair had been dating for years before they got married ."
+    },
+    {
+      "reference": "Erin has just baked something that Zachary finds delicious. Zachary wants her to bring him a piece of it as now he's busy cleaning. ",
+      "raw": "Zachary is cleaning his apartment .\nHe has been working for hours and needs some food .\ufffd\nThe baby's mother wants him to cook her something special .(egt",
+      "clean": "Zachary is cleaning his apartment .\nHe has been working for hours and needs some food .\ufffd\nThe baby's mother wants him to cook her something special .(egt"
+    },
+    {
+      "reference": "Piper will get paid tonight. Client liked Piper's work and wants to work with her on a long-term basis.",
+      "raw": "Client wanted to use their own money for a project .\nThey were told they had to pay Bryan's boss .\ub959s .\nBryan said his boss would send them the money tomorrow night .MemoryWarning\n\nThe client wants to use her own funds and not rely on Bryan's company .actionDate: The client has requested that she uses her own funds instead of relying on Bryan's company .actionDate: She'd",
+      "clean": "Client wanted to use their own money for a project .\nThey were told they had to pay Bryan's boss .\ub959s .\nBryan said his boss would send them the money tomorrow night .MemoryWarning\nThe client wants to use her own funds and not rely on Bryan's company .actionDate: The client has requested that she uses her own funds instead of relying on Bryan's company .actionDate: She'd"
+    },
+    {
+      "reference": "Ulysses and Peter got an A, Julia got a B. The grades are to be checked on the course page.",
+      "raw": "Ulysses and Peter were both in their first year at university .\nThey had been studying for exams on Monday .\ufffd\nUlysses' grade is an 'A'\nPeter's grade is a 'B' but he wants to know where they could find it online .",
+      "clean": "Ulysses and Peter were both in their first year at university .\nThey had been studying for exams on Monday .\ufffd\nUlysses' grade is an 'A'\nPeter's grade is a 'B' but he wants to know where they could find it online ."
+    },
+    {
+      "reference": "There was a meet-and-greet with James Charles in Birmingham which gathered 8000  people.",
+      "raw": "James Charles met and greet with BBC reporter Ellie at a mall .\nThe two were joined by 8000 fans who turned out to see them .FilterWhere\nBBC said they didn't know if he was real but it caused a gridlock .\nSome hosts complained that James' face wasn't as good as his TV show .",
+      "clean": "James Charles met and greet with BBC reporter Ellie at a mall .\nThe two were joined by 8000 fans who turned out to see them .FilterWhere\nBBC said they didn't know if he was real but it caused a gridlock .\nSome hosts complained that James' face wasn't as good as his TV show ."
+    },
+    {
+      "reference": "Julia knew Tim was gay, while Adam and Nate didn't. ",
+      "raw": "Friends talk about their new relationship .\nOne says she's shocked by how much they know each other .\ufffd\nAnother says that he shouldn't have been so sure of himself . Incontri di amicato e di confidenza (friendship and friendship) in questo libro \u00e8 un'opera d'amore che si rivela molto interessante per i due autori. La storia della relazione",
+      "clean": "Friends talk about their new relationship . One says she's shocked by how much they know each other .\ufffd\nAnother says that he shouldn't have been so sure of himself . Incontri di amicato e di confidenza (friendship and friendship) in questo libro \u00e8 un'opera d'amore che si rivela molto interessante per i due autori. La storia della relazione"
+    },
+    {
+      "reference": "Daniel will find out who rents a pop corn machines on Lily's request.",
+      "raw": "Lily is hosting an office Christmas party .\nShe needs a popcorn machine .FilterWhere\nDaniel says he can help her out .",
+      "clean": "Lily is hosting an office Christmas party .\nShe needs a popcorn machine .FilterWhere\nDaniel says he can help her out ."
+    },
+    {
+      "reference": "It took Phil a very long time to do the Christmas shopping but he probably managed to get everything. He will be home in an hour. Phil's apple pie will be in the oven when he arrives.",
+      "raw": "Phil: You're still at the store .\nNancy: No way!\nPhil: I can't find any parking .:green light on sign says 'no parking'\nNancy: It's not my fault - I just want to get some apples from the bakery .:green light on sign says 'yes' and then she walks into a huge line .\nPhil: OK, let me see if I have",
+      "clean": "Phil: You're still at the store . Nancy: No way! Phil: I can't find any parking .:green light on sign says 'no parking'\nNancy: It's not my fault - I just want to get some apples from the bakery .:green light on sign says 'yes' and then she walks into a huge line . Phil: OK, let me see if I have"
+    },
+    {
+      "reference": "Timmy had a bad day at work. Timmy will bring some wine to Gemma's bbq at the weekend.",
+      "raw": "Timmy has been working hard all day .\nHe thinks he can make some money from his job .\ufffd\nBut Timmy doesn't want to go home because he likes his wife .:greeneye: You're not making any money here! You should get a job in another city! The boss is so mean! You needn't worry about your family - you'll find someone else for them soon",
+      "clean": "Timmy has been working hard all day . He thinks he can make some money from his job .\ufffd\nBut Timmy doesn't want to go home because he likes his wife .:greeneye: You're not making any money here! You should get a job in another city! The boss is so mean! You needn't worry about your family - you'll find someone else for them soon"
+    },
+    {
+      "reference": "Shaldona sends mobile invitations to her wedding, as she has no time to give them in person.",
+      "raw": "Shaldona's husband Piper has asked her to marry him .\nShe wants to get married soon .\ufffd\nThey've been dating for months .\nBut she doesn't know how to make it work .(egt",
+      "clean": "Shaldona's husband Piper has asked her to marry him .\nShe wants to get married soon .\ufffd\nThey've been dating for months .\nBut she doesn't know how to make it work .(egt"
+    }
+  ]
+}

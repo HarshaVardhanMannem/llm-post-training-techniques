@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_SFT_LoRA",
+    "model_path": "/content/merged_qslwm5l2",
+    "dataset": "xsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 19.5,
+    "samples_per_sec": 51.21,
+    "rouge1_clean": 20.017,
+    "rouge2_clean": 2.859,
+    "rougeL_clean": 13.148,
+    "rougeLsum_clean": 16.542,
+    "rouge1_raw": 20.12,
+    "bertscore_f1": 9.501,
+    "bertscore_precision": -1.144,
+    "bertscore_recall": 20.445,
+    "avg_pred_words": 44.2,
+    "avg_ref_words": 21.0,
+    "preamble_rate": 0.106,
+    "finish_reasons": {
+      "length": 395,
+      "stop": 605
+    }
+  },
+  "samples": [
+    {
+      "reference": "A woman who was seriously hurt in a fatal hen party motorway crash is now helping other major trauma victims rebuild their lives.",
+      "raw": "Bethany Jones, 18, was killed during a collision between a lorry and a minibus .\nThe pair were travelling to Liverpool at the time .\nTheir minibus was hit by a lorry on the M62 .\ufffd\nJames Johnson, 45, was jailed for six years after being found",
+      "clean": "Bethany Jones, 18, was killed during a collision between a lorry and a minibus .\nThe pair were travelling to Liverpool at the time .\nTheir minibus was hit by a lorry on the M62 .\ufffd\nJames Johnson, 45, was jailed for six years after being found"
+    },
+    {
+      "reference": "A Tudor manor house has reopened following a \u00a32.2m makeover.",
+      "raw": "Bramall Hall is set to open on Saturday .\nIt will reopen as a restaurant next week .\ufffd\nRenovations were carried out by the council last year .\nThey include restoring stained glass windows and ceilings .",
+      "clean": "Bramall Hall is set to open on Saturday .\nIt will reopen as a restaurant next week .\ufffd\nRenovations were carried out by the council last year .\nThey include restoring stained glass windows and ceilings ."
+    },
+    {
+      "reference": "Walt Disney World has unveiled a lighthouse memorial for a young boy who was killed by an alligator while on holiday at the Florida theme park.",
+      "raw": "Lane Thomas Graves' parents were visiting the Grand Floridian resort .\nThey found him dragging himself into the water while collecting sand .\nDisney says it will install a sign warning people about the dangers .\ufffd\nLighthouse has been installed nearby to promote awareness of the cause .",
+      "clean": "Lane Thomas Graves' parents were visiting the Grand Floridian resort .\nThey found him dragging himself into the water while collecting sand .\nDisney says it will install a sign warning people about the dangers .\ufffd\nLighthouse has been installed nearby to promote awareness of the cause ."
+    },
+    {
+      "reference": "The agriculture minister is to return to China next month as attempts to access markets there continue.",
+      "raw": "The Chinese consul general attended the event .\nHe hopes to get approval from local authorities for exports .\ufffd\nUS consul general Greg Burton was also there .",
+      "clean": "The Chinese consul general attended the event .\nHe hopes to get approval from local authorities for exports .\ufffd\nUS consul general Greg Burton was also there ."
+    },
+    {
+      "reference": "Blackpool have signed Bournemouth goalkeeper Ryan Allsop and midfielder Callum Cooke from Middlesbrough on season-long loans.",
+      "raw": "Allsop, 25, made his Premier League debut in November .\nHe is currently playing for All Blacks .\ufffd\nCooke, 20, won the European Championship with England U17s in 2014 .\nThe club have also signed nine new players this summer .",
+      "clean": "Allsop, 25, made his Premier League debut in November .\nHe is currently playing for All Blacks .\ufffd\nCooke, 20, won the European Championship with England U17s in 2014 .\nThe club have also signed nine new players this summer ."
+    },
+    {
+      "reference": "Scotland must beat Slovenia if they are to resurrect their chances of reaching the World Cup finals, Gordon Strachan has acknowledged.",
+      "raw": "Scotland face Wales in the first round of the Euro 2016 qualifiers .\nStrachan says there is no getting away from losing to Wales .\nHe insists his team can beat them if they play hard .\ufffd\nScots host Canada in the next match on Saturday evening .\ufffd\nStrachan believes his",
+      "clean": "Scotland face Wales in the first round of the Euro 2016 qualifiers .\nStrachan says there is no getting away from losing to Wales .\nHe insists his team can beat them if they play hard .\ufffd\nScots host Canada in the next match on Saturday evening .\ufffd\nStrachan believes his"
+    },
+    {
+      "reference": "A man jailed for six years for coercing a woman into having sex with a stranger and sending \"revenge porn\" to her family has had the convictions quashed.",
+      "raw": "Clive Weatherhogg was convicted of downloading a video file .\nJailed for four years before serving out his time .\nAppeals judge says prosecution concede there has been a miscarriage of justice .\ufffd\nCounsel tells judges that jurors were misled about the footage sent to relatives .\nSheriff George Way had remitted the",
+      "clean": "Clive Weatherhogg was convicted of downloading a video file . Jailed for four years before serving out his time . Appeals judge says prosecution concede there has been a miscarriage of justice .\ufffd\nCounsel tells judges that jurors were misled about the footage sent to relatives . Sheriff George Way had remitted the"
+    },
+    {
+      "reference": "A Dublin man accused of stabbing his friend in a County Antrim hotel has been granted bail.",
+      "raw": "Derek White, 30, was stabbed in the chest and leg .\nChambery Corner Hotel owner John Morley charged with assault .\ufffd\nMorley also accused of possessing Class B drugs and disorderly conduct .",
+      "clean": "Derek White, 30, was stabbed in the chest and leg .\nChambery Corner Hotel owner John Morley charged with assault .\ufffd\nMorley also accused of possessing Class B drugs and disorderly conduct ."
+    },
+    {
+      "reference": "Catalans Dragons will be without hooker Paul Aiton for up to six weeks after he tore a pectoral muscle on his debut, in a defeat by Wigan Warriors on Friday.",
+      "raw": "Aiton was diagnosed with a torn ligament during scans .\nPapua New Guinean has been out since the start of this season .\ufffd\nLeeds defender missed the end of the last campaign with an arm injury .",
+      "clean": "Aiton was diagnosed with a torn ligament during scans .\nPapua New Guinean has been out since the start of this season .\ufffd\nLeeds defender missed the end of the last campaign with an arm injury ."
+    },
+    {
+      "reference": "Planners in Rugby have revealed they have been in talks with Coventry City Football Club about building a stadium in the borough.",
+      "raw": "Sky Blues want to build a new stadium .\nCoventry City has already played at the Ricoh Arena since 2013 .\nRugby boss Peter Ward says his side will try again .",
+      "clean": "Sky Blues want to build a new stadium .\nCoventry City has already played at the Ricoh Arena since 2013 .\nRugby boss Peter Ward says his side will try again ."
+    },
+    {
+      "reference": "A man tried to buy ricin from the \"dark web\" after the idea was \"implanted in his brain\" from watching the Breaking Bad television series, a court heard.",
+      "raw": "Mohammed Ali, 31, from Liverpool, charged with possessing a chemical weapon .\nAllegedly ordered 500mg of ricin - lethal poison used by the CIA .\nAli negotiated deal in encrypted exchanges unaware US agent was involved .\ufffd\nCourt hears he had also hidden packages containing harmless powder .\nAli",
+      "clean": "Mohammed Ali, 31, from Liverpool, charged with possessing a chemical weapon . Allegedly ordered 500mg of ricin - lethal poison used by the CIA . Ali negotiated deal in encrypted exchanges unaware US agent was involved .\ufffd\nCourt hears he had also hidden packages containing harmless powder . Ali"
+    },
+    {
+      "reference": "A tumble dryer could \"not be ruled out\" as the cause of a flat fire in which two men died, an inquest has heard.",
+      "raw": "Abergele inquest hears if a hotplate dryer caused the fire .\nFire engineer says there is 'no compelling evidence' it did so .\ufffd\nWhirlpool has now confirmed the dryer was severely damaged .\nIt can be seen as a problem from its appearance alone .",
+      "clean": "Abergele inquest hears if a hotplate dryer caused the fire .\nFire engineer says there is 'no compelling evidence' it did so .\ufffd\nWhirlpool has now confirmed the dryer was severely damaged .\nIt can be seen as a problem from its appearance alone ."
+    },
+    {
+      "reference": "Bots appear to be spamming a US regulator's website over a proposed reversal of net neutrality rules, researchers have said.",
+      "raw": "350,000 comments made between Monday and Friday .\nCommenters appear to use bots to submit fake data .\nThey may be trying to get around rules set out by the FCC .\ufffd\nSome commentators claim they're protesting the proposal .",
+      "clean": "350,000 comments made between Monday and Friday .\nCommenters appear to use bots to submit fake data .\nThey may be trying to get around rules set out by the FCC .\ufffd\nSome commentators claim they're protesting the proposal ."
+    },
+    {
+      "reference": "School Report gives students a real audience, by linking to their work from the BBC website.",
+      "raw": "BBC Schools Programme wants to give young people a voice .\nThey ask schools to set up dedicated pages where students' work is displayed .\ufffd\nTeachers must ensure the page is free of adverts and does not include personal information .\nPage needs to be visible on the school website and linked to from Map of Participating Schools .",
+      "clean": "BBC Schools Programme wants to give young people a voice .\nThey ask schools to set up dedicated pages where students' work is displayed .\ufffd\nTeachers must ensure the page is free of adverts and does not include personal information .\nPage needs to be visible on the school website and linked to from Map of Participating Schools ."
+    },
+    {
+      "reference": "Michele Morgan, the French screen star and glamour icon who won the first best actress prize at the Cannes film festival, has died at the age of 96.",
+      "raw": "French actress won Best Actress Oscar for her role in 1938's Quai des Brumes .\nShe is one of few women ever to win an Oscar for playing a female character .FilterWhere",
+      "clean": "French actress won Best Actress Oscar for her role in 1938's Quai des Brumes .\nShe is one of few women ever to win an Oscar for playing a female character .FilterWhere"
+    },
+    {
+      "reference": "For years Match of the Day has satisfied impatient football fans by condensing a 90 minute match into a handy chunk of highlights.",
+      "raw": "Scientists at the Polytechnic University of Catalonia are developing software .\nIt can analyse a whole game down to the key moments .\nThey hope it will help editors get more accurate reports .\ufffd\nThe team has tested their new system against five games .\ufffd\nThey found 70% of the total goals were missed out",
+      "clean": "Scientists at the Polytechnic University of Catalonia are developing software .\nIt can analyse a whole game down to the key moments .\nThey hope it will help editors get more accurate reports .\ufffd\nThe team has tested their new system against five games .\ufffd\nThey found 70% of the total goals were missed out"
+    },
+    {
+      "reference": "St Johnstone have secured striker Steven MacLean on a contract extension.",
+      "raw": "Former Scotland Under-21 captain MacLean will sign until May 2017 .\nSt Johnstone have sent two young players to the Championship side .\ufffd\nMcLean played for Ranges, Sheffield Wednesday, Cardiff City, Plymouth Argyle and Aberdeen last season .",
+      "clean": "Former Scotland Under-21 captain MacLean will sign until May 2017 .\nSt Johnstone have sent two young players to the Championship side .\ufffd\nMcLean played for Ranges, Sheffield Wednesday, Cardiff City, Plymouth Argyle and Aberdeen last season ."
+    },
+    {
+      "reference": "Bournemouth have signed Norwich midfielder Andrew Surman for an undisclosed fee on a three-year deal.",
+      "raw": "Surman has been out since January after suffering an injury .\nFormer Southampton midfielder is now playing for Norwich City .\nBournemouth boss Surman played for the Cherries from 2004 to 2007 .\ufffd\nNorwich have won their first league game this season against Wigan .\ufffd\nW",
+      "clean": "Surman has been out since January after suffering an injury .\nFormer Southampton midfielder is now playing for Norwich City .\nBournemouth boss Surman played for the Cherries from 2004 to 2007 .\ufffd\nNorwich have won their first league game this season against Wigan .\ufffd\nW"
+    },
+    {
+      "reference": "Another election is probably the last thing the public want to hear about after what we've just gone through but that's exactly what the parties at the assembly are gearing up for next year.",
+      "raw": "Conservative Party will have access to new information on voters .\nParty will use this to decide where it can best target its campaigns .\ufffd\nLabour won 10% of the vote while Conservatives got 43%, according to poll .\nLeanne Wood says she would be better off as an independent instead of a member",
+      "clean": "Conservative Party will have access to new information on voters .\nParty will use this to decide where it can best target its campaigns .\ufffd\nLabour won 10% of the vote while Conservatives got 43%, according to poll .\nLeanne Wood says she would be better off as an independent instead of a member"
+    },
+    {
+      "reference": "Chancellor George Osborne has abandoned his target to restore government finances to a surplus by 2020.",
+      "raw": "Chancellor said the economy showed 'clear signs' of shock .\nHe added that the government needed to be \"realistic\"\nHis comments came during a speech in Manchester .\ufffd\nTory leaders were shocked by the result of the EU referendum .\nThey vowed to try again next month unless they get an agreement .",
+      "clean": "Chancellor said the economy showed 'clear signs' of shock .\nHe added that the government needed to be \"realistic\"\nHis comments came during a speech in Manchester .\ufffd\nTory leaders were shocked by the result of the EU referendum .\nThey vowed to try again next month unless they get an agreement ."
+    }
+  ]
+}

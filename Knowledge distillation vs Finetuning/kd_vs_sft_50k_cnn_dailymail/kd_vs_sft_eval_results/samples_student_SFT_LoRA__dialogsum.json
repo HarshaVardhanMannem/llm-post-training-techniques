@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_SFT_LoRA",
+    "model_path": "/content/merged_qslwm5l2",
+    "dataset": "dialogsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 15.4,
+    "samples_per_sec": 65.033,
+    "rouge1_clean": 19.758,
+    "rouge2_clean": 3.818,
+    "rougeL_clean": 14.505,
+    "rougeLsum_clean": 16.78,
+    "rouge1_raw": 19.696,
+    "bertscore_f1": 6.911,
+    "bertscore_precision": 2.164,
+    "bertscore_recall": 11.605,
+    "avg_pred_words": 42.5,
+    "avg_ref_words": 18.7,
+    "preamble_rate": 0.09,
+    "finish_reasons": {
+      "stop": 844,
+      "length": 156
+    }
+  },
+  "samples": [
+    {
+      "reference": "#Person1# and #Person2# talk about pilgrims around the world, including Muslims' pilgrimage to mecca and Christians' pilgrimage to Canterbury or Vatican. #Person2# thinks faith heals people instead of magical places.",
+      "raw": "Muslims visit holy city of Mecca for Hajj .\nPilgrimage involves walking through sacred black stone .\ufffd\nMany people die during the process due to stamping accident .",
+      "clean": "Muslims visit holy city of Mecca for Hajj .\nPilgrimage involves walking through sacred black stone .\ufffd\nMany people die during the process due to stamping accident ."
+    },
+    {
+      "reference": "#Person1# is sending a package with the help of #Person2#.",
+      "raw": "The person is sending an item from their home .\nThey would like to ship it in first class .\ufffd\nThey're looking for postage and insurance packages .(egt",
+      "clean": "The person is sending an item from their home .\nThey would like to ship it in first class .\ufffd\nThey're looking for postage and insurance packages .(egt"
+    },
+    {
+      "reference": "#Person1# invites Lily to picnic this weekend. Lily accepts.",
+      "raw": "Lily is planning a picnic on Saturday .\nShe wants to walk through the park .\ufffd\nWhat do you think she should pack?\u770b\u67e5\u770b\nThe answer is nothing - just dress up! You don't need anything special .",
+      "clean": "Lily is planning a picnic on Saturday .\nShe wants to walk through the park .\ufffd\nWhat do you think she should pack?"
+    },
+    {
+      "reference": "#Person1# makes drinks for #Person2# at a bar.",
+      "raw": "The bartender is trying to make sure that everyone gets their fill of cocktails .\nHe's got some suggestions for people who want to try his mixology .\ufffd\nOne suggestion is a singer - it has lime juice and grenadine on top .(egt",
+      "clean": "The bartender is trying to make sure that everyone gets their fill of cocktails .\nHe's got some suggestions for people who want to try his mixology .\ufffd\nOne suggestion is a singer - it has lime juice and grenadine on top .(egt"
+    },
+    {
+      "reference": "Lin Fang and Lucy are talking about their favourite subjects.",
+      "raw": "Lin Fang has trouble finding his favorite subject .\nNancy likes English but finds it hard to understand .\ufffd\nBoth have their own favorites - Lin Fang loves PE and Nancy likes Chinese .",
+      "clean": "Lin Fang has trouble finding his favorite subject .\nNancy likes English but finds it hard to understand .\ufffd\nBoth have their own favorites - Lin Fang loves PE and Nancy likes Chinese ."
+    },
+    {
+      "reference": "#Person2# tells #Person1# that he falls in love with his neighbour and #Person1# thinks he has some competition and wishes him good luck.",
+      "raw": "The couple were talking on their phone when they heard the sound of someone knocking at the door .\nThey both looked out and saw a woman standing outside .\nShe had just moved into an apartment complex .\ufffd\nThe man said he would invite her over to his house later that night .",
+      "clean": "The couple were talking on their phone when they heard the sound of someone knocking at the door .\nThey both looked out and saw a woman standing outside .\nShe had just moved into an apartment complex .\ufffd\nThe man said he would invite her over to his house later that night ."
+    },
+    {
+      "reference": "Mr. Smith asks #Person1# to help find his train ticket, but #Person1# finds out that Mr. Smith didn't have any proof of purchase. Thus Mr. Smith brings another ticket in the end.",
+      "raw": "The man had been traveling from Shanghai to Shenzhen .\nHe wanted to take a hard sleeper and his wife would not allow him to buy one .\nShe asked him where he could find his wallet so she wouldn't steal it .\ufffd\nMan said 'I have 419. 6 RMB' which is more than enough for a soft sleeper .(egt>\nWoman says 'you're just",
+      "clean": "The man had been traveling from Shanghai to Shenzhen . He wanted to take a hard sleeper and his wife would not allow him to buy one . She asked him where he could find his wallet so she wouldn't steal it .\ufffd\nMan said 'I have 419. 6 RMB' which is more than enough for a soft sleeper .(egt>\nWoman says 'you're just"
+    },
+    {
+      "reference": "#Person1# congratulates #Person2# on #Person2#'s new venture and expresses #Person1#'s willingness to help.",
+      "raw": "The author is setting up his own law firm .\nHe says he's looking forward to working on cases .\ufffd\nAuthor wishes him well and hopes for success .",
+      "clean": "The author is setting up his own law firm .\nHe says he's looking forward to working on cases .\ufffd\nAuthor wishes him well and hopes for success ."
+    },
+    {
+      "reference": "#Person1# gets a crank call and is angry about it.",
+      "raw": "The caller says they're not sure if it's their phone .\nThey say they can't remember where to find the number .\ufffd\nThe person on the other end calls them back saying 'I'm sorry' for being late .",
+      "clean": "The caller says they're not sure if it's their phone .\nThey say they can't remember where to find the number .\ufffd\nThe person on the other end calls them back saying 'I'm sorry' for being late ."
+    },
+    {
+      "reference": "#Person1# introduces the weekend driving courses to #Person2#. #Person2# feels satisfied with its settings.",
+      "raw": "The driver's license exam is held on June 7th .\nThere are two types of exams - one that lasts from Monday through Friday (short term) and another that lasts from Tuesday through Thursday (long-term)\nBoth tests require drivers to take an online test .FilterWhere\nA few questions may be asked regarding your driving skills as well as other factors such as age, weight, height and experience .",
+      "clean": "The driver's license exam is held on June 7th .\nThere are two types of exams - one that lasts from Monday through Friday (short term) and another that lasts from Tuesday through Thursday (long-term)\nBoth tests require drivers to take an online test .FilterWhere\nA few questions may be asked regarding your driving skills as well as other factors such as age, weight, height and experience ."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the most fundamental concepts underlying the accounting process.",
+      "raw": "The concept of \"accounting entity\" has been used by many companies .\nAccounting entities can be either for-profit or nonprofit .FilterWhere\nA good example would be a corporation that owns its own assets but does not make any profits from them .FilterWhere\nAnother example could be a non-profit organization that uses some of its resources to help other organizations without making any profit .FilterWhere\nIn both cases,",
+      "clean": "The concept of \"accounting entity\" has been used by many companies .\nAccounting entities can be either for-profit or nonprofit .FilterWhere\nA good example would be a corporation that owns its own assets but does not make any profits from them .FilterWhere\nAnother example could be a non-profit organization that uses some of its resources to help other organizations without making any profit .FilterWhere\nIn both cases,"
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the low temperature at night, although spring has come.",
+      "raw": "The weather has been unusually cold for this time of year .\nIt's not too bad but there are some areas where temperatures can be as low as -5C .\ufffd\nPeople need to take extra precautions when spending time outdoors during winter months .(egt",
+      "clean": "The weather has been unusually cold for this time of year .\nIt's not too bad but there are some areas where temperatures can be as low as -5C .\ufffd\nPeople need to take extra precautions when spending time outdoors during winter months .(egt"
+    },
+    {
+      "reference": "Mark asks Maggie for her notes because Mark's notes aren't good. They decide to be study partners and study together.",
+      "raw": "Maggie is studying for her exam .\nShe has borrowed some notes from another student .\ufffd\nThe other student says she doesn't miss much class time .\nThey decide to sit down together in the library .",
+      "clean": "Maggie is studying for her exam .\nShe has borrowed some notes from another student .\ufffd\nThe other student says she doesn't miss much class time .\nThey decide to sit down together in the library ."
+    },
+    {
+      "reference": "Joe doesn't think highly of Tom's new assistant while Tom does.",
+      "raw": "Joe is trying to get his new assistant to work for him .\nHe finds out he has been given an assistant job by his boss .\nThe person in question is not very good at all things .\ufffd\nShe seems quite unhelpful and doesn't say hello when he comes into contact with her .(egt",
+      "clean": "Joe is trying to get his new assistant to work for him .\nHe finds out he has been given an assistant job by his boss .\nThe person in question is not very good at all things .\ufffd\nShe seems quite unhelpful and doesn't say hello when he comes into contact with her .(egt"
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the popular sports in their countries, including football, basketball, tennis, swimming, golf, extreme sports and rugby.",
+      "raw": "People in UK have different preferences when it comes to sport .\nSome prefer football while others love cricket .\ufffd\nMany people also enjoy golf as an alternative to tennis .",
+      "clean": "People in UK have different preferences when it comes to sport .\nSome prefer football while others love cricket .\ufffd\nMany people also enjoy golf as an alternative to tennis ."
+    },
+    {
+      "reference": "#Person1# thinks #Person2# has chicken pox and warns #Person2# about the possible hazards but #Person2# thinks it will be fine.",
+      "raw": "The person is scratching their skin .\nThey say they're feeling ill .\nSomeone says they might be getting chickenpox .\ufffd\nA friend tells them to stop worrying about it .",
+      "clean": "The person is scratching their skin .\nThey say they're feeling ill .\nSomeone says they might be getting chickenpox .\ufffd\nA friend tells them to stop worrying about it ."
+    },
+    {
+      "reference": "#Person1# gives #Person2# a physical check and advises #Person2# to stay in hospital for a shoulder X-ray the next day.",
+      "raw": "The patient is lying on his back while the doctor holds him by the shoulders .\nHe has been suffering from severe headaches since last week .\nThe doctor says he may need to go into surgery but wants to wait till tomorrow .\ufffd\nIt would be best if he stayed in hospital overnight as an x-ray might not show up .",
+      "clean": "The patient is lying on his back while the doctor holds him by the shoulders .\nHe has been suffering from severe headaches since last week .\nThe doctor says he may need to go into surgery but wants to wait till tomorrow .\ufffd\nIt would be best if he stayed in hospital overnight as an x-ray might not show up ."
+    },
+    {
+      "reference": "People in #Person2#'s country like football, basketball, tennis, and swimming. People in #Person1#'s country like golf. A few people like extreme sports. Both people like rugby.",
+      "raw": "People in UK have different preferences when it comes to sport .\nSome prefer football while others love cricket .\ufffd\nMany people also enjoy golf as an alternative to tennis .",
+      "clean": "People in UK have different preferences when it comes to sport .\nSome prefer football while others love cricket .\ufffd\nMany people also enjoy golf as an alternative to tennis ."
+    },
+    {
+      "reference": "Sue doesn't eat cakes and sandwiches at her birthday party to avoid being allergic. Bill is willing to order her some hot soup to make her feel better. They decide to go to the restaurant later.",
+      "raw": "Sue says she doesn't like her diet .\nBill tells her to stop eating certain foods .\nHe wants to try out new recipes .\ufffd\nThe couple will meet up later after their dinner .",
+      "clean": "Sue says she doesn't like her diet .\nBill tells her to stop eating certain foods .\nHe wants to try out new recipes .\ufffd\nThe couple will meet up later after their dinner ."
+    },
+    {
+      "reference": "#Person2# tells #Person1# #Person2#'s writing experience.",
+      "raw": "The author is working on her first book .\nShe has been writing for several top papers .\ufffd\nHer work will be published by The Guardian newspaper .",
+      "clean": "The author is working on her first book .\nShe has been writing for several top papers .\ufffd\nHer work will be published by The Guardian newspaper ."
+    }
+  ]
+}
