@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_SFT_LoRA",
+    "model_path": "/content/merged_fer149xn",
+    "dataset": "dialogsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 17.5,
+    "samples_per_sec": 57.149,
+    "rouge1_clean": 18.702,
+    "rouge2_clean": 3.822,
+    "rougeL_clean": 13.567,
+    "rougeLsum_clean": 15.513,
+    "rouge1_raw": 18.18,
+    "bertscore_f1": 2.936,
+    "bertscore_precision": -7.458,
+    "bertscore_recall": 13.762,
+    "avg_pred_words": 47.2,
+    "avg_ref_words": 18.7,
+    "preamble_rate": 0.292,
+    "finish_reasons": {
+      "length": 618,
+      "stop": 382
+    }
+  },
+  "samples": [
+    {
+      "reference": "#Person1# and #Person2# talk about pilgrims around the world, including Muslims' pilgrimage to mecca and Christians' pilgrimage to Canterbury or Vatican. #Person2# thinks faith heals people instead of magical places.",
+      "raw": "People visit holy sites like Mecca for religious reasons .\nPilgrimage to Mecca is called Hajj .actionDate: Friday, November 9th, 2014 - 6pm EST (GMT +1)\nThe event involves walking through a huge black stone and praying before facing the Kaaba .osg\nThere have been several incidents involving people getting shot while trying to cross the",
+      "clean": "People visit holy sites like Mecca for religious reasons .\nPilgrimage to Mecca is called Hajj .actionDate: Friday, November 9th, 2014 - 6pm EST (GMT +1)\nThe event involves walking through a huge black stone and praying before facing the Kaaba .osg\nThere have been several incidents involving people getting shot while trying to cross the"
+    },
+    {
+      "reference": "#Person1# is sending a package with the help of #Person2#.",
+      "raw": "The two people discuss their plans for sending packages .\nThey decide on postage and insurance rates .actionDate: Monday, November 4, 9am - 6pm ET .\nLocation: The Postal Service Office in Washington D.C., 7th floor, Room 801 .<=$50 per parcel plus $22 stamps (book) + $3 airmail .<=$50",
+      "clean": "The two people discuss their plans for sending packages .\nThey decide on postage and insurance rates .actionDate: Monday, November 4, 9am - 6pm ET .\nLocation: The Postal Service Office in Washington D.C., 7th floor, Room 801 .<=$50 per parcel plus $22 stamps (book) + $3 airmail .<=$50"
+    },
+    {
+      "reference": "#Person1# invites Lily to picnic this weekend. Lily accepts.",
+      "raw": "Lily is planning a picnic at the river .\nShe's not sure if she needs anything else .actionDate: Saturday, July 4th, 5pm - 7pm (60 minutes)\nPeople: Lily, your friend, and her parents .osg\nThey're all wearing comfortable clothes and good shoes for walking .osg\nThe weather will be sunny today but it could get hot tomorrow",
+      "clean": "Lily is planning a picnic at the river .\nShe's not sure if she needs anything else .actionDate: Saturday, July 4th, 5pm - 7pm (60 minutes)\nPeople: Lily, your friend, and her parents .osg\nThey're all wearing comfortable clothes and good shoes for walking .osg\nThe weather will be sunny today but it could get hot tomorrow"
+    },
+    {
+      "reference": "#Person1# makes drinks for #Person2# at a bar.",
+      "raw": "Barman is asking for a drink .\nHe says he doesn't drink much .:green tea+orange soda+lime juice+gin/+wine=40mls (5%)\nSinger is a non-alcoholic cocktail that comes in two sizes - small and large .\nIt's made from gin, lemon juice, grenadine and lime juice .actionDate: July 26, 2",
+      "clean": "Barman is asking for a drink .\nHe says he doesn't drink much .:green tea+orange soda+lime juice+gin/+wine=40mls (5%)\nSinger is a non-alcoholic cocktail that comes in two sizes - small and large .\nIt's made from gin, lemon juice, grenadine and lime juice .actionDate: July 26, 2"
+    },
+    {
+      "reference": "Lin Fang and Lucy are talking about their favourite subjects.",
+      "raw": "Lin Fang likes English best but Nancy likes PE .\nBoth students have trouble understanding some concepts in their classes .actionDate: November 05, 2017 - 9:46am EST",
+      "clean": "Lin Fang likes English best but Nancy likes PE .\nBoth students have trouble understanding some concepts in their classes .actionDate: November 05, 2017 - 9:46am EST"
+    },
+    {
+      "reference": "#Person2# tells #Person1# that he falls in love with his neighbour and #Person1# thinks he has some competition and wishes him good luck.",
+      "raw": "The couple has just moved into their new apartment together .\nThey're both excited about the possibility of dating each other .\nBut they haven't decided whether to start a relationship .\u6240\u6709\u60c5\u8282 goes here: The couple moves into an apartment together . They meet at a restaurant and talk about their feelings for each other . One man says he wants to invite his girlfriend over for dinner one night . The woman agrees and invites",
+      "clean": "The couple has just moved into their new apartment together .\nThey're both excited about the possibility of dating each other .\nBut they haven't decided whether to start a relationship ."
+    },
+    {
+      "reference": "Mr. Smith asks #Person1# to help find his train ticket, but #Person1# finds out that Mr. Smith didn't have any proof of purchase. Thus Mr. Smith brings another ticket in the end.",
+      "raw": "The man says he needs to buy a new ticket .\nHe asks where his wallet is and someone steals it .\nMan thanks him for saving him from being killed by his wife .\u6240\u6709\u60c5\u8282 should be written as one long paragraph using bullet points so they flow together well. Use \"I\" statements wherever possible - this makes them sound more natural and personal. Make sure all dialogue flows smoothly into each other without interrupt",
+      "clean": "The man says he needs to buy a new ticket .\nHe asks where his wallet is and someone steals it .\nMan thanks him for saving him from being killed by his wife ."
+    },
+    {
+      "reference": "#Person1# congratulates #Person2# on #Person2#'s new venture and expresses #Person1#'s willingness to help.",
+      "raw": "The two people were talking about their plans for starting a business .\nThey both said they wanted to have their own offices .actionDate: November 5, 2014 at 6:07 PM EST - The conversation is between #Person1 and #Person2 .actionDate: They talk about setting up a law firm after working on it for so long .actionDate: It's nice that",
+      "clean": "The two people were talking about their plans for starting a business .\nThey both said they wanted to have their own offices .actionDate: November 5, 2014 at 6:07 PM EST - The conversation is between #Person1 and #Person2 .actionDate: They talk about setting up a law firm after working on it for so long .actionDate: It's nice that"
+    },
+    {
+      "reference": "#Person1# gets a crank call and is angry about it.",
+      "raw": "The caller says they're calling to arrest someone .\nThey say their name is \"I know who you are\"\nThe caller then tells them that if they call again, they will be arrested .actionDate: 08/15/2014 6:37 PM PST\nSource: The New York Times' David Frum",
+      "clean": "The caller says they're calling to arrest someone .\nThey say their name is \"I know who you are\"\nThe caller then tells them that if they call again, they will be arrested .actionDate: 08/15/2014 6:37 PM PST\nSource: The New York Times' David Frum"
+    },
+    {
+      "reference": "#Person1# introduces the weekend driving courses to #Person2#. #Person2# feels satisfied with its settings.",
+      "raw": "The driver's school has two drivers' courses .\nThey start on Saturdays and Sundays from 8am - 6pm .\nThere is also an evening class that lasts until late night .\ufffd\nPeople who want to take part need to pay $50 per person .'gc'\nDriver's schools offer short term courses as well as long-term ones .'gc'\nCoaches usually teach for 20",
+      "clean": "The driver's school has two drivers' courses .\nThey start on Saturdays and Sundays from 8am - 6pm .\nThere is also an evening class that lasts until late night .\ufffd\nPeople who want to take part need to pay $50 per person .'gc'\nDriver's schools offer short term courses as well as long-term ones .'gc'\nCoaches usually teach for 20"
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the most fundamental concepts underlying the accounting process.",
+      "raw": "American-style accounting has been around for decades .\nThe concept of \"accounting entity\" is one that Americans have never had to work on before .\ufffd\nPeople who don't know how to do this can be very confused about their financial situation .GuidId\nThey may think they're making money when they actually aren't - because there's nothing like it in America .GuidId\nThis article will help people",
+      "clean": "American-style accounting has been around for decades .\nThe concept of \"accounting entity\" is one that Americans have never had to work on before .\ufffd\nPeople who don't know how to do this can be very confused about their financial situation .GuidId\nThey may think they're making money when they actually aren't - because there's nothing like it in America .GuidId\nThis article will help people"
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the low temperature at night, although spring has come.",
+      "raw": "People say spring has arrived but it's still cold at night .\nThey're not comfortable sitting out there without an air-conditioner .actionDate: Spring is finally here, says Person1; however, it's still very cold at night for some people .\nSome people don't want to go outside because they feel too cold .\u6240\u6709\u60c5\u8282: People say spring has arrived but it's still very cold at night for",
+      "clean": "People say spring has arrived but it's still cold at night .\nThey're not comfortable sitting out there without an air-conditioner .actionDate: Spring is finally here, says Person1; however, it's still very cold at night for some people .\nSome people don't want to go outside because they feel too cold ."
+    },
+    {
+      "reference": "Mark asks Maggie for her notes because Mark's notes aren't good. They decide to be study partners and study together.",
+      "raw": "Maggie borrows her notes from Mark .\nThey discuss their schedules and how they should study together .actionDate: Tuesday, October 5, 2016 at 4pm - Room 108B, University Center - The Library (9th Floor) Description: This is an opportunity for students to meet up with friends who may be studying alone during the day . It will",
+      "clean": "Maggie borrows her notes from Mark .\nThey discuss their schedules and how they should study together .actionDate: Tuesday, October 5, 2016 at 4pm - Room 108B, University Center - The Library (9th Floor) Description: This is an opportunity for students to meet up with friends who may be studying alone during the day . It will"
+    },
+    {
+      "reference": "Joe doesn't think highly of Tom's new assistant while Tom does.",
+      "raw": "Joe and Tom talk about their work at the same company .\nTom is not impressed by his new assistant .\nHe thinks he has been helped more than anyone else in the office .actionDate: June 05, 2014 - 9:36pm EDT",
+      "clean": "Joe and Tom talk about their work at the same company .\nTom is not impressed by his new assistant .\nHe thinks he has been helped more than anyone else in the office .actionDate: June 05, 2014 - 9:36pm EDT"
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the popular sports in their countries, including football, basketball, tennis, swimming, golf, extreme sports and rugby.",
+      "raw": "People in #CountryA prefer football over other sports .\nIn #CountryB, there's a lot of interest in cricket and tennis .\nThere are lots of people interested in golf .\ufffd\nThe UK has a large population of people who love sport .\u6240\u6709\u60c5\u8282 that happened during this conversation were:\n#Person1#: People in CountryA prefer football over other sports .\n#Person2#: In CountryB,",
+      "clean": "People in #CountryA prefer football over other sports .\nIn #CountryB, there's a lot of interest in cricket and tennis .\nThere are lots of people interested in golf .\ufffd\nThe UK has a large population of people who love sport ."
+    },
+    {
+      "reference": "#Person1# thinks #Person2# has chicken pox and warns #Person2# about the possible hazards but #Person2# thinks it will be fine.",
+      "raw": "Person1 says Person2 is itching all over her body .\nShe thinks she has chicken pox .actionDate: July 5, 2014 at 9:36 AM EDT .\nPerson2 says \"I'm not feeling well\" and wants to go for an oatmeal bath .actionDate: July 5, 2014 at 8:37 AM EDT .",
+      "clean": "Person1 says Person2 is itching all over her body .\nShe thinks she has chicken pox .actionDate: July 5, 2014 at 9:36 AM EDT .\nPerson2 says \"I'm not feeling well\" and wants to go for an oatmeal bath .actionDate: July 5, 2014 at 8:37 AM EDT ."
+    },
+    {
+      "reference": "#Person1# gives #Person2# a physical check and advises #Person2# to stay in hospital for a shoulder X-ray the next day.",
+      "raw": "The patient is lying on his back in a hospital room .\nHe has been diagnosed with an infection at the base of his spine .\nA doctor says he needs to go to the emergency department immediately .\nBut he doesn't want to wait because he wants to see if there's something wrong with his leg .\ufffd\nPeople who suffer from spinal infections often need surgery before they recover .GuidId\nDoctors say patients",
+      "clean": "The patient is lying on his back in a hospital room . He has been diagnosed with an infection at the base of his spine . A doctor says he needs to go to the emergency department immediately . But he doesn't want to wait because he wants to see if there's something wrong with his leg .\ufffd\nPeople who suffer from spinal infections often need surgery before they recover .GuidId\nDoctors say patients"
+    },
+    {
+      "reference": "People in #Person2#'s country like football, basketball, tennis, and swimming. People in #Person1#'s country like golf. A few people like extreme sports. Both people like rugby.",
+      "raw": "People in #CountryA prefer football over other sports .\nIn #CountryB, there's a lot of interest in cricket and tennis .\nThere are lots of people interested in golf .\ufffd\nThe UK has a large population of people who love sport .\u6240\u6709\u60c5\u8282 that happened during this conversation were:\n#Person1#: People in CountryA prefer football over other sports .\n#Person2#: In CountryB,",
+      "clean": "People in #CountryA prefer football over other sports .\nIn #CountryB, there's a lot of interest in cricket and tennis .\nThere are lots of people interested in golf .\ufffd\nThe UK has a large population of people who love sport ."
+    },
+    {
+      "reference": "Sue doesn't eat cakes and sandwiches at her birthday party to avoid being allergic. Bill is willing to order her some hot soup to make her feel better. They decide to go to the restaurant later.",
+      "raw": "Bill says he doesn't like his current diet .\nSue tells him she has been following her doctor's advice .$LANG\nThey decide to go out later after dinner .\nBill goes home and chats with friends before calling the restaurant .andest\nHe calls the restaurant and orders a salad instead of pizza .$LANG\nThe two then order their own drinks and head off to celebrate together .$LANG\nAt the",
+      "clean": "Bill says he doesn't like his current diet .\nSue tells him she has been following her doctor's advice .$LANG\nThey decide to go out later after dinner .\nBill goes home and chats with friends before calling the restaurant .andest\nHe calls the restaurant and orders a salad instead of pizza .$LANG\nThe two then order their own drinks and head off to celebrate together .$LANG\nAt the"
+    },
+    {
+      "reference": "#Person2# tells #Person1# #Person2#'s writing experience.",
+      "raw": "The person is looking for an editor job .\nThey say they've been working on their first book .actionDate: Monday, January 8, 2019 - 6:45pm EST\nPeople who work as editors often write articles and stories about news events .\nThis means they can help people understand important things happening around them . sourceMapping.com/",
+      "clean": "The person is looking for an editor job . They say they've been working on their first book .actionDate: Monday, January 8, 2019 - 6:45pm EST\nPeople who work as editors often write articles and stories about news events . This means they can help people understand important things happening around them . sourceMapping.com/"
+    }
+  ]
+}

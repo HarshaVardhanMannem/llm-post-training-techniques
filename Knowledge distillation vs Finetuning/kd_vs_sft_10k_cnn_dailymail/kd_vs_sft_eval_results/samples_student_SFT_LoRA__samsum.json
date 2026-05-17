@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_SFT_LoRA",
+    "model_path": "/content/merged_fer149xn",
+    "dataset": "samsum",
+    "in_domain": false,
+    "num_samples": 819,
+    "gen_time_s": 13.4,
+    "samples_per_sec": 61.256,
+    "rouge1_clean": 23.486,
+    "rouge2_clean": 5.098,
+    "rougeL_clean": 16.827,
+    "rougeLsum_clean": 18.974,
+    "rouge1_raw": 23.113,
+    "bertscore_f1": 13.733,
+    "bertscore_precision": -2.652,
+    "bertscore_recall": 31.389,
+    "avg_pred_words": 45.2,
+    "avg_ref_words": 20.0,
+    "preamble_rate": 0.386,
+    "finish_reasons": {
+      "stop": 303,
+      "length": 516
+    }
+  },
+  "samples": [
+    {
+      "reference": "Both Claire and Linda are making curry for dinner. ",
+      "raw": "Claire and Kim have been eating curry for years .\nThey're both fans of Indian cuisine .actionDate: July 30, 2017 at 6:45 PM PDT",
+      "clean": "Claire and Kim have been eating curry for years .\nThey're both fans of Indian cuisine .actionDate: July 30, 2017 at 6:45 PM PDT"
+    },
+    {
+      "reference": "Derek and Alyssa make fun of Fergie's performance of the national anthem.",
+      "raw": "Fergie's national anthem has been performed by Illuminati .\nThe group says they have done a \"great job\" of performing the song .\ufffd\nThey say their rendition is funnier than Fergie singing it herself .acists",
+      "clean": "Fergie's national anthem has been performed by Illuminati .\nThe group says they have done a \"great job\" of performing the song .\ufffd\nThey say their rendition is funnier than Fergie singing it herself .acists"
+    },
+    {
+      "reference": "Ann wants to buy Josh's laptop for $200. Josh doesn't want to negotiate the price. Ann will take it for $250 with accessories. ",
+      "raw": "Josh has an old laptop that he wants to sell .\nHe says his current offer is $250.\nAnn offers him $200 .\u770b\u67e5\u770b\nJosh agrees and pays her money .idUser\nThey both walk out of the store in a hurry .idUser\nThe conversation ends at this point .GuidId=3467891e-6d-4aeb-bc",
+      "clean": "Josh has an old laptop that he wants to sell .\nHe says his current offer is $250.\nAnn offers him $200 ."
+    },
+    {
+      "reference": "Matt and Tony want to go to the concert of Bon Jovi next July in Poland and are planning to buy the tickets that cost 250 PLN before they\u2019re sold out. Phil will think about it and let them know.",
+      "raw": "Matt: Have you heard that Bon Jovi are coming to Poland?\nPhil: No way! Where, when?\nMatt: Warsaw, next July .\nTony: Would you like to go?\nMatt: Yes .<=$>\nTony: They're huge, I guess tix can cost a bomb .\nMatt: I read the cheapest ones start at pln 250 .\nPhil: Not too bad",
+      "clean": "Matt: Have you heard that Bon Jovi are coming to Poland? Phil: No way! Where, when? Matt: Warsaw, next July . Tony: Would you like to go? Matt: Yes .<=$>\nTony: They're huge, I guess tix can cost a bomb . Matt: I read the cheapest ones start at pln 250 . Phil: Not too bad"
+    },
+    {
+      "reference": "Anastasia sent her new school photos to Darrell.",
+      "raw": "Darrell: \"What am I doing here?\"\nAnastasia: \"Ahahahaha\"ietetate .\nDarrell: \"Well, they took the photo in less than a minute actually\"\nAnastasia: \"Yeah\"\nDarrell: \"They would only really take group photos of us in middle and high school\"\nAnastasia: \"If someone wanted a portrait photo, I guess it",
+      "clean": "Darrell: \"What am I doing here?\"\nAnastasia: \"Ahahahaha\"ietetate .\nDarrell: \"Well, they took the photo in less than a minute actually\"\nAnastasia: \"Yeah\"\nDarrell: \"They would only really take group photos of us in middle and high school\"\nAnastasia: \"If someone wanted a portrait photo, I guess it"
+    },
+    {
+      "reference": "Jake, Florence, Margot and others are going on a research trip to Swazi. The name of the country was changed last year and it's now Eswatini.",
+      "raw": "Jake says he will go to Eswatini .\nHe asks if anyone else has applied.\nFlorence says she thinks it's funny .",
+      "clean": "Jake says he will go to Eswatini .\nHe asks if anyone else has applied.\nFlorence says she thinks it's funny ."
+    },
+    {
+      "reference": "Nathalie, Pauline, Jacob and Anthony are thinking about spending holidays in Greece together in August. Jacob and Nathalie need to be back by August 10 because of Nathalie's younger sister's wedding. ",
+      "raw": "Nathalie says they're planning their wedding in Greece .\nThey've been talking about it since last summer .\u6240\u6709\u60c5\u8282 here is Nathalie, Anthony, Jacob and Pauline.\nThe conversation starts off with Nathalie saying \"I guess Cob we ok w that\" which means \"We can do this\"\nThen Jacob asks if they should go back on August 10th because he doesn't want them",
+      "clean": "Nathalie says they're planning their wedding in Greece .\nThey've been talking about it since last summer ."
+    },
+    {
+      "reference": "Kim needs to get some fresh fish in Warsaw. Kim will ask at restaurants about their source. Kim is planning something special but won't share any details with Margot for now.",
+      "raw": "Kim wants to buy some fresh fish in Warsaw .\nShe has asked Margot for help and she agrees to help her out .actionDate: Saturday, September 30th, 2016 - 9pm GMT+1 (UTC+1) Location: Poland, Warsaw City Hall, Polna Street Telephone number: +48752345678 Email address",
+      "clean": "Kim wants to buy some fresh fish in Warsaw .\nShe has asked Margot for help and she agrees to help her out .actionDate: Saturday, September 30th, 2016 - 9pm GMT+1 (UTC+1) Location: Poland, Warsaw City Hall, Polna Street Telephone number: +48752345678 Email address"
+    },
+    {
+      "reference": "Malik and Samanta want to lose weight. They will try to keep a diet, keto or paleo, and go for runs together.",
+      "raw": "Samantha is trying out a new diet called Paleo.\nShe says she needs to lose weight .\nMalik wants her to try Keto .<=$>\nThey decide to meet up at the park in the morning .<=$>\nSamantha will tell Malik how much he weighs now .<=$>ietet",
+      "clean": "Samantha is trying out a new diet called Paleo.\nShe says she needs to lose weight .\nMalik wants her to try Keto .<=$>\nThey decide to meet up at the park in the morning .<=$>\nSamantha will tell Malik how much he weighs now .<=$>ietet"
+    },
+    {
+      "reference": "Suzy urges Linda to follow her on Instagram and she obliges.",
+      "raw": "Suzy and Linda have been friends for years .\nThey've exchanged photos since Suzy's wedding day .",
+      "clean": "Suzy and Linda have been friends for years .\nThey've exchanged photos since Suzy's wedding day ."
+    },
+    {
+      "reference": "Jones and Angelina will meet in town in the afternoon.",
+      "raw": "Angelina is calling Jones for a meeting .\nThey both say they're good at their jobs .actionDate: 09/30/2014 7:56 PM - Updated on September 30, 2014 8:15 AM - Updated on October 1, 2014 8:36 AM - Updated on November",
+      "clean": "Angelina is calling Jones for a meeting .\nThey both say they're good at their jobs .actionDate: 09/30/2014 7:56 PM - Updated on September 30, 2014 8:15 AM - Updated on October 1, 2014 8:36 AM - Updated on November"
+    },
+    {
+      "reference": "Erin has just baked something that Zachary finds delicious. Zachary wants her to bring him a piece of it as now he's busy cleaning. ",
+      "raw": "Zachary is baking something for Erin .\nHe's going to take her out and show her his work .actionDate: Friday, June 30, 2016 - 8:45pm EDT",
+      "clean": "Zachary is baking something for Erin .\nHe's going to take her out and show her his work .actionDate: Friday, June 30, 2016 - 8:45pm EDT"
+    },
+    {
+      "reference": "Piper will get paid tonight. Client liked Piper's work and wants to work with her on a long-term basis.",
+      "raw": "Client asks for payment .\nManager sends money but Piper doesn't know when she'll get it .actionDate: Wednesday, October 30 at 4pm EST .\nThe client says they're happy with their work and want to continue working together .actionDate: Friday, November 5 at 4pm EST .\nThey say they'd like to keep in touch after that time period .actionDate: Saturday,",
+      "clean": "Client asks for payment . Manager sends money but Piper doesn't know when she'll get it .actionDate: Wednesday, October 30 at 4pm EST . The client says they're happy with their work and want to continue working together .actionDate: Friday, November 5 at 4pm EST . They say they'd like to keep in touch after that time period .actionDate: Saturday,"
+    },
+    {
+      "reference": "Ulysses and Peter got an A, Julia got a B. The grades are to be checked on the course page.",
+      "raw": "Ulysses and Peter have been in school for two years .\nThey both received good grades this year .actionDate: They were on the same course page .\nJulia is not sure where they could find their grades .GuidId: Julia's question about how to get her grades has already been answered here .GuidId: She should go online at https://www.coursera.org/learn/intro",
+      "clean": "Ulysses and Peter have been in school for two years .\nThey both received good grades this year .actionDate: They were on the same course page .\nJulia is not sure where they could find their grades .GuidId: Julia's question about how to get her grades has already been answered here .GuidId: She should go online at https://www.coursera.org/learn/intro"
+    },
+    {
+      "reference": "There was a meet-and-greet with James Charles in Birmingham which gathered 8000  people.",
+      "raw": "Cora: What happened at the meet and greet with James Charles in Birmingham?\nEllie: They were supposed to be a meet and greet but instead they met and got into a huge crowd .\nCora: The BBC News said he was virtually unknown .:green eye> Green Eye: That's right!\nEllie: He didn't even know his name...\nCora: So, why do we",
+      "clean": "Cora: What happened at the meet and greet with James Charles in Birmingham? Ellie: They were supposed to be a meet and greet but instead they met and got into a huge crowd . Cora: The BBC News said he was virtually unknown .:green eye> Green Eye: That's right! Ellie: He didn't even know his name... Cora: So, why do we"
+    },
+    {
+      "reference": "Julia knew Tim was gay, while Adam and Nate didn't. ",
+      "raw": "Tim and Julia were talking about their relationship .\nThey said they'd met someone else .:green light on conversation green light off conversation red light on conversation yellow light off conversation blue light off conversation orange light on conversation purple light off conversation pink light on conversation blacklight off conversation white light on background color white background color green background color brown background color gray background color navy background color olive background color violet background color aqu",
+      "clean": "Tim and Julia were talking about their relationship .\nThey said they'd met someone else .:green light on conversation green light off conversation red light on conversation yellow light off conversation blue light off conversation orange light on conversation purple light off conversation pink light on conversation blacklight off conversation white light on background color white background color green background color brown background color gray background color navy background color olive background color violet background color aqu"
+    },
+    {
+      "reference": "Daniel will find out who rents a pop corn machines on Lily's request.",
+      "raw": "Lily needs a pop corn machine .\nShe asks Daniel if he knows anyone who rents one .actionDate: 09/30/2014 15:26:37 - Lily: I need to rent a pop corn machine.\nDaniel: :D\nLily: for our office Christmas party .\nDaniel: very Christmasy .\nLily: Do you know",
+      "clean": "Lily needs a pop corn machine . She asks Daniel if he knows anyone who rents one .actionDate: 09/30/2014 15:26:37 - Lily: I need to rent a pop corn machine. Daniel: :D\nLily: for our office Christmas party . Daniel: very Christmasy . Lily: Do you know"
+    },
+    {
+      "reference": "It took Phil a very long time to do the Christmas shopping but he probably managed to get everything. He will be home in an hour. Phil's apple pie will be in the oven when he arrives.",
+      "raw": "Phil: \"I don't like X-MAS\" - Nancy says .\nThey're talking about Phil's new cake recipe .actionDate: December 25, 2013 at 9:46 PM PST .\nAnswered on Facebook Messenger .Ease of conversation: Medium to high .Tags: Christmas, Thanksgiving, New Year, Halloween, Valentine's Day, etc.ietetic",
+      "clean": "Phil: \"I don't like X-MAS\" - Nancy says .\nThey're talking about Phil's new cake recipe .actionDate: December 25, 2013 at 9:46 PM PST .\nAnswered on Facebook Messenger .Ease of conversation: Medium to high .Tags: Christmas, Thanksgiving, New Year, Halloween, Valentine's Day, etc.ietetic"
+    },
+    {
+      "reference": "Timmy had a bad day at work. Timmy will bring some wine to Gemma's bbq at the weekend.",
+      "raw": "Timmy has been working on his new girlfriend for two days .\nHe hasn't told Gemma that he has a bf .\u6240\u6709\u60c5\u8282 from the conversation can be found here: https://www.youtube.com/watch?v=50468937eYI&t=1s .osg",
+      "clean": "Timmy has been working on his new girlfriend for two days .\nHe hasn't told Gemma that he has a bf ."
+    },
+    {
+      "reference": "Shaldona sends mobile invitations to her wedding, as she has no time to give them in person.",
+      "raw": "Shaldona says she's not going to send her husband a wedding invitation .\nShe has been waiting for months to get married .actionDate: February 28, 2017 - 5pm EST (GMT+1)\nThe couple met at a party last year and they were both very happy about it .actionDate: January 30, 2016 - 4",
+      "clean": "Shaldona says she's not going to send her husband a wedding invitation .\nShe has been waiting for months to get married .actionDate: February 28, 2017 - 5pm EST (GMT+1)\nThe couple met at a party last year and they were both very happy about it .actionDate: January 30, 2016 - 4"
+    }
+  ]
+}
