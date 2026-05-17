@@ -1,0 +1,5 @@
+model_label,cnn_dailymail,dialogsum,samsum,xsum
+teacher_7B,33.407,30.472,38.097,27.209
+student_baseline_0.5B,8.641,14.993,11.662,11.423
+student_SFT_LoRA,34.403,18.702,23.486,19.663
+student_KD_LoRA,31.147,20.925,23.971,21.474

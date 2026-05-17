@@ -1,0 +1,17 @@
+model_label,model_path,dataset,in_domain,num_samples,gen_time_s,samples_per_sec,rouge1_clean,rouge2_clean,rougeL_clean,rougeLsum_clean,rouge1_raw,bertscore_f1,bertscore_precision,bertscore_recall,avg_pred_words,avg_ref_words,preamble_rate
+teacher_7B,Qwen/Qwen2.5-7B-Instruct,cnn_dailymail,True,1000,71.8,13.935,33.407,10.523,21.609,27.403,33.422,22.949,28.615,17.284,43.7,55.2,0.013
+teacher_7B,Qwen/Qwen2.5-7B-Instruct,xsum,False,1000,41.1,24.311,27.209,7.178,20.071,20.073,27.221,30.062,26.448,33.644,27.5,21.0,0.01
+teacher_7B,Qwen/Qwen2.5-7B-Instruct,samsum,False,819,15.4,53.197,38.097,12.753,29.316,29.325,38.027,39.532,35.523,43.584,24.2,20.0,0.105
+teacher_7B,Qwen/Qwen2.5-7B-Instruct,dialogsum,False,1000,19.3,51.871,30.472,8.835,23.38,23.386,30.311,24.508,25.196,23.762,29.8,18.7,0.256
+student_baseline_0.5B,Qwen/Qwen2.5-0.5B,cnn_dailymail,True,1000,20.2,49.564,8.641,1.859,5.757,7.411,8.718,-16.921,-13.482,-20.484,39.6,55.2,0.936
+student_baseline_0.5B,Qwen/Qwen2.5-0.5B,xsum,False,1000,15.9,62.697,11.423,1.072,8.196,8.842,11.457,-1.826,-5.086,1.521,31.3,21.0,0.576
+student_baseline_0.5B,Qwen/Qwen2.5-0.5B,samsum,False,819,11.3,72.558,11.662,1.775,9.069,9.477,11.641,2.593,-7.159,12.688,32.0,20.0,0.634
+student_baseline_0.5B,Qwen/Qwen2.5-0.5B,dialogsum,False,1000,14.0,71.625,14.993,3.057,11.62,12.284,14.989,4.974,1.44,8.54,30.9,18.7,0.602
+student_KD_LoRA,/content/merged_ttyd4_3k,cnn_dailymail,True,1000,23.8,42.074,31.147,8.632,19.563,25.219,31.115,18.871,22.774,14.922,53.6,55.2,0.046
+student_KD_LoRA,/content/merged_ttyd4_3k,xsum,False,1000,18.5,54.126,21.474,3.928,14.283,14.276,21.459,21.337,13.521,29.278,47.1,21.0,0.026
+student_KD_LoRA,/content/merged_ttyd4_3k,samsum,False,819,13.1,62.439,23.971,4.552,16.703,16.845,23.898,23.961,15.044,33.101,45.7,20.0,0.284
+student_KD_LoRA,/content/merged_ttyd4_3k,dialogsum,False,1000,16.6,60.398,20.925,4.494,14.903,14.984,20.62,15.529,14.186,16.792,46.1,18.7,0.401
+student_SFT_LoRA,/content/merged_fer149xn,cnn_dailymail,True,1000,34.7,28.847,34.403,12.092,22.042,30.68,33.338,21.323,17.489,25.246,71.1,55.2,0.868
+student_SFT_LoRA,/content/merged_fer149xn,xsum,False,1000,18.6,53.846,19.663,2.867,12.96,16.261,19.575,9.778,-1.308,21.223,44.2,21.0,0.276
+student_SFT_LoRA,/content/merged_fer149xn,samsum,False,819,13.4,61.256,23.486,5.098,16.827,18.974,23.113,13.733,-2.652,31.389,45.2,20.0,0.386
+student_SFT_LoRA,/content/merged_fer149xn,dialogsum,False,1000,17.5,57.149,18.702,3.822,13.567,15.513,18.18,2.936,-7.458,13.762,47.2,18.7,0.292

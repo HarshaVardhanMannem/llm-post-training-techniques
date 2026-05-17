@@ -1,0 +1,7 @@
+,avg_pred_words,avg_pred_words,avg_pred_words,avg_pred_words,bertscore_f1,bertscore_f1,bertscore_f1,bertscore_f1,rouge1_clean,rouge1_clean,rouge1_clean,rouge1_clean,rouge2_clean,rouge2_clean,rouge2_clean,rouge2_clean,rougeL_clean,rougeL_clean,rougeL_clean,rougeL_clean
+dataset,cnn_dailymail,dialogsum,samsum,xsum,cnn_dailymail,dialogsum,samsum,xsum,cnn_dailymail,dialogsum,samsum,xsum,cnn_dailymail,dialogsum,samsum,xsum,cnn_dailymail,dialogsum,samsum,xsum
+model_label,,,,,,,,,,,,,,,,,,,,
+student_KD_LoRA,53.6,46.1,45.7,47.1,18.871,15.529,23.961,21.337,31.147,20.925,23.971,21.474,8.632,4.494,4.552,3.928,19.563,14.903,16.703,14.283
+student_SFT_LoRA,71.1,47.2,45.2,44.2,21.323,2.936,13.733,9.778,34.403,18.702,23.486,19.663,12.092,3.822,5.098,2.867,22.042,13.567,16.827,12.96
+student_baseline_0.5B,39.6,30.9,32.0,31.3,-16.921,4.974,2.593,-1.826,8.641,14.993,11.662,11.423,1.859,3.057,1.775,1.072,5.757,11.62,9.069,8.196
+teacher_7B,43.7,29.8,24.2,27.5,22.949,24.508,39.532,30.062,33.407,30.472,38.097,27.209,10.523,8.835,12.753,7.178,21.609,23.38,29.316,20.071
