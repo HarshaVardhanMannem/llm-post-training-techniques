@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_KD_LoRA",
+    "model_path": "/content/merged_f44ei2fz",
+    "dataset": "xsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 18.9,
+    "samples_per_sec": 52.973,
+    "rouge1_clean": 21.461,
+    "rouge2_clean": 3.921,
+    "rougeL_clean": 14.383,
+    "rougeLsum_clean": 14.39,
+    "rouge1_raw": 21.489,
+    "bertscore_f1": 21.368,
+    "bertscore_precision": 13.678,
+    "bertscore_recall": 29.162,
+    "avg_pred_words": 45.9,
+    "avg_ref_words": 21.0,
+    "preamble_rate": 0.011,
+    "finish_reasons": {
+      "stop": 698,
+      "length": 302
+    }
+  },
+  "samples": [
+    {
+      "reference": "A woman who was seriously hurt in a fatal hen party motorway crash is now helping other major trauma victims rebuild their lives.",
+      "raw": "Sarah Johnson, an 18-year-old woman, survived severe injuries after being struck by a lorry during a minibus ride in Liverpool, leading her to seek support through charity Day One. She expressed gratitude for the assistance she received and emphasized the importance of recognizing life's blessings despite past traumas.",
+      "clean": "Sarah Johnson, an 18-year-old woman, survived severe injuries after being struck by a lorry during a minibus ride in Liverpool, leading her to seek support through charity Day One. She expressed gratitude for the assistance she received and emphasized the importance of recognizing life's blessings despite past traumas."
+    },
+    {
+      "reference": "A Tudor manor house has reopened following a \u00a32.2m makeover.",
+      "raw": "Bramall Hall, a historic manor in Stockport, is set to open on Saturday with an estimated 1,400 ticket sales due to renovations including stained glass windows and restoration of the dining room and butler's pantry. The property, which dates back to the 15th century, now",
+      "clean": "Bramall Hall, a historic manor in Stockport, is set to open on Saturday with an estimated 1,400 ticket sales due to renovations including stained glass windows and restoration of the dining room and butler's pantry. The property, which dates back to the 15th century, now"
+    },
+    {
+      "reference": "Walt Disney World has unveiled a lighthouse memorial for a young boy who was killed by an alligator while on holiday at the Florida theme park.",
+      "raw": "A two-year-old boy named Lane Thomas Graves died after being attacked by an alligator while playing in the sand at a lighthouse near the Grand Floridian resort, prompting criticism from Disney over their lack of safety warnings. The incident highlights concerns about public education regarding wildlife hazards posed by such attractions.",
+      "clean": "A two-year-old boy named Lane Thomas Graves died after being attacked by an alligator while playing in the sand at a lighthouse near the Grand Floridian resort, prompting criticism from Disney over their lack of safety warnings. The incident highlights concerns about public education regarding wildlife hazards posed by such attractions."
+    },
+    {
+      "reference": "The agriculture minister is to return to China next month as attempts to access markets there continue.",
+      "raw": "Michelle O'Neill attended a Department of Agriculture breakfast in Belfast where she discussed plans to improve Northern Ireland's agricultural exports, including potential access to US markets for beef and chicken, while also addressing labeling issues between Northern Ireland and the Republic of Ireland.",
+      "clean": "Michelle O'Neill attended a Department of Agriculture breakfast in Belfast where she discussed plans to improve Northern Ireland's agricultural exports, including potential access to US markets for beef and chicken, while also addressing labeling issues between Northern Ireland and the Republic of Ireland."
+    },
+    {
+      "reference": "Blackpool have signed Bournemouth goalkeeper Ryan Allsop and midfielder Callum Cooke from Middlesbrough on season-long loans.",
+      "raw": "League One club Blackpool have signed nine new players for their squad this summer, including Allsop and Cooke from Coventry City and Wycombe, respectively. The signings include several young talent like Allsop who recently joined from Newcastle United, and Cooke scoring four goals during his loan spell at Crewe.FilterWhere",
+      "clean": "League One club Blackpool have signed nine new players for their squad this summer, including Allsop and Cooke from Coventry City and Wycombe, respectively. The signings include several young talent like Allsop who recently joined from Newcastle United, and Cooke scoring four goals during his loan spell at Crewe.FilterWhere"
+    },
+    {
+      "reference": "Scotland must beat Slovenia if they are to resurrect their chances of reaching the World Cup finals, Gordon Strachan has acknowledged.",
+      "raw": "Scottish football manager Roy Keane expressed confidence in his team despite facing a challenging schedule, stating there is no doubt they can secure a place in the World Cup if they perform well. He emphasized the importance of winning the upcoming match to maintain their position in Group F and boost morale before the crucial warm-up friendly against Canada",
+      "clean": "Scottish football manager Roy Keane expressed confidence in his team despite facing a challenging schedule, stating there is no doubt they can secure a place in the World Cup if they perform well. He emphasized the importance of winning the upcoming match to maintain their position in Group F and boost morale before the crucial warm-up friendly against Canada"
+    },
+    {
+      "reference": "A man jailed for six years for coercing a woman into having sex with a stranger and sending \"revenge porn\" to her family has had the convictions quashed.",
+      "raw": "A Scottish judge has ruled that prosecutors conceded there was a miscarriage of justice regarding the coercion charge against Clive Weatherhogg, while also agreeing that a jury was misled about related charges. The High Court remits the case back to the original court for further proceedings.",
+      "clean": "A Scottish judge has ruled that prosecutors conceded there was a miscarriage of justice regarding the coercion charge against Clive Weatherhogg, while also agreeing that a jury was misled about related charges. The High Court remits the case back to the original court for further proceedings."
+    },
+    {
+      "reference": "A Dublin man accused of stabbing his friend in a County Antrim hotel has been granted bail.",
+      "raw": "John Morley, 29, has been arrested and charged with attempting to kill Derek White by stabbing him in the chest and leg during a weekend attack at the Chimney Corner Hotel in Mallusk, County Antrim. He faces multiple charges including disorderly behavior and possession of an offensive weapon.",
+      "clean": "John Morley, 29, has been arrested and charged with attempting to kill Derek White by stabbing him in the chest and leg during a weekend attack at the Chimney Corner Hotel in Mallusk, County Antrim. He faces multiple charges including disorderly behavior and possession of an offensive weapon."
+    },
+    {
+      "reference": "Catalans Dragons will be without hooker Paul Aiton for up to six weeks after he tore a pectoral muscle on his debut, in a defeat by Wigan Warriors on Friday.",
+      "raw": "Papua New Guinea striker Aiton has been ruled out of the team's upcoming match against Newcastle United due to an elbow injury sustained during a game against Wakefield. He previously suffered an arm injury while playing for Leeds.",
+      "clean": "Papua New Guinea striker Aiton has been ruled out of the team's upcoming match against Newcastle United due to an elbow injury sustained during a game against Wakefield. He previously suffered an arm injury while playing for Leeds."
+    },
+    {
+      "reference": "Planners in Rugby have revealed they have been in talks with Coventry City Football Club about building a stadium in the borough.",
+      "raw": "Rugby Borough Council has held meetings with the club's owners, Sisu, to discuss a planning application for a new stadium at Coventry's Ricoh Arena, which will require further approval before being finalized by September. The club hopes to secure funding through increased revenues from other sources like ticket sales and merchandise.",
+      "clean": "Rugby Borough Council has held meetings with the club's owners, Sisu, to discuss a planning application for a new stadium at Coventry's Ricoh Arena, which will require further approval before being finalized by September. The club hopes to secure funding through increased revenues from other sources like ticket sales and merchandise."
+    },
+    {
+      "reference": "A man tried to buy ricin from the \"dark web\" after the idea was \"implanted in his brain\" from watching the Breaking Bad television series, a court heard.",
+      "raw": "Mohammed Ali, 31, faces charges of attempting to possess a chemical weapon after allegedly ordering 500mg of ricin from an unknown source through an online account; he also pleaded guilty to possessing a harmless powder and was arrested while sharing a toy car.",
+      "clean": "Mohammed Ali, 31, faces charges of attempting to possess a chemical weapon after allegedly ordering 500mg of ricin from an unknown source through an online account; he also pleaded guilty to possessing a harmless powder and was arrested while sharing a toy car."
+    },
+    {
+      "reference": "A tumble dryer could \"not be ruled out\" as the cause of a flat fire in which two men died, an inquest has heard.",
+      "raw": "Abergele inquest heard that a Hotpoint dryer at a funeral director's office caught fire in October 2014, with evidence suggesting it may have started from the starter switch rather than the timer or motor. A fire engineer testified that while the dryer was severely damaged, other parts remained intact, though",
+      "clean": "Abergele inquest heard that a Hotpoint dryer at a funeral director's office caught fire in October 2014, with evidence suggesting it may have started from the starter switch rather than the timer or motor. A fire engineer testified that while the dryer was severely damaged, other parts remained intact, though"
+    },
+    {
+      "reference": "Bots appear to be spamming a US regulator's website over a proposed reversal of net neutrality rules, researchers have said.",
+      "raw": "A series of automated comments to the Federal Communications Commission (FCC) were found to resemble responses to DDoS attacks, raising concerns among experts who warn of potential misuse of data for political gain. The FCC has not yet commented on the findings.",
+      "clean": "A series of automated comments to the Federal Communications Commission (FCC) were found to resemble responses to DDoS attacks, raising concerns among experts who warn of potential misuse of data for political gain. The FCC has not yet commented on the findings."
+    },
+    {
+      "reference": "School Report gives students a real audience, by linking to their work from the BBC website.",
+      "raw": "To ensure accurate reporting of student achievements, schools must create dedicated web pages linking to their School Report submissions, following specific guidelines and ensuring compliance with child protection laws. Schools can leverage various platforms like YouTube and social media to share their progress, while maintaining transparency and security measures.",
+      "clean": "To ensure accurate reporting of student achievements, schools must create dedicated web pages linking to their School Report submissions, following specific guidelines and ensuring compliance with child protection laws. Schools can leverage various platforms like YouTube and social media to share their progress, while maintaining transparency and security measures."
+    },
+    {
+      "reference": "Michele Morgan, the French screen star and glamour icon who won the first best actress prize at the Cannes film festival, has died at the age of 96.",
+      "raw": "French actress Michele Morgan won an Academy Award for Best Actress for her role in \"Quai des Brumes\" in 1946, becoming known for her elegant and graceful performances. She went on to receive numerous awards and recognition throughout her career, including Lifetime Achievement at the Venice Film Festival and the Cesar Awards",
+      "clean": "French actress Michele Morgan won an Academy Award for Best Actress for her role in \"Quai des Brumes\" in 1946, becoming known for her elegant and graceful performances. She went on to receive numerous awards and recognition throughout her career, including Lifetime Achievement at the Venice Film Festival and the Cesar Awards"
+    },
+    {
+      "reference": "For years Match of the Day has satisfied impatient football fans by condensing a 90 minute match into a handy chunk of highlights.",
+      "raw": "Scientists in Spain are developing software called KeyFrames to automate the process of summarizing football games into key moments, aiming to improve readability without completely replacing human editors. The system analyzes patterns like player movements and crowd activity to highlight crucial events, but still needs further refinement.",
+      "clean": "Scientists in Spain are developing software called KeyFrames to automate the process of summarizing football games into key moments, aiming to improve readability without completely replacing human editors. The system analyzes patterns like player movements and crowd activity to highlight crucial events, but still needs further refinement."
+    },
+    {
+      "reference": "St Johnstone have secured striker Steven MacLean on a contract extension.",
+      "raw": "Former Scotland Under-21 player MacLean is set to sign through May 2017, while St Johnstone have loaned two young players for the remainder of the season. The club's squad includes several key players like Neil Martyniuk and Greg Kerr, who will join other teams in League One",
+      "clean": "Former Scotland Under-21 player MacLean is set to sign through May 2017, while St Johnstone have loaned two young players for the remainder of the season. The club's squad includes several key players like Neil Martyniuk and Greg Kerr, who will join other teams in League One"
+    },
+    {
+      "reference": "Bournemouth have signed Norwich midfielder Andrew Surman for an undisclosed fee on a three-year deal.",
+      "raw": "Rafael Surman, an English footballer who has been playing for Norwich City since 2010, returned to the team after spending time on loan at Bournemouth and other clubs. He recently signed with Norwich as part of their transfer window.",
+      "clean": "Rafael Surman, an English footballer who has been playing for Norwich City since 2010, returned to the team after spending time on loan at Bournemouth and other clubs. He recently signed with Norwich as part of their transfer window."
+    },
+    {
+      "reference": "Another election is probably the last thing the public want to hear about after what we've just gone through but that's exactly what the parties at the assembly are gearing up for next year.",
+      "raw": "Conservative Party leaders are optimistic about challenging further in upcoming elections, citing increased voter confidence and new data on healthcare issues. However, challenges remain including managing the NHS and addressing internal party divisions regarding local government reforms.",
+      "clean": "Conservative Party leaders are optimistic about challenging further in upcoming elections, citing increased voter confidence and new data on healthcare issues. However, challenges remain including managing the NHS and addressing internal party divisions regarding local government reforms."
+    },
+    {
+      "reference": "Chancellor George Osborne has abandoned his target to restore government finances to a surplus by 2020.",
+      "raw": "Chancellor George Osborne faces criticism for failing to meet expectations regarding a budget surplus by the end of the decade, despite recent speeches suggesting he aims to achieve such a target. This comes amid concerns about potential economic shocks due to the EU referendum result and Labour's opposition to austerity measures.",
+      "clean": "Chancellor George Osborne faces criticism for failing to meet expectations regarding a budget surplus by the end of the decade, despite recent speeches suggesting he aims to achieve such a target. This comes amid concerns about potential economic shocks due to the EU referendum result and Labour's opposition to austerity measures."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "result": {
+    "model_label": "student_KD_LoRA",
+    "model_path": "/content/merged_f44ei2fz",
+    "dataset": "dialogsum",
+    "in_domain": false,
+    "num_samples": 1000,
+    "gen_time_s": 15.0,
+    "samples_per_sec": 66.534,
+    "rouge1_clean": 21.496,
+    "rouge2_clean": 4.181,
+    "rougeL_clean": 15.303,
+    "rougeLsum_clean": 15.307,
+    "rouge1_raw": 21.372,
+    "bertscore_f1": 16.783,
+    "bertscore_precision": 16.66,
+    "bertscore_recall": 16.769,
+    "avg_pred_words": 41.6,
+    "avg_ref_words": 18.7,
+    "preamble_rate": 0.215,
+    "finish_reasons": {
+      "stop": 1000
+    }
+  },
+  "samples": [
+    {
+      "reference": "#Person1# and #Person2# talk about pilgrims around the world, including Muslims' pilgrimage to mecca and Christians' pilgrimage to Canterbury or Vatican. #Person2# thinks faith heals people instead of magical places.",
+      "raw": "The conversation discusses the importance of Islamic pilgrimage to Mecca for Muslims, including its significance as a religious ritual and historical event, while also noting the challenges faced by pilgrims due to safety concerns and limited resources. The author reflects on other places like Lourdes where believers seek healing through prayer and meditation.",
+      "clean": "the importance of Islamic pilgrimage to Mecca for Muslims, including its significance as a religious ritual and historical event, while also noting the challenges faced by pilgrims due to safety concerns and limited resources. The author reflects on other places like Lourdes where believers seek healing through prayer and meditation."
+    },
+    {
+      "reference": "#Person1# is sending a package with the help of #Person2#.",
+      "raw": "A man is sending an expensive package via first-class mail in exchange for insurance coverage and postage; he requests specific items from the recipient, including stamps and money orders. The sender asks if they can pay extra for these extras.",
+      "clean": "A man is sending an expensive package via first-class mail in exchange for insurance coverage and postage; he requests specific items from the recipient, including stamps and money orders. The sender asks if they can pay extra for these extras."
+    },
+    {
+      "reference": "#Person1# invites Lily to picnic this weekend. Lily accepts.",
+      "raw": "Lily is planning a picnic on Saturday at the river, bringing just comfortable clothing and footwear; she will enjoy her outing without any special gear.",
+      "clean": "Lily is planning a picnic on Saturday at the river, bringing just comfortable clothing and footwear; she will enjoy her outing without any special gear."
+    },
+    {
+      "reference": "#Person1# makes drinks for #Person2# at a bar.",
+      "raw": "A man inquired about ordering an aperitif at a restaurant, where he suggested a comparison (stirred or shaken) and recommended a singer for his non-alcoholic choice. The waiter then served him a mix of both alcoholic and non-alcoholic cocktails.",
+      "clean": "A man inquired about ordering an aperitif at a restaurant, where he suggested a comparison (stirred or shaken) and recommended a singer for his non-alcoholic choice. The waiter then served him a mix of both alcoholic and non-alcoholic cocktails."
+    },
+    {
+      "reference": "Lin Fang and Lucy are talking about their favourite subjects.",
+      "raw": "The conversation discusses Lin Fang's preference for English as her favorite subject, while also noting that Nancy dislikes mathematics but enjoys physics; they discuss their preferences in other subjects like PE and Chinese.",
+      "clean": "Lin Fang's preference for English as her favorite subject, while also noting that Nancy dislikes mathematics but enjoys physics; they discuss their preferences in other subjects like PE and Chinese."
+    },
+    {
+      "reference": "#Person2# tells #Person1# that he falls in love with his neighbour and #Person1# thinks he has some competition and wishes him good luck.",
+      "raw": "A woman meets an American girl who seems interested in her after meeting them at a restaurant; they discuss potential future plans including a dinner date and invite her to their next visit. The conversation highlights the tension between excitement over the new relationship and concerns about breaking up.",
+      "clean": "A woman meets an American girl who seems interested in her after meeting them at a restaurant; they discuss potential future plans including a dinner date and invite her to their next visit. The conversation highlights the tension between excitement over the new relationship and concerns about breaking up."
+    },
+    {
+      "reference": "Mr. Smith asks #Person1# to help find his train ticket, but #Person1# finds out that Mr. Smith didn't have any proof of purchase. Thus Mr. Smith brings another ticket in the end.",
+      "raw": "A man named Person2 asks for assistance after losing his train ticket and leaving Shanghai without finding one. He requests a soft sleeper instead, explaining he needs more than just money; Person1 offers to buy him a soft sleeper at an additional charge.",
+      "clean": "A man named Person2 asks for assistance after losing his train ticket and leaving Shanghai without finding one. He requests a soft sleeper instead, explaining he needs more than just money; Person1 offers to buy him a soft sleeper at an additional charge."
+    },
+    {
+      "reference": "#Person1# congratulates #Person2# on #Person2#'s new venture and expresses #Person1#'s willingness to help.",
+      "raw": "The conversation is between two people who have been working together for several years and now want to establish their own law practice after years of collaboration. The speaker expresses interest in setting up his own office and wishes them well, while the other person acknowledges this desire but remains cautious about potential challenges.",
+      "clean": "The conversation is between two people who have been working together for several years and now want to establish their own law practice after years of collaboration. The speaker expresses interest in setting up his own office and wishes them well, while the other person acknowledges this desire but remains cautious about potential challenges."
+    },
+    {
+      "reference": "#Person1# gets a crank call and is angry about it.",
+      "raw": "A man named Person2 has called \"your\" ten times to ask for his phone number, threatening arrest if he calls it again; Person1 responds by telling him that they have been contacted before and will not give up their contact information.",
+      "clean": "A man named Person2 has called \"your\" ten times to ask for his phone number, threatening arrest if he calls it again; Person1 responds by telling him that they have been contacted before and will not give up their contact information."
+    },
+    {
+      "reference": "#Person1# introduces the weekend driving courses to #Person2#. #Person2# feels satisfied with its settings.",
+      "raw": "A man is seeking information on driving courses from Person1, who has short-term summer classes and long-term weekend ones; they discuss coach qualifications, training duration, and sharing transportation costs among participants.",
+      "clean": "A man is seeking information on driving courses from Person1, who has short-term summer classes and long-term weekend ones; they discuss coach qualifications, training duration, and sharing transportation costs among participants."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the most fundamental concepts underlying the accounting process.",
+      "raw": "The conversation discusses basic accounting principles including account entities, going concerns, units, periods, and objectivity. It highlights that while some companies operate under these terms, others may use different terminology to manage their financial activities effectively.",
+      "clean": "basic accounting principles including account entities, going concerns, units, periods, and objectivity. It highlights that while some companies operate under these terms, others may use different terminology to manage their financial activities effectively."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the low temperature at night, although spring has come.",
+      "raw": "The conversation discusses how winter has arrived despite being cold overnight, with one person noting their apartment feels frozen even when turning on the air conditioner for warmth. The other expresses concern about staying indoors due to the weather conditions.",
+      "clean": "how winter has arrived despite being cold overnight, with one person noting their apartment feels frozen even when turning on the air conditioner for warmth. The other expresses concern about staying indoors due to the weather conditions."
+    },
+    {
+      "reference": "Mark asks Maggie for her notes because Mark's notes aren't good. They decide to be study partners and study together.",
+      "raw": "A woman borrowed her notes from another student who often skips classes due to fatigue, finding it helpful as she studies while awake during lectures. They agreed to meet in the library for study sessions instead of using the cafeteria restroom.",
+      "clean": "A woman borrowed her notes from another student who often skips classes due to fatigue, finding it helpful as she studies while awake during lectures. They agreed to meet in the library for study sessions instead of using the cafeteria restroom."
+    },
+    {
+      "reference": "Joe doesn't think highly of Tom's new assistant while Tom does.",
+      "raw": "The conversation between two people reveals their differing opinions about an assistant they hired for help in managing office tasks; one finds her unhelpful and opinionated, while the other believes she is genuinely helpful despite being unfamiliar with them.",
+      "clean": "The conversation between two people reveals their differing opinions about an assistant they hired for help in managing office tasks; one finds her unhelpful and opinionated, while the other believes she is genuinely helpful despite being unfamiliar with them."
+    },
+    {
+      "reference": "#Person1# and #Person2# are talking about the popular sports in their countries, including football, basketball, tennis, swimming, golf, extreme sports and rugby.",
+      "raw": "The conversation discusses various sports preferences in different countries, including football (more boys prefer it), basketball (fewer players play compared to previous years), tennis (less interest among younger participants) and other activities like golf, extreme sports, and rugby. The speaker also mentions that while there's a growing trend towards more active hobbies, such as golfing and extreme sports remain relatively rare.",
+      "clean": "various sports preferences in different countries, including football (more boys prefer it), basketball (fewer players play compared to previous years), tennis (less interest among younger participants) and other activities like golf, extreme sports, and rugby. The speaker also mentions that while there's a growing trend towards more active hobbies, such as golfing and extreme sports remain relatively rare."
+    },
+    {
+      "reference": "#Person1# thinks #Person2# has chicken pox and warns #Person2# about the possible hazards but #Person2# thinks it will be fine.",
+      "raw": "A man is visibly ill after being scratched by another person who claims he has chickenpox; they both express concern but the man insists his condition is not serious and will seek medical help later.",
+      "clean": "A man is visibly ill after being scratched by another person who claims he has chickenpox; they both express concern but the man insists his condition is not serious and will seek medical help later."
+    },
+    {
+      "reference": "#Person1# gives #Person2# a physical check and advises #Person2# to stay in hospital for a shoulder X-ray the next day.",
+      "raw": "A patient is experiencing severe pain from an injury to her left shoulder, prompting a doctor to recommend she stays overnight at the hospital. The patient initially denies feeling any discomfort but later admits to some slight pain in her upper back and lower leg muscles.",
+      "clean": "A patient is experiencing severe pain from an injury to her left shoulder, prompting a doctor to recommend she stays overnight at the hospital. The patient initially denies feeling any discomfort but later admits to some slight pain in her upper back and lower leg muscles."
+    },
+    {
+      "reference": "People in #Person2#'s country like football, basketball, tennis, and swimming. People in #Person1#'s country like golf. A few people like extreme sports. Both people like rugby.",
+      "raw": "The conversation discusses various sports preferences in different countries, including football (more boys prefer it), basketball (fewer players play compared to previous years), tennis (less interest among younger participants) and other activities like golf, extreme sports, and rugby. The speaker also mentions that while there's a growing trend towards more active hobbies, such as golfing and extreme sports remain relatively rare.",
+      "clean": "various sports preferences in different countries, including football (more boys prefer it), basketball (fewer players play compared to previous years), tennis (less interest among younger participants) and other activities like golf, extreme sports, and rugby. The speaker also mentions that while there's a growing trend towards more active hobbies, such as golfing and extreme sports remain relatively rare."
+    },
+    {
+      "reference": "Sue doesn't eat cakes and sandwiches at her birthday party to avoid being allergic. Bill is willing to order her some hot soup to make her feel better. They decide to go to the restaurant later.",
+      "raw": "A man named Bill discusses his health issues and dietary restrictions during a birthday celebration where he plans to visit a nearby restaurant for soups instead of traditional dishes like burgers. He expresses interest in trying new things but acknowledges his current diet due to allergies.",
+      "clean": "A man named Bill discusses his health issues and dietary restrictions during a birthday celebration where he plans to visit a nearby restaurant for soups instead of traditional dishes like burgers. He expresses interest in trying new things but acknowledges his current diet due to allergies."
+    },
+    {
+      "reference": "#Person2# tells #Person1# #Person2#'s writing experience.",
+      "raw": "The author expresses interest in joining an advertising agency where they can write their own articles and novels, noting his extensive newspaper writing experience. He asks about the company's hiring practices and how he could apply if available.",
+      "clean": "The author expresses interest in joining an advertising agency where they can write their own articles and novels, noting his extensive newspaper writing experience. He asks about the company's hiring practices and how he could apply if available."
+    }
+  ]
+}

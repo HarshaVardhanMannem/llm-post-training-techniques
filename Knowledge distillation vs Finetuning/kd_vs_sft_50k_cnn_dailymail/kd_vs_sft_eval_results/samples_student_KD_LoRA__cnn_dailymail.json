@@ -1,0 +1,128 @@
+{
+  "result": {
+    "model_label": "student_KD_LoRA",
+    "model_path": "/content/merged_f44ei2fz",
+    "dataset": "cnn_dailymail",
+    "in_domain": true,
+    "num_samples": 1000,
+    "gen_time_s": 23.4,
+    "samples_per_sec": 42.759,
+    "rouge1_clean": 31.359,
+    "rouge2_clean": 8.992,
+    "rougeL_clean": 19.777,
+    "rougeLsum_clean": 25.496,
+    "rouge1_raw": 31.351,
+    "bertscore_f1": 19.824,
+    "bertscore_precision": 24.241,
+    "bertscore_recall": 15.336,
+    "avg_pred_words": 50.1,
+    "avg_ref_words": 55.2,
+    "preamble_rate": 0.037,
+    "finish_reasons": {
+      "stop": 993,
+      "length": 7
+    }
+  },
+  "samples": [
+    {
+      "reference": "CNN's Dr. Sanjay Gupta says we should legalize medical marijuana now .\nHe says he knows how easy it is do nothing \"because I did nothing for too long\"",
+      "raw": "The author reflects on the growing medical marijuana movement, highlighting key milestones and challenges, while emphasizing the importance of understanding the benefits and risks associated with cannabis. He advocates for legalization nationwide and emphasizes the need for objective analysis rather than partisan views.",
+      "clean": "The author reflects on the growing medical marijuana movement, highlighting key milestones and challenges, while emphasizing the importance of understanding the benefits and risks associated with cannabis. He advocates for legalization nationwide and emphasizes the need for objective analysis rather than partisan views."
+    },
+    {
+      "reference": "Child has amassed thousands of Twitter followers with 'gang life' photos .\nIn one video he points gun at camera as adults look on unfazed .\nHis tweets have prompted backlash with calls for intervention .",
+      "raw": "A 6-year-old boy from Memphis, Tennessee, gained over 3,000 Twitter followers by posing with guns, money, and drug paraphernalia, prompting criticism from adults and sparking calls for better guidance on using social media responsibly. His actions highlight the potential negative impact of social media on youth behavior.",
+      "clean": "A 6-year-old boy from Memphis, Tennessee, gained over 3,000 Twitter followers by posing with guns, money, and drug paraphernalia, prompting criticism from adults and sparking calls for better guidance on using social media responsibly. His actions highlight the potential negative impact of social media on youth behavior."
+    },
+    {
+      "reference": "The presidential hopeful held a town hall meeting in Kenilworth on Tuesday .\nDuring the meeting, high school English teacher Kathy Mooney got up to ask the governor a question about pensions .\nShe asked why he didn't seek a higher legal settlement in a case with ExxonMobil that would have contributed to the state's pension system .\nChristie responded by repeatedly asking how much Mooney knew about the deal instead of answering her question .",
+      "raw": "New Jersey Governor Chris Christie faced criticism from a teacher's union during a town hall meeting where he was accused of bullying and disrespect towards teachers, while also defending himself against accusations of unfair treatment. His response included questioning the union's stance on pension reform, though he maintained his position that the state should provide adequate benefits.",
+      "clean": "New Jersey Governor Chris Christie faced criticism from a teacher's union during a town hall meeting where he was accused of bullying and disrespect towards teachers, while also defending himself against accusations of unfair treatment. His response included questioning the union's stance on pension reform, though he maintained his position that the state should provide adequate benefits."
+    },
+    {
+      "reference": "Cassey Ho boasts over two million subscribers on her YouTube channel Blogilates .\nThe 28-year-old receives hundreds of comments a day telling her that she needs to lose weight .",
+      "raw": "Cassey Ho, a YouTube fitness influencer, challenges harmful comments on her fitness videos, revealing that such criticism has led to feelings of insecurity and shame despite her efforts to change her appearance. Her new video \"The Perfect Body\" showcases her transformations and aims to counteract negative attitudes towards body image.",
+      "clean": "Cassey Ho, a YouTube fitness influencer, challenges harmful comments on her fitness videos, revealing that such criticism has led to feelings of insecurity and shame despite her efforts to change her appearance. Her new video \"The Perfect Body\" showcases her transformations and aims to counteract negative attitudes towards body image."
+    },
+    {
+      "reference": "Aaron Cook was overlooked by Team GB for the London Olympics .\nTaekwondo star has received citizenship from Moldova and plans to fight for them at the Rio 2016 Games .\nThe British Olympic Association could yet block the move .",
+      "raw": "Aaron Cook, a British taekwondo fighter, has secured citizenship in Moldova and plans to compete for the national team at the 2016 Rio Olympics despite facing criticism from GB Taekwondo for his exclusion from the UK's Olympic squad due to financial reasons.",
+      "clean": "Aaron Cook, a British taekwondo fighter, has secured citizenship in Moldova and plans to compete for the national team at the 2016 Rio Olympics despite facing criticism from GB Taekwondo for his exclusion from the UK's Olympic squad due to financial reasons."
+    },
+    {
+      "reference": "Floyd Mayweather will fight Manny Pacquiao in Las Vegas on May 2 .\nThe bout is expected to generate $300 million in revenue .\nIyanna Mayweather has been in training camp with her father Floyd .",
+      "raw": "Floyd Mayweather's daughter Iyanna shares insights into her father's rigorous training regimen during the upcoming boxing match against Manny Pacquiao, praising his dedication to both physical and mental fitness. She also mentions how they enjoy playing together after her dad returns from training camp.",
+      "clean": "Floyd Mayweather's daughter Iyanna shares insights into her father's rigorous training regimen during the upcoming boxing match against Manny Pacquiao, praising his dedication to both physical and mental fitness. She also mentions how they enjoy playing together after her dad returns from training camp."
+    },
+    {
+      "reference": "Arsene Wenger will have chat with Theo Walcott ahead of Arsenal clash .\nWalcott was substituted after 55 minutes of England's draw with Italy .\nArsenal boss is Wenger is concerned by the winger's confidence .\nThe Gunners take on Liverpool at the Emirates Stadium on Saturday .",
+      "raw": "Arsene Wenger expresses concern over Theo Walcott's mental health following England's recent match, while also discussing the need for increased homegrown player quotas in the Premier League. He emphasizes that while Walcott excels defensively, he faces challenges academically and feels underappreciated by fans and teammates.",
+      "clean": "Arsene Wenger expresses concern over Theo Walcott's mental health following England's recent match, while also discussing the need for increased homegrown player quotas in the Premier League. He emphasizes that while Walcott excels defensively, he faces challenges academically and feels underappreciated by fans and teammates."
+    },
+    {
+      "reference": "New video features an Australian doctor called Abu Yusuf al-Australi .\nThe doctor calls on foreigners with training to join the ISIS health service .\nHe is seen handling babies while dressed in western-style surgical scrubs .\nThe video appears to be mimicking Britain's National Health Service .\nNine British medical students recently\u00a0travelled to Syria to join ISIS .",
+      "raw": "Australian doctor \"Abu Yusuf\" is featured in a propaganda video by ISIS, showing him handling infants and teaching others how to care for them, aiming to recruit foreign doctors to assist in the country's healthcare crisis. The video, along with other high-budget propaganda efforts, aims to appeal to Westerners seeking better treatment options amid ongoing violence.",
+      "clean": "Australian doctor \"Abu Yusuf\" is featured in a propaganda video by ISIS, showing him handling infants and teaching others how to care for them, aiming to recruit foreign doctors to assist in the country's healthcare crisis. The video, along with other high-budget propaganda efforts, aims to appeal to Westerners seeking better treatment options amid ongoing violence."
+    },
+    {
+      "reference": "Fish and chips has believed to be partly Portuguese and partly Belgian .\nThe tea bag was accidentally invented by a New York tea merchant .\nSaint George himself is thought to have been born in Syria .",
+      "raw": "St George's Day celebrates English heritage, reflecting centuries of immigration and cultural exchange. Key aspects include fish and chips (partly Portuguese and partly Belgian), polo (originating in Persia or Iran), tea (from China to India) and pub culture (first in Italy). Other notable items include Saint George himself, the Polish government's campaign against \"Scousers\" who ate lobscouse, and the discovery of Polish-made Enigma cipher machines by British intelligence officers.",
+      "clean": "St George's Day celebrates English heritage, reflecting centuries of immigration and cultural exchange. Key aspects include fish and chips (partly Portuguese and partly Belgian), polo (originating in Persia or Iran), tea (from China to India) and pub culture (first in Italy). Other notable items include Saint George himself, the Polish government's campaign against \"Scousers\" who ate lobscouse, and the discovery of Polish-made Enigma cipher machines by British intelligence officers."
+    },
+    {
+      "reference": "Duli Hembrom wrote to the principal at Milan Mithi Uchha Vidyalaya .\nSaid parents refused to cancel the wedding and did not want to go ahead .\nChild Marriage Restraint Act specifies a girl must be 18 before she can wed .",
+      "raw": "An 13-year-old Indian girl named Duli Hembrom wrote to her teacher asking to stop an arranged marriage, highlighting the prevalence of child marriage in India where nearly half of girls are married before age 18. The act, enacted in 1929, prohibits children from marrying until they reach 21, though its effectiveness varies widely between countries.\ufffd",
+      "clean": "An 13-year-old Indian girl named Duli Hembrom wrote to her teacher asking to stop an arranged marriage, highlighting the prevalence of child marriage in India where nearly half of girls are married before age 18. The act, enacted in 1929, prohibits children from marrying until they reach 21, though its effectiveness varies widely between countries.\ufffd"
+    },
+    {
+      "reference": "Investigators have released a handful of photographs to help inquiries .\nThey show fans rushing to tend to the dying as they lay on football pitch .\nPolice say the people photographed could address unanswered questions .\nA Home Office probe into 1989 disaster which claimed 96 lives is ongoing .\nAnyone with information is urged to call 08000 283 284 or visit www.operationresolve.co.uk .\nAnyone who can identify any of the people in the images should call Operation Resolve on 08000 283 284 or via the website www.operationresolve.co.uk .",
+      "raw": "Hillsborough investigators are appealing to identify fans who helped tend to injured fans following the 1989 Hillsborough disaster, releasing photos from 26-year-old individuals who may recall their roles. This effort aims to assist in establishing responsibility among those responsible for the deaths of 96 Liverpool fans.",
+      "clean": "Hillsborough investigators are appealing to identify fans who helped tend to injured fans following the 1989 Hillsborough disaster, releasing photos from 26-year-old individuals who may recall their roles. This effort aims to assist in establishing responsibility among those responsible for the deaths of 96 Liverpool fans."
+    },
+    {
+      "reference": "David Wheeler: Corinthian, considered a \"predator\" school, will shut down campuses .\nWheeler: Students of for-profit colleges are hapless victims; their debts should be forgiven .",
+      "raw": "Corinthian Colleges Inc., a former for-profit college, announced plans to close all remaining campuses due to poor academic performance and lackluster enrollment, highlighting the ongoing challenges faced by for-profit colleges like these. The closure comes amid growing concerns over the ethical and economic issues associated with these institutions, including fraudulent admissions and inflated tuition fees.\ufffd",
+      "clean": "Corinthian Colleges Inc., a former for-profit college, announced plans to close all remaining campuses due to poor academic performance and lackluster enrollment, highlighting the ongoing challenges faced by for-profit colleges like these. The closure comes amid growing concerns over the ethical and economic issues associated with these institutions, including fraudulent admissions and inflated tuition fees.\ufffd"
+    },
+    {
+      "reference": "Franz Beckenbauer thinks Jurgen Klopp could be next Bayern Munich boss .\nKlopp has already confirmed he will leave Borussia Dortmund this summer .\nBeckenebauer believes Klopp has what it takes to replace Pep Guardiola .\nGuardiola has a contract until 2016 but has been linked with a move away .",
+      "raw": "Franz Beckenbauer suggests Jurgen Klopp might succeed Pep Guardiola at Bayern Munich after Guardiola leaves Borussia Dortmund, while also expressing optimism about the team's chances in the upcoming Champions League match against Barcelona.FilterWhere",
+      "clean": "Franz Beckenbauer suggests Jurgen Klopp might succeed Pep Guardiola at Bayern Munich after Guardiola leaves Borussia Dortmund, while also expressing optimism about the team's chances in the upcoming Champions League match against Barcelona.FilterWhere"
+    },
+    {
+      "reference": "Faris Al-Khori, 62, was found with dozens of bomb-making\u00a0ingredients .\nPolice found\u00a0chemicals, nails, ball bearings, toxic beans and instructions .\nDiscovery made during a fire at his block of flats in Edinburgh last year .\nHe pleaded guilty and was sentenced to three years and four months in jail .",
+      "raw": "Faris Al-Khori, a 62-year-old former Syrian doctor, was sentenced to three years and four months in prison for possessing a hoard of explosive ingredients and making homemade bombs in his Edinburgh flats, despite not having any known links to terrorism. The discovery came after firefighters forced entry into a flat where they found jars containing various hazardous materials like castor beans and lead picrate._Parms",
+      "clean": "Faris Al-Khori, a 62-year-old former Syrian doctor, was sentenced to three years and four months in prison for possessing a hoard of explosive ingredients and making homemade bombs in his Edinburgh flats, despite not having any known links to terrorism. The discovery came after firefighters forced entry into a flat where they found jars containing various hazardous materials like castor beans and lead picrate._Parms"
+    },
+    {
+      "reference": "More than nine in ten working households will receive a tax cut from today .\nPersonal allowance rising to \u00a310,600 - putting extra \u00a317 a month in pockets .\nCameron due to set out case for people keeping more of their own money .\nHe will argue for continued lower taxes, with less spent on \u2018bureaucracy\u2019\nA rise in the personal allowance from \u00a310,000 to \u00a310,600.\nThe first increase in the 40p higher threshold \u2013 in line with inflation \u2013 for five years.\nThe \u00a31,060 Marriage Tax allowance, which benefits traditional couples where one parent does not work.\nA one per cent increase in working age benefits.",
+      "raw": "David Cameron will argue that high taxes and wasteful government spending are \"immoral\" among 14 million working households receiving a tax cut, emphasizing the importance of individual responsibility in spending decisions. He will introduce other measures aimed at encouraging savings and reducing bureaucracy, though some critics claim these changes have led to significant financial hardship for many.",
+      "clean": "David Cameron will argue that high taxes and wasteful government spending are \"immoral\" among 14 million working households receiving a tax cut, emphasizing the importance of individual responsibility in spending decisions. He will introduce other measures aimed at encouraging savings and reducing bureaucracy, though some critics claim these changes have led to significant financial hardship for many."
+    },
+    {
+      "reference": "Manchester United take on Manchester City on Sunday .\nMatch will begin at 4pm local time at United's Old Trafford home .\nPolice have no objections to kick-off being so late in the afternoon .\nLast late afternoon weekend kick-off in the Manchester derby saw 34 fans arrested at Wembley in 2011 FA Cup semi-final .",
+      "raw": "Manchester police have stated there is no objection to the late afternoon kick-off for the Manchester derby, citing good behavior from fans and safety concerns. This follows similar decisions in other matches where early starts led to incidents like those seen in 2011 between United and City.",
+      "clean": "Manchester police have stated there is no objection to the late afternoon kick-off for the Manchester derby, citing good behavior from fans and safety concerns. This follows similar decisions in other matches where early starts led to incidents like those seen in 2011 between United and City."
+    },
+    {
+      "reference": "Alexander Kutner travelled with his Sky presenter mum, Kay Burley .\nThey stayed at the Ulusaba reserve\u00a0in South Africa's Sabi Sands .\nThe  stay at\u00a0Cliff Lodge had luxury furnishings, soft sheets and a chef .",
+      "raw": "Photographer Alexander Kutner photographed a rhinoceros at Ulusaba Game Reserve in South Africa, highlighting its rarity and importance in the region's wildlife. Despite the harsh conditions, Kutner managed to capture stunning shots of various animals including lions, leopards, and buffaloes.FilterWhere\ncala",
+      "clean": "Photographer Alexander Kutner photographed a rhinoceros at Ulusaba Game Reserve in South Africa, highlighting its rarity and importance in the region's wildlife. Despite the harsh conditions, Kutner managed to capture stunning shots of various animals including lions, leopards, and buffaloes.FilterWhere\ncala"
+    },
+    {
+      "reference": "Sharista Giles of Sweetwater, Tennessee, went into a coma after a car accident in December .\nDoctors forced delivery of her baby in January and Giles opened her eyes for the first time earlier this month .\nShe is still nonverbal and is on a ventilator to help her breathe, but has moved her head when she recognizes voices .\nHer mother, Anna Moser, believes Giles will make a full recovery and will be able to raise her son on her own .",
+      "raw": "A pregnant woman in Tennessee, Sharista Giles, woke from a four-month coma believing her daughter would not recover, leading to an emotional reunion where she found their newborn son Leighton Isiah Giles. Despite initial doubts about her daughter's ability to speak, the mother remains positive as she continues to support her child's development.",
+      "clean": "A pregnant woman in Tennessee, Sharista Giles, woke from a four-month coma believing her daughter would not recover, leading to an emotional reunion where she found their newborn son Leighton Isiah Giles. Despite initial doubts about her daughter's ability to speak, the mother remains positive as she continues to support her child's development."
+    },
+    {
+      "reference": "Moutassem Yazbek describes harrowing 12-day journey from Turkey to Italy .\nYazbek, a Syrian refugee, paid a smuggler $6,500 to get him to Italy in December .",
+      "raw": "The author describes his journey from Syria to Europe, facing significant risks including meeting dangerous smugglers and enduring harsh conditions aboard a cargo ship, ultimately achieving freedom and safety. Despite the challenges, he expresses gratitude for the opportunity to escape violence and seek refuge abroad.",
+      "clean": "The author describes his journey from Syria to Europe, facing significant risks including meeting dangerous smugglers and enduring harsh conditions aboard a cargo ship, ultimately achieving freedom and safety. Despite the challenges, he expresses gratitude for the opportunity to escape violence and seek refuge abroad."
+    },
+    {
+      "reference": "Decorated former Argentina international Esteban Cambiasso says that keeping Leicester up this season would be like 'another cup'\nThe former Inter Milan and Real Madrid midfielder joined Leicester last summer on a free transfer, signing a one-year deal .\nLeicester are currently bottom of the Premier League table with 19 points from 29 games and take on West Ham in their next fixture .",
+      "raw": "Esteban Cambiasso believes winning the Premier League could be one of his most memorable achievements after Leicester City secured their place in the top flight, despite being relegated from the Championship. He emphasizes that achieving such success would make him proud of his career and help secure a spot in the next round of the Europa League.",
+      "clean": "Esteban Cambiasso believes winning the Premier League could be one of his most memorable achievements after Leicester City secured their place in the top flight, despite being relegated from the Championship. He emphasizes that achieving such success would make him proud of his career and help secure a spot in the next round of the Europa League."
+    }
+  ]
+}
