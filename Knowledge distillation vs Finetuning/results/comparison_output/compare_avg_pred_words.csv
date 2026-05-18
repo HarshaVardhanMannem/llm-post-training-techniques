@@ -1,0 +1,17 @@
+metric,model_label,dataset,value_10k,value_50k,delta_50k_minus_10k
+avg_pred_words,teacher_7B,cnn_dailymail,43.7,43.7,0.0
+avg_pred_words,teacher_7B,xsum,27.5,27.5,0.0
+avg_pred_words,teacher_7B,samsum,24.2,24.2,0.0
+avg_pred_words,teacher_7B,dialogsum,29.8,29.8,0.0
+avg_pred_words,student_baseline_0.5B,cnn_dailymail,39.6,39.6,0.0
+avg_pred_words,student_baseline_0.5B,xsum,31.3,31.3,0.0
+avg_pred_words,student_baseline_0.5B,samsum,32.0,32.0,0.0
+avg_pred_words,student_baseline_0.5B,dialogsum,30.9,30.9,0.0
+avg_pred_words,student_SFT_LoRA,cnn_dailymail,71.1,70.2,-0.9
+avg_pred_words,student_SFT_LoRA,xsum,44.2,44.2,0.0
+avg_pred_words,student_SFT_LoRA,samsum,45.2,41.7,-3.5
+avg_pred_words,student_SFT_LoRA,dialogsum,47.2,42.5,-4.7
+avg_pred_words,student_KD_LoRA,cnn_dailymail,53.6,50.1,-3.5
+avg_pred_words,student_KD_LoRA,xsum,47.1,45.9,-1.2
+avg_pred_words,student_KD_LoRA,samsum,45.7,37.9,-7.8
+avg_pred_words,student_KD_LoRA,dialogsum,46.1,41.6,-4.5
