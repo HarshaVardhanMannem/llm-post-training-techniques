@@ -1,0 +1,17 @@
+metric,model_label,dataset,value_10k,value_50k,delta_50k_minus_10k
+bertscore_f1,teacher_7B,cnn_dailymail,22.949,22.949,0.0
+bertscore_f1,teacher_7B,xsum,30.062,30.062,0.0
+bertscore_f1,teacher_7B,samsum,39.532,39.532,0.0
+bertscore_f1,teacher_7B,dialogsum,24.508,24.508,0.0
+bertscore_f1,student_baseline_0.5B,cnn_dailymail,-16.921,-16.921,0.0
+bertscore_f1,student_baseline_0.5B,xsum,-1.826,-1.826,0.0
+bertscore_f1,student_baseline_0.5B,samsum,2.593,2.593,0.0
+bertscore_f1,student_baseline_0.5B,dialogsum,4.974,4.974,0.0
+bertscore_f1,student_SFT_LoRA,cnn_dailymail,21.323,24.074,2.751
+bertscore_f1,student_SFT_LoRA,xsum,9.778,9.501,-0.277
+bertscore_f1,student_SFT_LoRA,samsum,13.733,16.307,2.574
+bertscore_f1,student_SFT_LoRA,dialogsum,2.936,6.911,3.975
+bertscore_f1,student_KD_LoRA,cnn_dailymail,18.871,19.824,0.953
+bertscore_f1,student_KD_LoRA,xsum,21.337,21.368,0.031
+bertscore_f1,student_KD_LoRA,samsum,23.961,27.08,3.119
+bertscore_f1,student_KD_LoRA,dialogsum,15.529,16.783,1.254
