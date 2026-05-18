@@ -1,0 +1,17 @@
+run,metric,dataset,KD_minus_SFT
+10k,rouge1_clean,cnn_dailymail,-3.2560000000000002
+10k,rouge1_clean,xsum,1.811
+10k,rouge1_clean,samsum,0.48499999999999943
+10k,rouge1_clean,dialogsum,2.222999999999999
+10k,bertscore_f1,cnn_dailymail,-2.4520000000000017
+10k,bertscore_f1,xsum,11.559
+10k,bertscore_f1,samsum,10.227999999999998
+10k,bertscore_f1,dialogsum,12.593
+50k,rouge1_clean,cnn_dailymail,-4.469000000000001
+50k,rouge1_clean,xsum,1.443999999999999
+50k,rouge1_clean,samsum,1.8150000000000013
+50k,rouge1_clean,dialogsum,1.7379999999999995
+50k,bertscore_f1,cnn_dailymail,-4.25
+50k,bertscore_f1,xsum,11.866999999999999
+50k,bertscore_f1,samsum,10.773
+50k,bertscore_f1,dialogsum,9.872000000000002
