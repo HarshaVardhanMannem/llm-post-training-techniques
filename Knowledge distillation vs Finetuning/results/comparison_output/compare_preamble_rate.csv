@@ -1,0 +1,17 @@
+metric,model_label,dataset,value_10k,value_50k,delta_50k_minus_10k
+preamble_rate,teacher_7B,cnn_dailymail,0.013,0.013,0.0
+preamble_rate,teacher_7B,xsum,0.01,0.01,0.0
+preamble_rate,teacher_7B,samsum,0.105,0.105,0.0
+preamble_rate,teacher_7B,dialogsum,0.256,0.256,0.0
+preamble_rate,student_baseline_0.5B,cnn_dailymail,0.936,0.936,0.0
+preamble_rate,student_baseline_0.5B,xsum,0.576,0.576,0.0
+preamble_rate,student_baseline_0.5B,samsum,0.634,0.634,0.0
+preamble_rate,student_baseline_0.5B,dialogsum,0.602,0.602,0.0
+preamble_rate,student_SFT_LoRA,cnn_dailymail,0.868,0.667,-0.201
+preamble_rate,student_SFT_LoRA,xsum,0.276,0.106,-0.17
+preamble_rate,student_SFT_LoRA,samsum,0.386,0.149,-0.237
+preamble_rate,student_SFT_LoRA,dialogsum,0.292,0.09,-0.202
+preamble_rate,student_KD_LoRA,cnn_dailymail,0.046,0.037,-0.009
+preamble_rate,student_KD_LoRA,xsum,0.026,0.011,-0.015
+preamble_rate,student_KD_LoRA,samsum,0.284,0.05,-0.234
+preamble_rate,student_KD_LoRA,dialogsum,0.401,0.215,-0.186
