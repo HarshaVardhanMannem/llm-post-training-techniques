@@ -1,0 +1,17 @@
+metric,model_label,dataset,value_10k,value_50k,delta_50k_minus_10k
+rouge1_clean,teacher_7B,cnn_dailymail,33.407,33.414,0.007
+rouge1_clean,teacher_7B,xsum,27.209,27.222,0.013
+rouge1_clean,teacher_7B,samsum,38.097,38.107,0.01
+rouge1_clean,teacher_7B,dialogsum,30.472,30.451,-0.021
+rouge1_clean,student_baseline_0.5B,cnn_dailymail,8.641,8.62,-0.021
+rouge1_clean,student_baseline_0.5B,xsum,11.423,11.433,0.01
+rouge1_clean,student_baseline_0.5B,samsum,11.662,11.664,0.002
+rouge1_clean,student_baseline_0.5B,dialogsum,14.993,15.0,0.007
+rouge1_clean,student_SFT_LoRA,cnn_dailymail,34.403,35.828,1.425
+rouge1_clean,student_SFT_LoRA,xsum,19.663,20.017,0.354
+rouge1_clean,student_SFT_LoRA,samsum,23.486,24.307,0.821
+rouge1_clean,student_SFT_LoRA,dialogsum,18.702,19.758,1.056
+rouge1_clean,student_KD_LoRA,cnn_dailymail,31.147,31.359,0.212
+rouge1_clean,student_KD_LoRA,xsum,21.474,21.461,-0.013
+rouge1_clean,student_KD_LoRA,samsum,23.971,26.122,2.151
+rouge1_clean,student_KD_LoRA,dialogsum,20.925,21.496,0.571
