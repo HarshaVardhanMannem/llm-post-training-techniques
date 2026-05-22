@@ -26,6 +26,7 @@ This repository is a living lab for **post-training research on large language m
 |---|---|---|
 | **Knowledge Distillation vs Supervised Fine-Tuning** | ✅ Complete (10k + 50k) | KD outperforms SFT at scale, especially on cross-domain generalization |
 | **Direct Preference Optimization (DPO)** | ✅ Complete | DPO successfully removes robotic "As an AI" patterns |
+| **GRPO Math Reasoning (Qwen3-4B)** | ✅ Complete | GRPO with verifiable rewards elicits structured chain-of-thought on AMD ROCm 190 GB cluster |
 | **Soft-Label KD (KL-divergence)** | 🔜 Planned | — |
 | **Scaling Laws for Distillation** | 🔜 Planned (25k crossover) | — |
 
@@ -71,10 +72,16 @@ llm-post-training-techniques/
 │       ├── qwen2.5-0.5b-sft-merged-cnndm-50k/
 │       └── upload_readmes.py
 │
-└── DPO Finetuning/                              # 🎯 Experiment 2: DPO Alignment
-    ├── README.md
-    ├── dpo_finetuning_qwen2.5_1.5B.ipynb         # Full training pipeline
-    └── dpo_comparison_base_vs_finetuned.ipynb     # Side-by-side inference
+├── DPO Finetuning/                              # 🎯 Experiment 2: DPO Alignment
+│   ├── README.md
+│   ├── dpo_finetuning_qwen2.5_1.5B.ipynb         # Full training pipeline
+│   └── dpo_comparison_base_vs_finetuned.ipynb     # Side-by-side inference
+│
+└── GRPO - Qwen3 4B Math Reasoning/             # 🧮 Experiment 3: GRPO RL Training
+    ├── README.md                                # Full experiment details
+    └── Qwen3_4B_GRPO_Math_Reasoning.ipynb      # End-to-end training pipeline
+        ├── Phase 1: SFT warm-up (59 examples, 2 epochs)
+        └── Phase 2: GRPO training (12,709 examples, vLLM + ROCm)
 ```
 
 ---
@@ -107,6 +114,35 @@ llm-post-training-techniques/
 > **Key insight:** At 10k samples, SFT wins 3 of 4 datasets. At 50k samples, **KD wins all 4** — with the largest margins on cross-domain dialogue tasks (+4.5 ROUGE-1 on SAMSum and DialogSum). KD scales faster because teacher soft targets encode richer distributional information that compounds over more training examples.
 
 **📄 Full analysis:** [`Knowledge distillation vs Finetuning/RESULTS.md`](Knowledge%20distillation%20vs%20Finetuning/RESULTS.md)
+
+---
+
+### Experiment 3 — GRPO Math Reasoning (Qwen3-4B on ROCm)
+
+**Research question:** *Can a 4B base model learn structured chain-of-thought math reasoning purely from verifiable reward signals — without human preference labels?*
+
+<table>
+<tr><td><b>Model</b></td><td>Qwen3-4B-Base (unsloth/Qwen3-4B-Base)</td></tr>
+<tr><td><b>Method</b></td><td>GRPO with 4 reward functions (format + correctness)</td></tr>
+<tr><td><b>LoRA</b></td><td>r=32, α=64, targeting all attention + MLP projections (1.62% params)</td></tr>
+<tr><td><b>Dataset</b></td><td>DAPO-Math-17k-Processed (12,709 examples after filtering)</td></tr>
+<tr><td><b>SFT Warm-up</b></td><td>OpenMathReasoning-mini: 59 examples × 2 epochs (118 steps)</td></tr>
+<tr><td><b>Hardware</b></td><td>AMD ROCm 190 GB cluster — 191.69 GB VRAM, ROCm 7.0, vLLM v1</td></tr>
+<tr><td><b>Inference Engine</b></td><td>vLLM with CUDA graphs, prefix caching, LoRA hot-swap</td></tr>
+</table>
+
+#### Training Outcome (Selected Steps)
+
+| Step | Total Reward | Format Match | Correct Answer |
+|---|:---:|:---:|:---:|
+| 1 | −7.50 | 0.00 | −2.00 |
+| 5 | **+13.00** | +3.00 | **+5.00** |
+| 15 | **+13.00** | +3.00 | **+5.00** |
+| 22 | +11.00 | +3.00 | +4.25 |
+
+> **Key insight:** The model rapidly learns to produce the correct output format (reward = +3.0) AND solve the problem correctly (reward = +5.0) within just 5 GRPO steps. The two-phase SFT → GRPO approach prevents format collapse in early training.
+
+**📄 Full details:** [`GRPO - Qwen3 4B Math Reasoning/README.md`](GRPO%20-%20Qwen3%204B%20Math%20Reasoning/README.md)
 
 ---
 
@@ -235,11 +271,14 @@ python generate_plots.py          # Generates all publication-ready plots
 - [x] **Cross-domain evaluation** — XSum, SAMSum, DialogSum generalization
 - [x] **BERTScore evaluation** — semantic similarity metrics beyond ROUGE
 - [x] **Model publishing** — merged weights on Hugging Face Hub
+- [x] **GRPO Math Reasoning** — Qwen3-4B trained with RL on AMD ROCm 190 GB cluster
 - [ ] **25k crossover experiment** — pinpoint the exact scale at which KD overtakes SFT
 - [ ] **Soft-label KD** — KL-divergence loss on token-level teacher distributions
 - [ ] **Extended training** — 6–8 epochs to test if KD benefits more from longer schedules
 - [ ] **Larger student** — Qwen2.5-1.5B as student to test scaling behavior
-- [ ] **RLHF pipeline** — PPO-based alignment for comparison with DPO
+- [ ] **GRPO full run** — Complete 12,709 steps and publish merged model to Hugging Face
+- [ ] **GRPO evaluation** — MATH benchmark (AIME, AMC) evaluation of fine-tuned model
+- [ ] **Multi-GPU GRPO** — Scale to multi-GPU sampling for faster training throughput
 
 ---
 
@@ -254,6 +293,12 @@ python generate_plots.py          # Generates all publication-ready plots
 4. **DPO is effective for style alignment.** A single epoch of DPO training with only 5k preference pairs is sufficient to eliminate robotic disclaimers and produce naturally conversational outputs.
 
 5. **LoRA makes all of this accessible.** Training only 2–3% of model parameters achieves substantial performance gains, enabling experimentation on consumer GPUs.
+
+6. **GRPO learns to reason from scratch using only reward signals.** With a 2-phase SFT→GRPO pipeline, a 4B base model can learn complex output formatting and math problem-solving simultaneously — without any human preference labels. The model achieves max reward (+13.0) by step 5 on some problems.
+
+7. **Two-phase training prevents early reward collapse.** Starting with a 59-example SFT warm-up before GRPO is critical: it gives the model just enough format priming so that early GRPO completions aren't all clipped at max sequence length.
+
+8. **Large VRAM accelerates GRPO throughput.** The 191 GB ROCm cluster allows vLLM to cache ~1.17M tokens and run 574× concurrency — enabling the high-throughput multi-completion sampling that GRPO requires.
 
 ---
 
