@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🧮 GRPO Fine-Tuning — Qwen3-4B Math Reasoning
+# 🧮 GRPO Experiments
 
-**Teaching a 4B model to reason step-by-step through reinforcement learning from verifiable rewards**
+**Reinforcement learning from verifiable rewards — a growing collection of GRPO fine-tuning experiments**
 
 [![Model](https://img.shields.io/badge/🤗_Base_Model-Qwen3--4B--Base-FFD21E)](https://huggingface.co/unsloth/Qwen3-4B-Base)
 [![Dataset](https://img.shields.io/badge/🤗_Dataset-DAPO--Math--17k-blue)](https://huggingface.co/datasets/open-r1/DAPO-Math-17k-Processed)
@@ -186,13 +186,14 @@ Early GRPO training behavior observed from the training log:
 
 ---
 
-## 🗂️ Repository Structure
+## 🗂️ Folder Structure
 
 ```
-GRPO - Qwen3 4B Math Reasoning/
+GRPO/                                    # ← You are here
 │
-├── README.md                           # ← You are here
-└── Qwen3_4B_GRPO_Math_Reasoning.ipynb  # Complete training pipeline
+├── README.md                            # This file — GRPO collection overview
+│
+└── Qwen3_4B_GRPO_Math_Reasoning.ipynb  # Experiment 1: Qwen3-4B math reasoning
     │
     ├── Cell 1:  Model Loading          # Unsloth + vLLM + LoRA setup
     ├── Cell 2:  Reasoning Format       # Custom token/tag definition
