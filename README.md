@@ -77,9 +77,9 @@ llm-post-training-techniques/
 │   ├── dpo_finetuning_qwen2.5_1.5B.ipynb         # Full training pipeline
 │   └── dpo_comparison_base_vs_finetuned.ipynb     # Side-by-side inference
 │
-└── GRPO - Qwen3 4B Math Reasoning/             # 🧮 Experiment 3: GRPO RL Training
-    ├── README.md                                # Full experiment details
-    └── Qwen3_4B_GRPO_Math_Reasoning.ipynb      # End-to-end training pipeline
+└── GRPO/                                        # 🧮 All GRPO experiments
+    ├── README.md                                # GRPO collection overview
+    └── Qwen3_4B_GRPO_Math_Reasoning.ipynb      # Exp 1: Qwen3-4B math reasoning
         ├── Phase 1: SFT warm-up (59 examples, 2 epochs)
         └── Phase 2: GRPO training (12,709 examples, vLLM + ROCm)
 ```
@@ -142,7 +142,7 @@ llm-post-training-techniques/
 
 > **Key insight:** The model rapidly learns to produce the correct output format (reward = +3.0) AND solve the problem correctly (reward = +5.0) within just 5 GRPO steps. The two-phase SFT → GRPO approach prevents format collapse in early training.
 
-**📄 Full details:** [`GRPO - Qwen3 4B Math Reasoning/README.md`](GRPO%20-%20Qwen3%204B%20Math%20Reasoning/README.md)
+**📄 Full details:** [`GRPO/README.md`](GRPO/README.md)
 
 ---
 
