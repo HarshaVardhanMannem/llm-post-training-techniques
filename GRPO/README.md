@@ -193,7 +193,7 @@ GRPO/                                    # ← You are here
 │
 ├── README.md                            # This file — GRPO collection overview
 │
-└── Qwen3_4B_GRPO_Math_Reasoning.ipynb  # Experiment 1: Qwen3-4B math reasoning
+├── qwen3-4b-grpo-math-reasoning.ipynb  # Experiment 1: Qwen3-4B math reasoning
     │
     ├── Cell 1:  Model Loading          # Unsloth + vLLM + LoRA setup
     ├── Cell 2:  Reasoning Format       # Custom token/tag definition
@@ -229,6 +229,8 @@ GRPO/                                    # ← You are here
     ├── Cell 26: Reward: Numbers        # check_numbers() + logging
     ├── Cell 27: Prompt Length Filter   # 90th percentile cut
     └── Cell 28: GRPO Training          # GRPOConfig + GRPOTrainer
+│
+└── llama3-2-3b-grpo-gsm8k-finetuning.ipynb # Experiment 2: Llama 3.2 3B GSM8K fine-tuning
 ```
 
 ---
@@ -251,7 +253,7 @@ pip install trl vllm datasets pandas numpy
 ### Running the Notebook
 
 1. Ensure you have a ROCm-compatible GPU (or adapt to CUDA by removing ROCm-specific flags)
-2. Open `Qwen3_4B_GRPO_Math_Reasoning.ipynb`
+2. Open `qwen3-4b-grpo-math-reasoning.ipynb` or `llama3-2-3b-grpo-gsm8k-finetuning.ipynb`
 3. Run cells sequentially — each phase has a clear separator
 
 > **Memory note:** Phase 1 (SFT) and Phase 2 (GRPO) share the same model/tokenizer. `gc.collect()` and `torch.cuda.empty_cache()` are called between phases. On smaller GPUs, adjust `gpu_memory_utilization` and `num_generations`.
