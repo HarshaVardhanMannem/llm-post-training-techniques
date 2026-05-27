@@ -18,7 +18,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This repository is a living lab for **post-training research on large language models**. Each experiment is self-contained with its own notebooks, data pipelines, evaluation harnesses, and published model weights. The focus areas include:
 
